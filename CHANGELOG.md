@@ -1,3 +1,16 @@
+# [1.18.0-dev.4](https://github.com/MorpheApp/morphe-manager/compare/v1.18.0-dev.3...v1.18.0-dev.4) (2026-05-17)
+
+
+### Bug Fixes
+
+* Don't flag blank-default required options as missing ([9a6fa0c](https://github.com/MorpheApp/morphe-manager/commit/9a6fa0c55a84d6fb92807ee7241bc916429a5b2e))
+* Reduce icon button spacing in dialog text fields ([251f839](https://github.com/MorpheApp/morphe-manager/commit/251f8395cd390e9903b78a0effcdd0663ef76cd2))
+
+
+### Features
+
+* Add file picker for file path patch options ([18620ed](https://github.com/MorpheApp/morphe-manager/commit/18620edd988e85c9966088daa83808e220da35a0))
+
 # [1.18.0-dev.3](https://github.com/MorpheApp/morphe-manager/compare/v1.18.0-dev.2...v1.18.0-dev.3) (2026-05-17)
 
 
