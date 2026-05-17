@@ -3,6 +3,22 @@
 
 ### Bug Fixes
 
+* App info dialog could show wrong app's data after installing a different app ([94139e6](https://github.com/MorpheApp/morphe-manager/commit/94139e66d01a05f947e4d56074504faf096478cc))
+* Disable fade overlay in two-column layout ([3d83c53](https://github.com/MorpheApp/morphe-manager/commit/3d83c5327e783dbda9ced58dccda1fe9d4b9b268))
+* Pre-release version history shown in update dialog for stable users ([9d0debd](https://github.com/MorpheApp/morphe-manager/commit/9d0debdb3786cffbea339fa300e8c58c9168920f))
+* Resolve changelog dialog rendering jank after `markdown-renderer` update ([58fdc0f](https://github.com/MorpheApp/morphe-manager/commit/58fdc0f4dbf42f0b0fe36a344ccfb39bc9cb33e0))
+* Source rename not reflected in patch flow until restart ([3d9a1d8](https://github.com/MorpheApp/morphe-manager/commit/3d9a1d8aab16f0de6aadc47c37569c55496ff17c))
+
+
+### Features
+
+* Add "Use installed APK" button to APK availability dialog ([#552](https://github.com/MorpheApp/morphe-manager/issues/552)) ([9d2df3f](https://github.com/MorpheApp/morphe-manager/commit/9d2df3f591eb46703e1fc0203c45a69a5129c375))
+
+# [1.18.0-dev.1](https://github.com/MorpheApp/morphe-manager/compare/v1.17.1...v1.18.0-dev.1) (2026-05-17)
+
+
+### Bug Fixes
+
 * Disable fade overlay in two-column layout ([ea51995](https://github.com/MorpheApp/morphe-manager/commit/ea5199543af70e3aea1460702918d67d97376917))
 * Resolve changelog dialog rendering jank after `markdown-renderer` update ([b969be9](https://github.com/MorpheApp/morphe-manager/commit/b969be9d17f3bd7b311bf18053510ba5682065ea))
 
