@@ -129,6 +129,9 @@ fun SectionsLayout(
     // Auto-close search if the button disappears
     LaunchedEffect(showSearchButton) { if (!showSearchButton) searchVisible = false }
 
+    // Back gesture closes search (registered before multiselect BackHandler so multiselect takes priority)
+    BackHandler(enabled = searchVisible) { searchVisible = false }
+
     Box(modifier = Modifier.fillMaxSize()) {
         // Main layout structure
         Column(
