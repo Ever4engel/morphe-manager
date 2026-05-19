@@ -405,23 +405,27 @@ private fun BundleManagementCard(
         border = BorderStroke(1.dp, animatedBorderColor)
     ) {
         // Build content description
-        val contentDesc = buildString {
-            append(bundle.displayTitle)
-            append(", ")
-            if (isEnabled) {
-                append(enabledState)
-            } else {
-                append(disabledState)
-            }
-            if (!forceExpanded) {
+        val updateLabel = stringResource(R.string.update)
+        val availableLabel = stringResource(R.string.available)
+        val contentDesc = remember(bundle.displayTitle, isEnabled, expanded, forceExpanded, updateInfo) {
+            buildString {
+                append(bundle.displayTitle)
                 append(", ")
-                append(if (expanded) expandedState else collapsedState)
-            }
-            updateInfo?.let {
-                append(", ")
-                append(stringResource(R.string.update))
-                append(" ")
-                append(stringResource(R.string.available))
+                if (isEnabled) {
+                    append(enabledState)
+                } else {
+                    append(disabledState)
+                }
+                if (!forceExpanded) {
+                    append(", ")
+                    append(if (expanded) expandedState else collapsedState)
+                }
+                updateInfo?.let {
+                    append(", ")
+                    append(updateLabel)
+                    append(" ")
+                    append(availableLabel)
+                }
             }
         }
 
@@ -521,7 +525,7 @@ private fun BundleManagementCard(
                         }
                     }
 
-                    HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
+                    MorpheSettingsDivider(modifier = Modifier.padding(vertical = 8.dp), fullWidth = true)
 
                     // Resolve prerelease state once
                     val currentUsePrerelease = when (bundle) {
@@ -603,7 +607,7 @@ private fun BundleManagementCard(
                     }
 
                     if (onPrereleasesToggle != null || (hasExperimentalVersions && onExperimentalVersionsToggle != null)) {
-                        HorizontalDivider(modifier = Modifier.padding(vertical = 8.dp))
+                        MorpheSettingsDivider(modifier = Modifier.padding(vertical = 8.dp), fullWidth = true)
                     }
 
                     // Action bar
@@ -724,7 +728,7 @@ private fun BundleCardHeader(
             // When showChevron=true (multiple bundles): show version • date.
             val timestamp = bundle.updatedAt ?: bundle.createdAt
             val versionText = if (showChevron) bundle.version?.removePrefix("v") else null
-            val dateText = timestamp?.let { getRelativeTimeString(it) }
+            val dateText = remember(timestamp) { timestamp?.let { getRelativeTimeString(it) } }
 
             if (versionText != null || dateText != null) {
                 Row(
@@ -858,10 +862,9 @@ private fun BundleInfoCard(
             verticalAlignment = Alignment.CenterVertically,
             horizontalArrangement = Arrangement.spacedBy(8.dp)
         ) {
-            Icon(
-                icon,
-                contentDescription = null,
-                modifier = Modifier.size(20.dp),
+            MorpheIcon(
+                icon = icon,
+                size = 20.dp,
                 tint = MaterialTheme.colorScheme.onSecondaryContainer
             )
 
