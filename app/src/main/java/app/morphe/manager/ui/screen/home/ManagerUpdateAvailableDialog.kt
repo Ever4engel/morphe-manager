@@ -26,7 +26,7 @@ import app.morphe.manager.ui.viewmodel.UpdateViewModel
 import app.morphe.manager.util.formatMegabytes
 
 /**
- * Update details dialog with download and install functionality
+ * Update details dialog with download and install functionality.
  */
 @Composable
 fun ManagerUpdateDetailsDialog(
@@ -54,7 +54,7 @@ fun ManagerUpdateDetailsDialog(
     }
 
     MorpheDialog(
-        onDismissRequest = { onDismiss() },
+        onDismissRequest = onDismiss,
         title = stringResource(
             when (state) {
                 UpdateViewModel.State.CAN_DOWNLOAD -> R.string.update_available
@@ -92,7 +92,7 @@ fun ManagerUpdateDetailsDialog(
                 UpdateViewModel.State.DOWNLOADING -> {
                     MorpheDialogOutlinedButton(
                         text = stringResource(R.string.close),
-                        onClick = { onDismiss() },
+                        onClick = onDismiss,
                         modifier = Modifier.fillMaxWidth()
                     )
                 }
@@ -224,11 +224,9 @@ fun ManagerUpdateDetailsDialog(
                                     horizontalArrangement = Arrangement.spacedBy(12.dp),
                                     verticalAlignment = Alignment.Top
                                 ) {
-                                    Icon(
-                                        imageVector = Icons.Outlined.ErrorOutline,
-                                        contentDescription = null,
-                                        tint = MaterialTheme.colorScheme.error,
-                                        modifier = Modifier.size(24.dp)
+                                    MorpheIcon(
+                                        icon = Icons.Outlined.ErrorOutline,
+                                        tint = MaterialTheme.colorScheme.error
                                     )
                                     Column(
                                         verticalArrangement = Arrangement.spacedBy(4.dp)
@@ -333,7 +331,7 @@ fun ManagerUpdateDetailsDialog(
 }
 
 /**
- * Download progress section with styled progress bar
+ * Download progress section with styled progress bar.
  */
 @Composable
 private fun DownloadProgressSection(
