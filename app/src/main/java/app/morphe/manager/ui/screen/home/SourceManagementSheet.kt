@@ -366,6 +366,12 @@ private fun BundleManagementCard(
     val disabledState = stringResource(R.string.disabled)
     val openInBrowser = stringResource(R.string.sources_management_open_in_browser)
 
+    val context = LocalContext.current
+    fun withToast(doneMessage: String, action: () -> Unit): () -> Unit = {
+        context.toast(doneMessage)
+        action()
+    }
+
     val isEnabled = bundle.enabled
     val hasMetadataError = metadataFetchError != null
     val isMissing = bundle.state is PatchBundleSource.State.Missing
@@ -623,6 +629,10 @@ private fun BundleManagementCard(
                                 } else {
                                     stringResource(R.string.enable) + " " + bundle.displayTitle
                                 }
+                                val disableToast = stringResource(
+                                    if (bundle.enabled) R.string.sources_management_source_disabled
+                                    else R.string.sources_management_source_enabled
+                                )
 
                                 val disableIcon = if (bundle.enabled)
                                     Icons.Outlined.Block
@@ -635,35 +645,43 @@ private fun BundleManagementCard(
                                 ) { icon ->
                                     // Disable button
                                     ActionPillButton(
-                                        onClick = onDisable,
+                                        onClick = withToast(disableToast, onDisable),
                                         icon = icon,
-                                        contentDescription = disableEnableDesc
+                                        contentDescription = disableEnableDesc,
+                                        tooltip = disableEnableDesc
                                     )
                                 }
                             }
 
                             if (bundle is RemotePatchBundle) {
+                                val updateDesc = stringResource(R.string.update) + " " + bundle.displayTitle
+                                val updateToast = stringResource(R.string.sources_management_source_updating)
                                 // Update button
                                 ActionPillButton(
-                                    onClick = onUpdate,
+                                    onClick = withToast(updateToast, onUpdate),
                                     icon = Icons.Outlined.Refresh,
-                                    contentDescription = stringResource(R.string.update) + " " + bundle.displayTitle
+                                    contentDescription = updateDesc,
+                                    tooltip = updateDesc
                                 )
                             }
 
                             if (!bundle.isDefault) {
+                                val renameDesc = stringResource(R.string.rename) + " " + bundle.displayTitle
+                                val deleteDesc = stringResource(R.string.delete) + " " + bundle.displayTitle
                                 // Rename button
                                 ActionPillButton(
                                     onClick = onRename,
                                     icon = Icons.Outlined.Edit,
-                                    contentDescription = stringResource(R.string.rename) + " " + bundle.displayTitle
+                                    contentDescription = renameDesc,
+                                    tooltip = renameDesc
                                 )
 
                                 // Delete button
                                 ActionPillButton(
                                     onClick = onDelete,
                                     icon = Icons.Outlined.Delete,
-                                    contentDescription = stringResource(R.string.delete) + " " + bundle.displayTitle,
+                                    contentDescription = deleteDesc,
+                                    tooltip = deleteDesc,
                                     colors = IconButtonDefaults.filledTonalIconButtonColors(
                                         containerColor = MaterialTheme.colorScheme.errorContainer,
                                         contentColor = MaterialTheme.colorScheme.onErrorContainer
