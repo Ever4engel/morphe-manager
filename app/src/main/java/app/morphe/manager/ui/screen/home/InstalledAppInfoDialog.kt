@@ -757,8 +757,6 @@ private fun AppHeroHeader(
                                 fontSize = 22.sp,
                                 color = onHero
                             ),
-                            maxLines = 1,
-                            overflow = TextOverflow.Ellipsis,
                             defaultText = packageName
                         )
                     }

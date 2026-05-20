@@ -191,8 +191,6 @@ fun HeaderCreatorDialog(
                     packageName = packageName,
                     lightHeaderBitmap = if (showLightVariant) lightHeaderBitmap else null,
                     darkHeaderBitmap = darkHeaderBitmap!!,
-                    lightFileName = HeaderConfig.LIGHT_HEADER_FILE_NAME,
-                    darkFileName = HeaderConfig.DARK_HEADER_FILE_NAME,
                     lightScale = lightScale,
                     lightOffsetX = lightOffsetX,
                     lightOffsetY = lightOffsetY,
@@ -674,8 +672,6 @@ private suspend fun createHeaderFiles(
     packageName: String,
     lightHeaderBitmap: Bitmap?,
     darkHeaderBitmap: Bitmap,
-    lightFileName: String,
-    darkFileName: String,
     lightScale: Float,
     lightOffsetX: Float,
     lightOffsetY: Float,
@@ -727,8 +723,8 @@ private suspend fun createHeaderFiles(
                 offsetX = lightOffsetX,
                 offsetY = lightOffsetY
             )
-            val lightDocFile = drawableDocDir.findFile("$lightFileName.png")
-                ?: drawableDocDir.createFile("image/png", "$lightFileName.png")
+            val lightDocFile = drawableDocDir.findFile("${HeaderConfig.LIGHT_HEADER_FILE_NAME}.png")
+                ?: drawableDocDir.createFile("image/png", "${HeaderConfig.LIGHT_HEADER_FILE_NAME}.png")
             lightDocFile?.let {
                 context.contentResolver.openOutputStream(it.uri)?.use { out ->
                     lightScaled.compress(Bitmap.CompressFormat.PNG, 100, out)
@@ -747,8 +743,8 @@ private suspend fun createHeaderFiles(
             offsetX = darkOffsetX,
             offsetY = darkOffsetY
         )
-        val darkDocFile = drawableDocDir.findFile("$darkFileName.png")
-            ?: drawableDocDir.createFile("image/png", "$darkFileName.png")
+        val darkDocFile = drawableDocDir.findFile("${HeaderConfig.DARK_HEADER_FILE_NAME}.png")
+            ?: drawableDocDir.createFile("image/png", "${HeaderConfig.DARK_HEADER_FILE_NAME}.png")
         darkDocFile?.let {
             context.contentResolver.openOutputStream(it.uri)?.use { out ->
                 darkScaled.compress(Bitmap.CompressFormat.PNG, 100, out)

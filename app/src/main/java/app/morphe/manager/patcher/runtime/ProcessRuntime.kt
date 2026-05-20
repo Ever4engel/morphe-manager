@@ -296,7 +296,7 @@ class ProcessRuntime(
         const val INTENT_BUNDLE_KEY = "BUNDLE"
         const val BUNDLE_BINDER_KEY = "BINDER"
 
-        private fun resolvePropOverride(context: Context) = findLibrary(context, "prop_override")
+        private fun resolvePropOverride(context: Context) = findPropOverrideLibrary(context)
         private fun resolveAppProcessBin(context: Context): String {
             val is64Bit = context.applicationInfo.nativeLibraryDir.contains("64")
             val preferred = if (is64Bit) APP_PROCESS_BIN_PATH_64 else APP_PROCESS_BIN_PATH_32

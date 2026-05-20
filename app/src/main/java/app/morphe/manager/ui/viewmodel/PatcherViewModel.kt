@@ -763,7 +763,6 @@ class PatcherViewModel(
 
     private fun launchWorker(): UUID =
         workerRepository.launchExpedited<PatcherWorker, PatcherWorker.Args>(
-            "patching",
             buildWorkerArgs()
         )
 

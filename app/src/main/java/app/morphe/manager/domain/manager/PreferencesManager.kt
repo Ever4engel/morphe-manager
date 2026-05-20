@@ -5,6 +5,8 @@ import android.os.Build
 import android.util.Log
 import app.morphe.manager.BuildConfig
 import app.morphe.manager.domain.manager.base.BasePreferencesManager
+import app.morphe.manager.domain.manager.base.IntPreference
+import app.morphe.manager.domain.manager.base.LongPreference
 import app.morphe.manager.domain.repository.PatchBundleRepository.Companion.DEFAULT_SOURCE_UID
 import app.morphe.manager.patcher.runtime.PROCESS_RUNTIME_MEMORY_MAX_LIMIT_INITIALIZATION
 import app.morphe.manager.patcher.runtime.PROCESS_RUNTIME_MEMORY_NOT_SET
@@ -86,7 +88,7 @@ class PreferencesManager(
         // Armv7 silently fails and nobody has researched why.
         Build.VERSION.SDK_INT >= Build.VERSION_CODES.R && !isArmV7()
     )
-    val patcherProcessMemoryLimit = intPreference("use_process_runtime_memory_limit", PROCESS_RUNTIME_MEMORY_NOT_SET)
+    val patcherProcessMemoryLimit = IntPreference(dataStore, "use_process_runtime_memory_limit", PROCESS_RUNTIME_MEMORY_NOT_SET)
 
     val keystoreAlias = stringPreference("keystore_alias", KeystoreManager.DEFAULT)
     val keystorePass = stringPreference("keystore_pass", KeystoreManager.DEFAULT)
@@ -98,7 +100,7 @@ class PreferencesManager(
     val allowMeteredUpdates = booleanPreference("allow_metered_updates", true)
     val firstLaunch = booleanPreference("first_launch", true)
 
-    val installationTime = longPreference("manager_installation_time", 0)
+    val installationTime = LongPreference(dataStore, "manager_installation_time", 0L)
     val disablePatchVersionCompatCheck = booleanPreference("disable_patch_version_compatibility_check", false)
 
     /**  Hidden preference to track if prerelease was auto-enabled. */

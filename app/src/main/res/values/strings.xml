@@ -6,7 +6,6 @@
     <string name="home_app_hide_title">Hide this app?</string>
     <string name="home_app_hide_message">This app will be hidden from the home screen. You can restore it later from the hidden apps using the button at the bottom of the list</string>
     <string name="home_app_will_be_hidden">This app will be hidden</string>
-    <string name="home_app_show_hidden">Show hidden apps</string>
     <string name="home_app_no_hidden">No hidden apps</string>
     <string name="home_app_hidden_apps_title">Hidden apps</string>
     <string name="home_app_hidden_apps_hint">Tap to unhide</string>
@@ -50,7 +49,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Let\'s make your apps behave</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Today\'s forecast: 100% chance of patching</string>
+    <string name="home_greeting_7" formatted="false">Today\'s forecast: 100% chance of patching</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Ready to change underwhelming into awesome?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -265,11 +264,9 @@ Outer zone (dashed): may be clipped by the launcher mask - keep important detail
     <string name="home_app_info_original_package_name">Original package name</string>
     <string name="home_app_info_applied_patches">Applied patches</string>
     <string name="home_app_info_patch_source_used">Patch source used</string>
-    <string name="home_app_info_install_type">Installation type</string>
     <string name="home_app_info_install_type_custom_installer">Custom installer</string>
     <string name="home_app_info_install_type_system_installer">System installer</string>
     <string name="home_app_info_install_type_shizuku" translatable="false">Shizuku</string>
-    <string name="home_app_info_patched_at">Patched</string>
     <string name="home_app_info_patch_update_available">Patch update available</string>
     <string name="home_app_info_patch_update_available_description">A newer version of patches is available. Repatch your app to get the latest improvements and fixes</string>
     <string name="home_app_info_app_deleted_warning">App was uninstalled</string>
@@ -723,7 +720,7 @@ The image dimensions must be as follows:
     <string name="settings_system_about">About</string>
     <string name="settings_system_share_website">Share website</string>
     <string name="settings_system_share_website_description">Shares the official Morphe website</string>
-    <string name="settings_system_manager_description">"An open-source project for modern, streamlined patching of popular Android apps, driven by community feedback and contributions"</string>
+    <string name="settings_system_manager_description">An open-source project for modern, streamlined patching of popular Android apps, driven by community feedback and contributions</string>
     <string name="credits">Credits</string>
     <string name="credits_current_development">Current development</string>
     <string name="credits_prior_development">Prior development</string>
@@ -829,10 +826,4 @@ The image dimensions must be as follows:
 
 Do you still want to continue?"</string>
     <string name="download_update_confirmation">Download update?</string>
-
-    <string name="just_now">Just now</string>
-    <string name="minutes_ago">%sm ago</string>
-    <string name="hours_ago">%sh ago</string>
-    <string name="days_ago">%sd ago</string>
-    <string name="invalid_date">Invalid date</string>
 </resources>

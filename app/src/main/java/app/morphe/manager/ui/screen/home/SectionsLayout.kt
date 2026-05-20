@@ -2272,7 +2272,6 @@ internal fun HideAppDialog(
                     displayName = item.displayName,
                     subtitle = stringResource(R.string.home_app_will_be_hidden),
                     gradientColors = item.gradientColors,
-                    iconSource = AppDataSource.PATCHED_APK
                 )
             }
 
@@ -2473,7 +2472,6 @@ internal fun HiddenAppsDialog(
                                     subtitle = if (isMultiSelectMode.value) null
                                     else stringResource(R.string.home_app_hidden_apps_hint),
                                     gradientColors = item.gradientColors,
-                                    iconSource = AppDataSource.PATCHED_APK
                                 )
                             }
                         }
@@ -2492,7 +2490,6 @@ internal fun HiddenAppsDialog(
  * @param displayName   Primary label shown in bold.
  * @param subtitle      Secondary line shown below [displayName]; null → not rendered.
  * @param gradientColors Gradient palette forwarded to [AppIcon] placeholder.
- * @param iconSource    [AppDataSource] preference for [AppIcon].
  */
 @Composable
 private fun RowScope.AppCardContent(
@@ -2500,8 +2497,7 @@ private fun RowScope.AppCardContent(
     packageInfo: PackageInfo?,
     displayName: String,
     subtitle: String?,
-    gradientColors: List<Color>,
-    iconSource: AppDataSource
+    gradientColors: List<Color>
 ) {
     val textColor = Color.White
     val subtitleColor = Color.White.copy(alpha = 0.75f)
@@ -2521,7 +2517,7 @@ private fun RowScope.AppCardContent(
         packageName = if (packageInfo == null) packageName else null,
         contentDescription = null,
         modifier = Modifier.size(60.dp),
-        preferredSource = iconSource,
+        preferredSource = AppDataSource.PATCHED_APK,
         placeholderGradientColors = gradientColors,
         placeholderInnerPadding = 6.dp
     )
@@ -2754,7 +2750,6 @@ fun AppButton(
             displayName = displayName,
             subtitle = notPatchedText,
             gradientColors = gradientColors,
-            iconSource = AppDataSource.PATCHED_APK
         )
     }
 }

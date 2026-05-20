@@ -61,7 +61,7 @@ fun SimplePatchingInProgress(
     LaunchedEffect(Unit) {
         while (true) {
             delay(10000)
-            currentMessage.value = HomeAndPatcherMessages.getPatcherMessage(context)
+            currentMessage.intValue = HomeAndPatcherMessages.getPatcherMessage(context)
         }
     }
 
@@ -80,7 +80,7 @@ fun SimplePatchingInProgress(
         ) {
             AdaptiveProgressContent(
                 windowSize = windowSize,
-                currentMessage = currentMessage.value,
+                currentMessage = currentMessage.intValue,
                 progress = progress,
                 completed = completed,
                 total = total,
