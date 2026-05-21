@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Ascunzi aplicația?</string>
     <string name="home_app_hide_message">Aplicația va fi ascunsă de pe ecranul principal. O vei putea restaura mai târziu folosind butonul de la capătul listei.</string>
     <string name="home_app_will_be_hidden">Aplicația va fi ascunsă</string>
-    <string name="home_app_show_hidden">Arată aplicațiile ascunse</string>
     <string name="home_app_no_hidden">Nicio aplicație ascunsă</string>
     <string name="home_app_hidden_apps_title">Aplicații ascunse</string>
     <string name="home_app_hidden_apps_hint">Apasă pentru a afișa</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Hai să-ți educăm aplicațiile</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Prognoza de azi: 100% șanse de patch-uit</string>
+    <string name="home_greeting_7" formatted="false">Prognoza de azi: 100% șanse de patch-uit</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Gata să transformi mediocritatea în ceva extraordinar?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@ Pentru cele mai bune rezultate, această aplicație recomandă patch-uirea unui 
     <string name="patch_option_required_missing">%s: completați toate opțiunile obligatorii</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Creează iconiță adaptivă</string>
-    <string name="adaptive_icon_instructions">Alege o imagine de fundal, selectează o culoare de fundal, apoi folosește glisorul sau gesturile de ciupire pentru a ajusta previzualizarea</string>
-    <string name="adaptive_icon_preview">Previzualizare pictogramă adaptivă</string>
-    <string name="adaptive_icon_preview_hint">Pentru cel mai bun rezultat, păstrează pictograma în interiorul cercului interior solid</string>
     <string name="adaptive_icon_select_image">Selectează imagine</string>
     <string name="adaptive_icon_change_image">Schimbă imagine</string>
     <string name="adaptive_icon_background_color">Culoare de fundal</string>
     <string name="adaptive_icon_reset_transform">Reinitalizați poziția și scalarea</string>
     <string name="adaptive_icon_safe_zone_inner">Zonă sigură (totdeauna vizibilă)</string>
     <string name="adaptive_icon_safe_zone_outer">Zonă mascată (poate fi tăiată)</string>
+    <string name="adaptive_icon_no_transparency_warning">Imaginea nu conține pixeli transparenți. Rezultatul poate arăta incorect.</string>
     <string name="adaptive_icon_created_success">Icoana adaptivă creată cu succes</string>
     <string name="adaptive_icon_creation_failed">Eroare la crearea icoanei adaptive</string>
-    <string name="adaptive_icon_folder_explanation">Selectează unde să creezi dosarul \'%1$s/%2$s\' cu fișiere de iconi generate</string>
-    <string name="notification_icon_preview">Butonul de notificare este ascuns</string>
-    <string name="notification_icon_preview_hint">Folosește glisorul pentru a redimensiona. Trage pentru a repoziționa</string>
+    <string name="adaptive_icon_label">Adaptiv</string>
+    <string name="adaptive_icon_monochrome_label">Monocrom</string>
+    <string name="adaptive_icon_guide">Ghid de creare icoane</string>
+    <string name="adaptive_icon_guide_png_title">Utilizați un PNG cu fundal transparent</string>
+    <string name="adaptive_icon_guide_png_body">Prim-planul trebuie să fie un fișier PNG cu un fundal transparent. Un fundal de culoare solidă va arăta incorect - culoarea fundalului ar trebui să provină din selectorul de fundal de mai jos.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Zone de siguranță</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Zona interioară (solidă): conținutul este întotdeauna complet vizibil pe toate formele lansatorului.
+Zona exterioară (întreruptă): poate fi decupată de masca lansatorului - păstrați detaliile importante în zona interioară."</string>
+    <string name="adaptive_icon_guide_notification_title">Notificări</string>
+    <string name="adaptive_icon_guide_notification_body">Generat automat din imaginea de prim-plan. Ajustați dimensiunea folosind glisorul de notificare. Tot conținutul vizibil apare alb în bara de stare.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Icoană monocromă</string>
+    <string name="adaptive_icon_guide_monochrome_body">Generat automat din imaginea de prim-plan folosind aceleași transformări pentru icoane adaptive. Apare nuanțat cu culoarea de accent a tapetului pe Android 13 și versiunile ulterioare.</string>
+    <string name="notification_icon_preview">Notificări</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Creează antet personalizat</string>
-    <string name="header_creator_instructions">Alege imaginile pentru teme luminoase și întunecate, apoi ajustează cu gesturi</string>
     <string name="header_creator_light_theme">Antet temă luminoasă</string>
     <string name="header_creator_dark_theme">Antet temă întunecată</string>
     <string name="header_creator_no_image">Nicio imagine selectată</string>
     <string name="header_creator_success">Antet creat cu succes</string>
     <string name="header_creator_failed">Eroare la crearea antetului</string>
-    <string name="header_creator_folder_explanation">Selectează unde să creezi dosarul \'%1$s/%2$s\' cu fișiere de antet generate</string>
+    <string name="header_creator_guide">Ghid de creare antet</string>
+    <string name="header_creator_guide_image_title">Cerințe privind imaginile</string>
+    <string name="header_creator_guide_image_body">Utilizați orice fișier imagine (PNG sau JPEG). Pentru cele mai bune rezultate, utilizați o imagine de format larg cu un raport de aspect de aproximativ 2,7:1. Fișierele PNG cu fundaluri transparente se vor integra natural cu tema aplicației.</string>
+    <string name="header_creator_guide_themes_title">Teme deschise și întunecate</string>
+    <string name="header_creator_guide_themes_body">Majoritatea aplicațiilor necesită imagini separate pentru temele deschise și întunecate. Unele aplicații (cum ar fi YouTube Music) utilizează doar tema întunecată, astfel încât doar acea secțiune este afișată.</string>
+    <string name="header_creator_guide_positioning_title">Poziționare și scalare</string>
+    <string name="header_creator_guide_positioning_body">Utilizați gesturile pinch-to-zoom și glisare direct în previzualizare pentru a poziționa și scala imaginea. Ghiduri de ajustare apar când imaginea este aproape de centru. De asemenea, puteți utiliza glisorul de sub previzualizare.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Sigur doriți să ștergeți această aplicație?</string>
     <string name="home_app_info_remove_app_warning">Aceasta va șterge permanent:</string>
@@ -238,10 +250,8 @@ Pentru cele mai bune rezultate, această aplicație recomandă patch-uirea unui 
     <string name="home_app_info_original_package_name">Numele pachetului original</string>
     <string name="home_app_info_applied_patches">Patachuri aplica</string>
     <string name="home_app_info_patch_source_used">Sursă de actualizare utilizată</string>
-    <string name="home_app_info_install_type">Tipul de instalare</string>
     <string name="home_app_info_install_type_custom_installer">Instalator personalizat</string>
     <string name="home_app_info_install_type_system_installer">Instalator sistem</string>
-    <string name="home_app_info_patched_at">Patachizat</string>
     <string name="home_app_info_patch_update_available">Actualizare patach disponibilă</string>
     <string name="home_app_info_patch_update_available_description">O versiune mai nouă a modificărilor este disponibilă. Repătați aplicația pentru a obține ultimele îmbunătățiri și corectări</string>
     <string name="home_app_info_app_deleted_warning">Aplicația a fost dezinstalată</string>
@@ -656,7 +666,7 @@ Dimensiunile imaginilor trebuie să fie următoarele:
     <string name="settings_system_about">Despre</string>
     <string name="settings_system_share_website">Partajează website</string>
     <string name="settings_system_share_website_description">Împărtășește site-ul oficial Morphe</string>
-    <string name="settings_system_manager_description">"Un proiect open-source pentru patch-uri moderne și simplificate ale aplicațiilor Android populare, ghidat de feedback-ul și contribuțiile comunității"</string>
+    <string name="settings_system_manager_description">Un proiect open-source pentru patch-uri moderne și simplificate ale aplicațiilor Android populare, ghidat de feedback-ul și contribuțiile comunității</string>
     <string name="credits">Credite</string>
     <string name="credits_current_development">Dezvoltare curentă</string>
     <string name="credits_prior_development">Dezvoltare anterioară</string>
@@ -757,9 +767,4 @@ Dimensiunile imaginilor trebuie să fie următoarele:
 
 Doriți totuși să continuați?"</string>
     <string name="download_update_confirmation">Descarci actualizarea?</string>
-    <string name="just_now">Chiar acum</string>
-    <string name="minutes_ago">acum %s min</string>
-    <string name="hours_ago">acum %s ore</string>
-    <string name="days_ago">acum %s zile</string>
-    <string name="invalid_date">Dată invalidă</string>
 </resources>

@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Sakriti ovu aplikaciju?</string>
     <string name="home_app_hide_message">Ova će aplikacija biti skrivena na početnom zaslonu. Kasnije je možete vratiti iz skrivenih aplikacija pomoću tipke pri dnu popisa</string>
     <string name="home_app_will_be_hidden">Ova će aplikacija biti skrivena</string>
-    <string name="home_app_show_hidden">Prikaži skrivene aplikacije</string>
     <string name="home_app_no_hidden">Nema skrivenih aplikacija</string>
     <string name="home_app_hidden_apps_title">Skrivene aplikacije</string>
     <string name="home_app_hidden_apps_hint">Dodirnite za otkrivanje</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Neka vaše aplikacije budu kako treba</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Današnja prognoza: 100% šanse za patchanje</string>
+    <string name="home_greeting_7" formatted="false">Današnja prognoza: 100% šanse za patchanje</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Spremni pretvoriti razočaravajuće u sjajno?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -196,9 +195,6 @@ Za najbolje rezultate,  patchanje ove aplikacija preporučuje &lt;b&gt;cijeli AP
     <string name="patch_option_required_missing">%s: popunite sve obavezne opcije</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Stvori adaptivnu ikonu</string>
-    <string name="adaptive_icon_instructions">Odaberite sliku u prvom planu, odaberite boju pozadine, zatim koristite klizač ili geste stiskanja kako biste prilagodili pregled</string>
-    <string name="adaptive_icon_preview">Prilagodljivi pregled ikona</string>
-    <string name="adaptive_icon_preview_hint">Za najbolji rezultat, držite ikonu unutar punog unutarnjeg kruga</string>
     <string name="adaptive_icon_select_image">Odaberite sliku</string>
     <string name="adaptive_icon_change_image">Promijeni sliku</string>
     <string name="adaptive_icon_background_color">Boja pozadine</string>
@@ -207,18 +203,14 @@ Za najbolje rezultate,  patchanje ove aplikacija preporučuje &lt;b&gt;cijeli AP
     <string name="adaptive_icon_safe_zone_outer">Skriveno područje  (može biti isječeno)</string>
     <string name="adaptive_icon_created_success">Uspješno stvorena adaptivna ikona</string>
     <string name="adaptive_icon_creation_failed">Nije moguće stvoriti adaptivnu ikonu</string>
-    <string name="adaptive_icon_folder_explanation">Odaberite gdje želite stvoriti %1$s/%2$s mapu s generiranim datotekama ikona</string>
-    <string name="notification_icon_preview">Pregled ikone obavijesti</string>
-    <string name="notification_icon_preview_hint">Pomoću klizača promijenite veličinu. Povucite za promjenu položaja.</string>
+    <string name="adaptive_icon_guide_notification_title">Ikona obavijesti</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Stvori prilagođeno zaglavlje</string>
-    <string name="header_creator_instructions">Odaberite slike za svijetle i tamne teme, a zatim ih prilagodite gestama zumiranja štipanjem prstiju</string>
     <string name="header_creator_light_theme">Svijetla tema zaglavlja</string>
     <string name="header_creator_dark_theme">Tamna tema zaglavlja</string>
     <string name="header_creator_no_image">Nije odabrana nijedna slika</string>
     <string name="header_creator_success">Zaglavlje uspješno stvoreno</string>
     <string name="header_creator_failed">Nije moguće stvoriti zaglavlje</string>
-    <string name="header_creator_folder_explanation">Odaberite gdje želite stvoriti mapu \'%1$s/%2$s\' s generiranim datotekama zaglavlja</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Jeste li sigurni da želite deinstalirati ovu aplikaciju?</string>
     <string name="home_app_info_remove_app_warning">Ovo će trajno izbrisati:</string>
@@ -233,10 +225,8 @@ Za najbolje rezultate,  patchanje ove aplikacija preporučuje &lt;b&gt;cijeli AP
     <string name="home_app_info_original_package_name">Originalni naziv paketa</string>
     <string name="home_app_info_applied_patches">Primijenjeni patchevi </string>
     <string name="home_app_info_patch_source_used">Korišten izvor patcheva</string>
-    <string name="home_app_info_install_type">Vrsta instalacije</string>
     <string name="home_app_info_install_type_custom_installer">Vlastiti program</string>
     <string name="home_app_info_install_type_system_installer">Sustav</string>
-    <string name="home_app_info_patched_at">Patchano</string>
     <string name="home_app_info_patch_update_available">Dostupno je ažuriranje patcheva</string>
     <string name="home_app_info_patch_update_available_description">Dostupna je novija verzija patcheva. Ponovno instalirajte patch za aplikaciju kako biste dobili najnovija poboljšanja i ispravke.</string>
     <string name="home_app_info_app_deleted_warning">Aplikacija je deinstalirana</string>
@@ -651,7 +641,7 @@ Dimenzije slike moraju biti sljedeće:
     <string name="settings_system_about">O aplikaciji</string>
     <string name="settings_system_share_website">Dijeli web stranicu</string>
     <string name="settings_system_share_website_description">Podijeli službenu stranicu Morphe</string>
-    <string name="settings_system_manager_description">"Projekt otvorenog koda za moderno, pojednostavljeno ažuriranje popularnih Android aplikacija, potaknut povratnim informacijama i doprinosima zajednice"</string>
+    <string name="settings_system_manager_description">Projekt otvorenog koda za moderno, pojednostavljeno ažuriranje popularnih Android aplikacija, potaknut povratnim informacijama i doprinosima zajednice</string>
     <string name="credits">Zasluge</string>
     <string name="credits_current_development">Trenutni razvoj</string>
     <string name="credits_prior_development">Prijašnji razvoj</string>
@@ -751,9 +741,4 @@ Dimenzije slike moraju biti sljedeće:
 Želite li i dalje nastaviti?
 "</string>
     <string name="download_update_confirmation">Preuzeti ažuriranje?</string>
-    <string name="just_now">Upravo sada</string>
-    <string name="minutes_ago">prije %sm</string>
-    <string name="hours_ago">prije %sh</string>
-    <string name="days_ago">prije %sd</string>
-    <string name="invalid_date">Nevažeći datum</string>
 </resources>

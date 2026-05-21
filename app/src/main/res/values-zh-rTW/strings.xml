@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">要隱藏這個應用程式嗎？</string>
     <string name="home_app_hide_message">此應用程式將從主螢幕隱藏。您可以稍後透過清單底部的按鈕從隱藏的應用程式中將其還原</string>
     <string name="home_app_will_be_hidden">這個應用程式將被隱藏</string>
-    <string name="home_app_show_hidden">顯示隱藏的應用程式</string>
     <string name="home_app_no_hidden">沒有隱藏的應用程式</string>
     <string name="home_app_hidden_apps_title">隱藏的應用程式</string>
     <string name="home_app_hidden_apps_hint">輕觸以取消隱藏</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">讓您的應用程式乖乖聽話</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">今日預報：100% 的修補機率</string>
+    <string name="home_greeting_7" formatted="false">今日預報：100% 的修補機率</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">準備好將平庸化為神奇了嗎？</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@
     <string name="patch_option_required_missing">%s：填寫所有必要選項</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">建立自動調整圖示</string>
-    <string name="adaptive_icon_instructions">選擇前景影像，選取背景顏色，然後使用滑桿或雙指縮放手勢調整預覽</string>
-    <string name="adaptive_icon_preview">自適應圖示預覽</string>
-    <string name="adaptive_icon_preview_hint">為獲得最佳結果，請將您的圖示保留在實心內圓中</string>
     <string name="adaptive_icon_select_image">選取影像</string>
     <string name="adaptive_icon_change_image">變更影像</string>
     <string name="adaptive_icon_background_color">背景顏色</string>
     <string name="adaptive_icon_reset_transform">重設位置與縮放比例</string>
     <string name="adaptive_icon_safe_zone_inner">安全區域（一律可見）</string>
     <string name="adaptive_icon_safe_zone_outer">遮罩區域（可能會被裁切）</string>
+    <string name="adaptive_icon_no_transparency_warning">圖片沒有透明像素。結果可能看起來不正確</string>
     <string name="adaptive_icon_created_success">已成功建立自適應圖示</string>
     <string name="adaptive_icon_creation_failed">無法建立自適應圖示</string>
-    <string name="adaptive_icon_folder_explanation">選取要在何處建立包含產生的圖示檔案的「%1$s/%2$s」資料夾</string>
-    <string name="notification_icon_preview">通知圖示預覽</string>
-    <string name="notification_icon_preview_hint">使用滑桿調整大小。拖曳以重新定位</string>
+    <string name="adaptive_icon_label">自適應</string>
+    <string name="adaptive_icon_monochrome_label">單色</string>
+    <string name="adaptive_icon_guide">圖示建立指南</string>
+    <string name="adaptive_icon_guide_png_title">使用具有透明背景的 PNG</string>
+    <string name="adaptive_icon_guide_png_body">前景必須是具有透明背景的 PNG 檔案。純色背景看起來會不正確 - 背景顏色應來自下面的背景選擇器。</string>
+    <string name="adaptive_icon_guide_safe_zones_title">安全區域</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"內部區域（實心）：內容在所有啟動器形狀上始終完全可見。
+外部區域（虛線）：可能會被啟動器遮罩剪裁 - 將重要詳細資訊保留在內部區域內。"</string>
+    <string name="adaptive_icon_guide_notification_title">通知圖示</string>
+    <string name="adaptive_icon_guide_notification_body">從前景圖像自動產生。使用通知滑桿調整其大小。所有可見內容在狀態欄中顯示為白色。</string>
+    <string name="adaptive_icon_guide_monochrome_title">單色圖示</string>
+    <string name="adaptive_icon_guide_monochrome_body">使用相同的自適應圖示轉換從前景圖像自動產生。在 Android 13 及更高版本上，它會根據壁紙顏色進行著色。</string>
+    <string name="notification_icon_preview">通知</string>
     <!-- Header Creator -->
     <string name="header_creator_create">建立自訂標頭</string>
-    <string name="header_creator_instructions">為淺色和深色主題選擇影像，然後使用雙指縮放手勢進行調整</string>
     <string name="header_creator_light_theme">淺色主題標頭</string>
     <string name="header_creator_dark_theme">深色主題標頭</string>
     <string name="header_creator_no_image">未選取影像</string>
     <string name="header_creator_success">已成功建立標頭</string>
     <string name="header_creator_failed">無法建立標頭</string>
-    <string name="header_creator_folder_explanation">選取要在何處建立包含產生的標頭檔案的「%1$s/%2$s」資料夾</string>
+    <string name="header_creator_guide">標題建立指南</string>
+    <string name="header_creator_guide_image_title">圖像要求</string>
+    <string name="header_creator_guide_image_body">使用任何圖像檔案（PNG 或 JPEG）。為了獲得最佳效果，請使用寬螢幕圖像，其長寬比約為 2.7:1。具有透明背景的 PNG 檔案將與應用程式主題自然融合。</string>
+    <string name="header_creator_guide_themes_title">淺色和深色主題</string>
+    <string name="header_creator_guide_themes_body">大多數應用程式需要淺色和深色主題的分開圖像。有些應用程式（例如 YouTube Music）僅使用深色主題，因此僅顯示該部分。</string>
+    <string name="header_creator_guide_positioning_title">定位與縮放</string>
+    <string name="header_creator_guide_positioning_body">直接在預覽中，使用雙指縮放和拖動手勢來定位和縮放您的圖像。當圖像靠近中心時，會出現快照指南。您也可以使用預覽下方的滑桿。</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">確定要解除安裝此應用程式？</string>
     <string name="home_app_info_remove_app_warning">這項操作將永久刪除：</string>
@@ -238,10 +250,8 @@
     <string name="home_app_info_original_package_name">原始套件名稱</string>
     <string name="home_app_info_applied_patches">已套用的修補程式</string>
     <string name="home_app_info_patch_source_used">使用的修補來源</string>
-    <string name="home_app_info_install_type">安裝類型</string>
     <string name="home_app_info_install_type_custom_installer">自訂安裝程式</string>
     <string name="home_app_info_install_type_system_installer">系統安裝程式</string>
-    <string name="home_app_info_patched_at">修補時間</string>
     <string name="home_app_info_patch_update_available">有可用的修補程式更新</string>
     <string name="home_app_info_patch_update_available_description">有較新版本的修補程式可用。重新修補您的應用程式以獲得最新的改進和修復</string>
     <string name="home_app_info_app_deleted_warning">應用程式已解除安裝</string>
@@ -656,7 +666,7 @@ morphe_header_custom_dark.png
     <string name="settings_system_about">關於</string>
     <string name="settings_system_share_website">分享網站</string>
     <string name="settings_system_share_website_description">分享官方 Morphe 網站</string>
-    <string name="settings_system_manager_description">"\"這是一個開源專案，用於對熱門的 Android 應用程式進行現代、簡化的修補，並由社群的意見回饋和貢獻所驅動\""</string>
+    <string name="settings_system_manager_description">\"這是一個開源專案，用於對熱門的 Android 應用程式進行現代、簡化的修補，並由社群的意見回饋和貢獻所驅動\"</string>
     <string name="credits">鳴謝</string>
     <string name="credits_current_development">目前開發</string>
     <string name="credits_prior_development">先前開發</string>
@@ -757,9 +767,4 @@ morphe_header_custom_dark.png
 
 您仍要繼續嗎？\""</string>
     <string name="download_update_confirmation">要下載更新嗎？</string>
-    <string name="just_now">剛剛</string>
-    <string name="minutes_ago">%s 分鐘前</string>
-    <string name="hours_ago">%s 小時前</string>
-    <string name="days_ago">%s 天前</string>
-    <string name="invalid_date">無效的日期</string>
 </resources>

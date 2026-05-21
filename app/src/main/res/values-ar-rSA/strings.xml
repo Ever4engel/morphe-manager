@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">إخفاء هذا التطبيق؟</string>
     <string name="home_app_hide_message">سيتم إخفاء هذا التطبيق من الشاشة الرئيسية. يمكنك استعادته لاحقًا من قائمة التطبيقات المخفية باستخدام الزر الموجود أسفل القائمة.</string>
     <string name="home_app_will_be_hidden">سيتم إخفاء هذا التطبيق</string>
-    <string name="home_app_show_hidden">إظهار التطبيقات المخفية</string>
     <string name="home_app_no_hidden">لا تطبيقات مخفية</string>
     <string name="home_app_hidden_apps_title">التطبيقات المخفية</string>
     <string name="home_app_hidden_apps_hint">انقر لإظهارها</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">الآن نجعل تطبيقاتك تتصرف</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">توقعات اليوم: فرصة 100% للتعديل</string>
+    <string name="home_greeting_7" formatted="false">توقعات اليوم: فرصة 100% للتعديل</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">هل أنت مستعد لتحويل الأداء غير المثير إلى رائع؟</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@
     <string name="patch_option_required_missing">%s: املأ جميع الخيارات المطلوبة</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">إنشاء أيقونة تكيفية</string>
-    <string name="adaptive_icon_instructions">اختر صورة أساسية، حدد لون الخلفية، ثم استخدم شريط التمرير أو الإيماءات لتعديل المعاينة حسب رغبتك</string>
-    <string name="adaptive_icon_preview">معاينة الأيقونة التكيّفية</string>
-    <string name="adaptive_icon_preview_hint">للحصول على أفضل نتيجة، احرص أن تكون الأيقونة داخل الدائرة الداخلية الممتلئة</string>
     <string name="adaptive_icon_select_image">تحديد صورة</string>
     <string name="adaptive_icon_change_image">تغيير الصورة</string>
     <string name="adaptive_icon_background_color">لون الخلفية</string>
     <string name="adaptive_icon_reset_transform">إعادة ضبط الموضع والحجم</string>
     <string name="adaptive_icon_safe_zone_inner">منطقة آمنة (دائمة الظهور)</string>
     <string name="adaptive_icon_safe_zone_outer">منطقة القناع (قد تكون مقصوصة)</string>
+    <string name="adaptive_icon_no_transparency_warning">الصورة لا تحتوي على وحدات بكسل شفافة. قد تبدو النتيجة غير صحيحة</string>
     <string name="adaptive_icon_created_success">تم إنشاء أيقونة تكيفية بنجاح</string>
     <string name="adaptive_icon_creation_failed">فشل إنشاء أيقونة تكيفية</string>
-    <string name="adaptive_icon_folder_explanation">حدد مكان إنشاء مجلد \'%1$s/%2$s\' مع ملفات الأيقونة المنشأة</string>
-    <string name="notification_icon_preview">معاينة رمز الإشعار</string>
-    <string name="notification_icon_preview_hint">استخدم شريط التمرير لتغيير الحجم. اسحب لتعديل الموضع</string>
+    <string name="adaptive_icon_label">تكيفي</string>
+    <string name="adaptive_icon_monochrome_label">أحادي اللون</string>
+    <string name="adaptive_icon_guide">دليل إنشاء الأيقونات</string>
+    <string name="adaptive_icon_guide_png_title">استخدم صورة PNG بخلفية شفافة</string>
+    <string name="adaptive_icon_guide_png_body">يجب أن يكون الجزء الأمامي عبارة عن ملف PNG بخلفية شفافة. ستظهر الخلفية ذات اللون الواحد بشكل غير صحيح - يجب أن يأتي لون الخلفية من منتقي الخلفية أدناه.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">المناطق الآمنة</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"المنطقة الداخلية (متصلة): يكون المحتوى مرئيًا بالكامل دائمًا على جميع أشكال المشغّل.
+المنطقة الخارجية (متقطعة): قد يتم اقتصاصها بواسطة قناع المشغّل - احتفظ بالتفاصيل المهمة داخل المنطقة الداخلية."</string>
+    <string name="adaptive_icon_guide_notification_title">رمز الإشعار</string>
+    <string name="adaptive_icon_guide_notification_body">يتم إنشاؤه تلقائيًا من الصورة الأمامية. اضبط حجمه باستخدام شريط تمرير الإشعار. يظهر كل المحتوى المرئي باللون الأبيض في شريط الحالة.</string>
+    <string name="adaptive_icon_guide_monochrome_title">أيقونة أحادية اللون</string>
+    <string name="adaptive_icon_guide_monochrome_body">يتم إنشاؤها تلقائيًا من الصورة الأمامية باستخدام نفس تحولات الأيقونات التكيفية. تظهر بلون خلفية الشاشة المميز على نظام Android 13 والإصدارات الأحدث.</string>
+    <string name="notification_icon_preview">الإشعار</string>
     <!-- Header Creator -->
     <string name="header_creator_create">إنشاء علامة شعار مخصصة</string>
-    <string name="header_creator_instructions">اختر صورًا للمظاهر الفاتحة والداكنة، ثم اضبطها باستخدام إيماءات التكبير والتصغير.</string>
     <string name="header_creator_light_theme">علامة شعار المظهر الفاتح</string>
     <string name="header_creator_dark_theme">علامة شعار المظهر الداكن</string>
     <string name="header_creator_no_image">لم يتم تحديد أي صورة</string>
     <string name="header_creator_success">تم إنشاء علامة الشعار بنجاح</string>
     <string name="header_creator_failed">تعذر إنشاء علامة الشعار</string>
-    <string name="header_creator_folder_explanation">حدد مكان إنشاء مجلد \'%1$s/%2$s\' مع ملفات علامة الشعار المنشأة</string>
+    <string name="header_creator_guide">دليل إنشاء علامة الشعار</string>
+    <string name="header_creator_guide_image_title">متطلبات الصورة</string>
+    <string name="header_creator_guide_image_body">استخدم أي ملف صورة (PNG أو JPEG). للحصول على أفضل النتائج، استخدم صورة عريضة بنسبة عرض إلى ارتفاع 2.7:1 تقريبًا. ستندمج ملفات PNG ذات الخلفيات الشفافة بسلاسة مع مظهر التطبيق.</string>
+    <string name="header_creator_guide_themes_title">المظهر الفاتح والداكن</string>
+    <string name="header_creator_guide_themes_body">تتطلب معظم التطبيقات صورًا منفصلة للمظهر الفاتحة والداكنة. تستخدم بعض التطبيقات (مثل YouTube Music) فقط المظهر الداكن، لذلك يظهر هذا القسم فقط.</string>
+    <string name="header_creator_guide_positioning_title">الموضع والحجم</string>
+    <string name="header_creator_guide_positioning_body">استخدم إيماءات التكبير والتصغير والسحب مباشرةً في المعاينة لتحديد موضع الصورة وتغيير حجمها. تظهر خطوط التوجيه عندما تكون الصورة قريبة من المركز. يمكنك أيضًا استخدام شريط التمرير أسفل المعاينة.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">هل تريد بالتأكيد حذف هذا التطبيق؟</string>
     <string name="home_app_info_remove_app_warning">هذا سيحذف بشكل دائم:</string>
@@ -238,10 +250,8 @@
     <string name="home_app_info_original_package_name">اسم الحزمة الأصلي</string>
     <string name="home_app_info_applied_patches">التعديلات المطبقة</string>
     <string name="home_app_info_patch_source_used">مصدر التعديل المستخدم</string>
-    <string name="home_app_info_install_type">نوع التثبيت</string>
     <string name="home_app_info_install_type_custom_installer">أداة تثبيت مخصصة</string>
     <string name="home_app_info_install_type_system_installer">أداة تثبيت النظام</string>
-    <string name="home_app_info_patched_at">تم التعديل</string>
     <string name="home_app_info_patch_update_available">تحديث تعديل متاح</string>
     <string name="home_app_info_patch_update_available_description">إصدار أحدث من التعديلات متاح. اعد تعديل التطبيق للحصول على آخر التحسينات و الإصلاحات</string>
     <string name="home_app_info_app_deleted_warning">التطبيق غير مثبت</string>
@@ -657,7 +667,7 @@ morphe_adaptive_monochrome_custom.xml
     <string name="settings_system_about">لمحة</string>
     <string name="settings_system_share_website">مشاركة الموقع الإلكتروني</string>
     <string name="settings_system_share_website_description">يشارك موقع Morphe الرسمي</string>
-    <string name="settings_system_manager_description">"مشروع مفتوح المصدر يهدف إلى توفير طريقة حديثة ومبسطة لتعديل تطبيقات Android الشهيرة، مستندًا إلى ملاحظات المستخدمين ومساهمات المجتمع"</string>
+    <string name="settings_system_manager_description">مشروع مفتوح المصدر يهدف إلى توفير طريقة حديثة ومبسطة لتعديل تطبيقات Android الشهيرة، مستندًا إلى ملاحظات المستخدمين ومساهمات المجتمع</string>
     <string name="credits">حقوق الملكية</string>
     <string name="credits_current_development">التطوير الحالي</string>
     <string name="credits_prior_development">التطوير المسبق</string>
@@ -758,9 +768,4 @@ morphe_adaptive_monochrome_custom.xml
 
 هل لا تزال ترغب في المتابعة؟"</string>
     <string name="download_update_confirmation">تنزيل التحديث؟</string>
-    <string name="just_now">الآن</string>
-    <string name="minutes_ago">قبل %s دقيقة</string>
-    <string name="hours_ago">قبل %s ساعة</string>
-    <string name="days_ago">قبل %s يوم</string>
-    <string name="invalid_date">تاريخ غير صالح</string>
 </resources>

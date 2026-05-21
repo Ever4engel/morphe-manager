@@ -36,10 +36,6 @@
         <item quantity="one">%s módosítás kiválasztva</item>
         <item quantity="other">%s módosítás kiválasztva</item>
     </plurals>
-    <plurals name="home_app_show_selected">
-        <item quantity="one">%s alkalmazás megjelenítése</item>
-        <item quantity="other">%s alkalmazás megjelenítése</item>
-    </plurals>
     <plurals name="home_app_show_hidden_count">
         <item quantity="one">%s rejtett alkalmazás</item>
         <item quantity="other">%s rejtett alkalmazás</item>

@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">להסתיר את האפליקציה הזאת?</string>
     <string name="home_app_hide_message">האפליקציה הזו תוסתר ממסך הבית. תוכל לשחזר אותה מאוחר יותר מהאפליקציות המוסתרות באמצעות הכפתור בתחתית הרשימה</string>
     <string name="home_app_will_be_hidden">האפליקציה הזאת תהיה מוסתרת</string>
-    <string name="home_app_show_hidden">הצג אפליקציות מוסתרות</string>
     <string name="home_app_no_hidden">אין אפליקציות מוסתרות</string>
     <string name="home_app_hidden_apps_title">אפליקציות מוסתרות</string>
     <string name="home_app_hidden_apps_hint">הקישו כדי להציג</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">בואו נגרום לאפליקציות שלך להתנהג</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">התחזית להיום: 100% סיכויים לתיקון</string>
+    <string name="home_greeting_7" formatted="false">התחזית להיום: 100% סיכויים לתיקון</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">מוכן להפוך את המאכזב לנפלא?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@
     <string name="patch_option_required_missing">%s: מלא את כל האפשרויות הנדרשות</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">צור סמלapte</string>
-    <string name="adaptive_icon_instructions">בחר תמונה ברקע, בחר צבע רקע, ולאחר מכן השתמש במחוון או בתנועות הצמצום כדי להתאים את התצוגה המקדימה</string>
-    <string name="adaptive_icon_preview">תצוגה מקדימה של סמל אדפטיבי</string>
-    <string name="adaptive_icon_preview_hint">עבור התוצאה הטובה ביותר, שמור את הסמל שלך בתוך המעגל הפנימי המוצק</string>
     <string name="adaptive_icon_select_image">בחר תמונה</string>
     <string name="adaptive_icon_change_image">שנה תמונה</string>
     <string name="adaptive_icon_background_color">צבע רקע</string>
     <string name="adaptive_icon_reset_transform">אפס מיקום ומספר</string>
     <string name="adaptive_icon_safe_zone_inner">אזור בטוח (תמיד מראה)</string>
     <string name="adaptive_icon_safe_zone_outer">אזור מסכה (может быть обрезан)</string>
+    <string name="adaptive_icon_no_transparency_warning">התמונה אינה מכילה פיקסלים שקופים. התוצאה עלולה להיראות שגויה</string>
     <string name="adaptive_icon_created_success">עיצוב איקונני אדפטיבי בוצע בהצלחה</string>
     <string name="adaptive_icon_creation_failed">שגיאה ביצירת עיצוב איקונני אדפטיבי</string>
-    <string name="adaptive_icon_folder_explanation">בחר את המקום ליצור תיקיה \"%1$s/%2$s\" עם קבצי אייקונים שנוצרו</string>
-    <string name="notification_icon_preview">לחצן ההתראה מוסתר</string>
-    <string name="notification_icon_preview_hint">השתמש במחוון כדי לשנות גודל. גרור כדי למקם מחדש</string>
+    <string name="adaptive_icon_label">מותאם</string>
+    <string name="adaptive_icon_monochrome_label">מונוכרום</string>
+    <string name="adaptive_icon_guide">מדריך ליצירת אייקון</string>
+    <string name="adaptive_icon_guide_png_title">השתמש בתמונה בפורמט PNG עם רקע שקוף</string>
+    <string name="adaptive_icon_guide_png_body">החלק הקדמי חייב להיות קובץ PNG עם רקע שקוף. רקע בצבע אחיד ייראה שגוי - צבע הרקע צריך להגיע מתוך בוחר הרקע למטה.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">אזורי בטיחות</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"האזור הפנימי (מוצק): התוכן תמיד גלוי במלואו בכל צורות השיגור.
+האזור החיצוני (מקווקו): עלול להיחתך על ידי מסכת השיגור - שמור פרטים חשובים בתוך האזור הפנימי."</string>
+    <string name="adaptive_icon_guide_notification_title">עדכונים</string>
+    <string name="adaptive_icon_guide_notification_body">נוצר באופן אוטומטי מהתמונה הקדמית. התאם את גודלו באמצעות המחוון עדכון. כל התוכן הגלוי מופיע בלבן בשורת המצב.</string>
+    <string name="adaptive_icon_guide_monochrome_title">אייקון מונוכרום</string>
+    <string name="adaptive_icon_guide_monochrome_body">נוצר באופן אוטומטי מהתמונה הקדמית באמצעות אותם טרנספורמציות של אייקון אדפטיבי. הוא מופיע בגוון צבע האקסנט של הטפט באנדרואיד 13 ומעלה.</string>
+    <string name="notification_icon_preview">עדכונים</string>
     <!-- Header Creator -->
     <string name="header_creator_create">צור כותרת מותאמת</string>
-    <string name="header_creator_instructions">בחר תמונות עבור תכונות אור וחושך, ואז מתן בעזרת גישות \'pinch-to-zoom\'</string>
     <string name="header_creator_light_theme">עמודות ראשיות עבור תכונת אור</string>
     <string name="header_creator_dark_theme">עמודות ראשיות עבור תכונת חושך</string>
     <string name="header_creator_no_image">לא נבחרה תמונה</string>
     <string name="header_creator_success">עמודות ראשיות צורו בהצלחה</string>
     <string name="header_creator_failed">שגיאה ביצירת עמודות ראשיות</string>
-    <string name="header_creator_folder_explanation">בחר את המקום ליצור תיקיה \"%1$s/%2$s\" עם קבצי ראש (header) שנוצרו</string>
+    <string name="header_creator_guide">מדריך ליצירת כותרת</string>
+    <string name="header_creator_guide_image_title">דרישות תמונה</string>
+    <string name="header_creator_guide_image_body">השתמש בכל קובץ תמונה (PNG או JPEG). לקבלת התוצאות הטובות ביותר, השתמש בתמונה בפורמט רחב עם יחס גובה-רוחב של כ-2.7:1. קבצי PNG עם רקע שקוף ישתלבו באופן טבעי עם ערכת הנושא של האפליקציה.</string>
+    <string name="header_creator_guide_themes_title">ערכות נושא בהירות וכהות</string>
+    <string name="header_creator_guide_themes_body">רוב האפליקציות דורשות תמונות נפרדות עבור ערכות הנושא הבהירות והכהות. חלק מהאפליקציות (כמו YouTube Music) משתמשות רק בערכת הנושא הכהה, כך שרק אותו חלק מוצג.</string>
+    <string name="header_creator_guide_positioning_title">מיקום ושינוי גודל</string>
+    <string name="header_creator_guide_positioning_body">השתמש במחוות צביטה-להתקרב וגרירה ישירות בתצוגה המקדימה כדי למקם ולשנות את גודל התמונה שלך. מדריכי הצמדה מופיעים כאשר התמונה קרובה למרכז. ניתן גם להשתמש במחוון מתחת לתצוגה המקדימה.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">האם אתה בטוח שברצונך למחוק את אפליקציה זו? </string>
     <string name="home_app_info_remove_app_warning">זוהי תהליך מחיקה קבוע:</string>
@@ -238,10 +250,8 @@
     <string name="home_app_info_original_package_name">שם חבילה מקורי</string>
     <string name="home_app_info_applied_patches">פיצ\'ים יושם</string>
     <string name="home_app_info_patch_source_used">החבילה הועברה</string>
-    <string name="home_app_info_install_type">סוג הפקדה</string>
     <string name="home_app_info_install_type_custom_installer">פיצ\'ח מותאם</string>
     <string name="home_app_info_install_type_system_installer">פיצ\'ח מותאם</string>
-    <string name="home_app_info_patched_at">פיצ\'ח</string>
     <string name="home_app_info_patch_update_available">עדכון פיצ\'ה זמין זמין</string>
     <string name="home_app_info_patch_update_available_description">גרסה חדשה של תיקונים זמינה. תיקן את האפליקציה שלך כדי לקבל את התיקונים וההערות החדשים</string>
     <string name="home_app_info_app_deleted_warning">האפליקציה הוסרה</string>
@@ -640,7 +650,7 @@ morphe_adaptive_monochrome_custom.xml
     <string name="settings_system_about">אודות</string>
     <string name="settings_system_share_website">שתף אתר</string>
     <string name="settings_system_share_website_description">משתף את האתר הרשמי של Morphe</string>
-    <string name="settings_system_manager_description">"פרויקט קוד פתוח לתיקון יעיל ומודרני של אפליקציות אנדרואיד פופולריות, המונע על ידי משוב ותרומות של הקהילה"</string>
+    <string name="settings_system_manager_description">פרויקט קוד פתוח לתיקון יעיל ומודרני של אפליקציות אנדרואיד פופולריות, המונע על ידי משוב ותרומות של הקהילה</string>
     <string name="credits">קרדיטים</string>
     <string name="credits_current_development">פיתוח נוכחי</string>
     <string name="credits_prior_development">פיתוח קודם</string>
@@ -741,9 +751,4 @@ morphe_adaptive_monochrome_custom.xml
 
 האם אתה עדיין רוצה להמשיך?"</string>
     <string name="download_update_confirmation">להוריד עדכון?</string>
-    <string name="just_now">ממש עכשיו</string>
-    <string name="minutes_ago">לפני %sm</string>
-    <string name="hours_ago">לפני %sh</string>
-    <string name="days_ago">לפני %sd</string>
-    <string name="invalid_date">תאריך לא חוקי</string>
 </resources>

@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Dölj den här appen?</string>
     <string name="home_app_hide_message">Den här appen döljs från startskärmen. Du kan återställa den senare från de dolda apparna med knappen längst ned i listan</string>
     <string name="home_app_will_be_hidden">Den här appen döljs</string>
-    <string name="home_app_show_hidden">Visa dolda appar</string>
     <string name="home_app_no_hidden">Inga dolda appar</string>
     <string name="home_app_hidden_apps_title">Dolda appar</string>
     <string name="home_app_hidden_apps_hint">Tryck för att visa</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Vi får dina appar att uppföra sig</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Dagens prognos: 100 % risk för modifiering</string>
+    <string name="home_greeting_7" formatted="false">Dagens prognos: 100 % risk för modifiering</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Redo att göra det medelmåttiga fantastiskt?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -190,9 +189,6 @@ För bästa resultat rekommenderar den här appen att du modifierar en &lt;b&gt;
     <string name="patch_option_required_missing">%s: fyll i alla obligatoriska alternativ</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Skapa adaptiv ikon</string>
-    <string name="adaptive_icon_instructions">Välj en förgrundsbild, välj bakgrundsfärg och justera förhandsgranskningen med skjutreglaget eller genom att nypa den.</string>
-    <string name="adaptive_icon_preview">Förhandsgranskning av adaptiv ikon</string>
-    <string name="adaptive_icon_preview_hint">För att få bästa resultat håller du din ikon inom den heldragna inre cirkeln</string>
     <string name="adaptive_icon_select_image">Välj bild</string>
     <string name="adaptive_icon_change_image">Ändra bild</string>
     <string name="adaptive_icon_background_color">Bakgrundsfärg</string>
@@ -201,18 +197,15 @@ För bästa resultat rekommenderar den här appen att du modifierar en &lt;b&gt;
     <string name="adaptive_icon_safe_zone_outer">Maskzon (kan beskäras)</string>
     <string name="adaptive_icon_created_success">Adaptiv ikon har skapats</string>
     <string name="adaptive_icon_creation_failed">Det gick inte att skapa adaptiv ikon</string>
-    <string name="adaptive_icon_folder_explanation">Välj var mappen \"%1$s/%2$s\" ska skapas med genererade ikonfiler</string>
-    <string name="notification_icon_preview">Förhandsgranskning av aviseringsikon</string>
-    <string name="notification_icon_preview_hint">Använd skjutreglaget för att ändra storlek. Dra för att flytta</string>
+    <string name="adaptive_icon_monochrome_label">Monokrom</string>
+    <string name="adaptive_icon_guide_notification_title">Aviseringsikon</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Skapa anpassat sidhuvud</string>
-    <string name="header_creator_instructions">Välj bilder för ljust och mörkt tema, och justera sedan genom att nypa</string>
     <string name="header_creator_light_theme">Sidhuvud för ljust tema</string>
     <string name="header_creator_dark_theme">Sidhuvud för mörkt tema</string>
     <string name="header_creator_no_image">Ingen bild har valts</string>
     <string name="header_creator_success">Sidhuvud har skapats</string>
     <string name="header_creator_failed">Det gick inte att skapa sidhuvud</string>
-    <string name="header_creator_folder_explanation">Välj var mappen \"%1$s/%2$s\" ska skapas med genererade sidhuvudfiler</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Är du säker på att du vill avinstallera den här appen?</string>
     <string name="home_app_info_remove_app_warning">Detta raderar följande permanent:</string>
@@ -227,10 +220,8 @@ För bästa resultat rekommenderar den här appen att du modifierar en &lt;b&gt;
     <string name="home_app_info_original_package_name">Ursprungligt paketnamn</string>
     <string name="home_app_info_applied_patches">Tillämpade tillägg</string>
     <string name="home_app_info_patch_source_used">Tilläggskälla som används</string>
-    <string name="home_app_info_install_type">Installationstyp</string>
     <string name="home_app_info_install_type_custom_installer">Anpassad installerare</string>
     <string name="home_app_info_install_type_system_installer">Systemets installerare</string>
-    <string name="home_app_info_patched_at">Modifierades</string>
     <string name="home_app_info_patch_update_available">Tilläggsuppdatering är tillgänglig</string>
     <string name="home_app_info_patch_update_available_description">En nyare version av tilläggen är tillgänglig. Modifiera appen igen för att få de senaste förbättringarna och felkorrigeringarna</string>
     <string name="home_app_info_app_deleted_warning">Appen har avinstallerats</string>
@@ -611,7 +602,7 @@ Bildernas mått ska vara följande:
     <!-- Settings - System Tab - About Section -->
     <string name="settings_system_about">Om</string>
     <string name="settings_system_share_website">Dela webbplatsen</string>
-    <string name="settings_system_manager_description">"Ett projekt med öppen källkod för modern och smidig modifiering av populära Android-appar som drivs av feedback och bidrag från communityn"</string>
+    <string name="settings_system_manager_description">Ett projekt med öppen källkod för modern och smidig modifiering av populära Android-appar som drivs av feedback och bidrag från communityn</string>
     <string name="credits">Medverkande</string>
     <string name="credits_current_development">Nuvarande utveckling</string>
     <string name="credits_prior_development">Tidigare utveckling</string>
@@ -707,9 +698,4 @@ Bildernas mått ska vara följande:
 
 Vill du fortsätta ändå?"</string>
     <string name="download_update_confirmation">Ladda ned uppdatering?</string>
-    <string name="just_now">Just nu</string>
-    <string name="minutes_ago">För %s min sen</string>
-    <string name="hours_ago">För %s tim sen</string>
-    <string name="days_ago">För %s d sen</string>
-    <string name="invalid_date">Ogiltigt datum</string>
 </resources>

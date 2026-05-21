@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Bu tətbiq gizlədilsin?</string>
     <string name="home_app_hide_message">Bu tətbiq əsas ekrandan gizlədiləcək. Siyahının aşağısındakı düyməni istifadə edərək onu daha sonra gizli tətbiqlərdən qaytara bilərsiniz</string>
     <string name="home_app_will_be_hidden">Bu tətbiq gizlədiləcək</string>
-    <string name="home_app_show_hidden">Gizlədilən tətbiqləri göstər</string>
     <string name="home_app_no_hidden">Gizlədilən tətbiqlər yoxdur</string>
     <string name="home_app_hidden_apps_title">Gizlədilən tətbiqlər</string>
     <string name="home_app_hidden_apps_hint">Göstərmək üçün toxun</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Tətbiqlərinizin davranışını hazırlayaq</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Bugünkü proqnoz: yamaqlanma şansı 100%</string>
+    <string name="home_greeting_7" formatted="false">Bugünkü proqnoz: yamaqlanma şansı 100%</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Məyusedici olanı mükəmmələ çevirməyə hazırsınız?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -58,13 +57,18 @@
     <string name="sources_management_title">Yamaq mənbələri</string>
     <string name="sources_management_open_in_browser">Brauzerdə açın</string>
     <string name="sources_management_failed_to_open_url">URL açmaq uğursuzdu</string>
+    <string name="sources_management_prerelease_toggle">İlkin-buraxılış yamaqları</string>
     <string name="sources_management_prerelease_toggle_description">Yeni təcrübi yamaq versiyalarına erkən keçid əldə edilir</string>
+    <string name="sources_management_experimental_versions_toggle">Təcrübi tətbiq versiyaları</string>
     <string name="sources_management_experimental_versions_toggle_description">Əlçatandırsa təcrübi tətbiq hədəflərin yamaqlayır</string>
     <string name="sources_management_already_exists">Bu mənbə artıq əlavə edilib</string>
     <string name="sources_management_invalid_url">Etibarsız mənbə URL-si. Xahiş olunur, ünvanı yoxla və təkrar cəhd et</string>
     <string name="sources_management_metadata_unavailable">Əlavə Məlumat Yoxdur</string>
     <string name="sources_management_metadata_unavailable_hint">Uzaq üst məlumatı faylı mövcud deyil. Quraşdırılan paketlə yamaqlanma hələ də işləyir, lakin bu mənbə üçün birbaşa yenilənmə qapadılıb</string>
     <string name="sources_management_metadata_unavailable_hint_missing">Yamaq paketin yükləmək olmadı. Mənbə URL-si səhv ola bilər və ya fayl mövcud deyil</string>
+    <string name="sources_management_source_enabled">Mənbə işləkdir</string>
+    <string name="sources_management_source_disabled">Mənbə qapalıdır</string>
+    <string name="sources_management_source_updating">Mənbə yenilənir</string>
     <!-- Home Screen - Sources Dialogs -->
     <string name="sources_dialog_display_name">Görünmə adı</string>
     <string name="sources_dialog_rename">Yamaq mənbəsin təkrar adlandır</string>
@@ -196,9 +200,6 @@ Davam etmək istədiyinizə əminsiniz?"</string>
     <string name="patch_option_required_missing">%s: bütün tələb olunan seçimləri doldur</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Uyğun simvol yarat</string>
-    <string name="adaptive_icon_instructions">Ön cild şəklini seç, fon rəngini seç, sonra önizləməni nizamlamaq üçün sürüşdürmə yaxud çimdikləmə jestlərin istifadə et</string>
-    <string name="adaptive_icon_preview">Uyğun simvol önizləməsi</string>
-    <string name="adaptive_icon_preview_hint">Ən yaxşı nəticə üçün simvolunuzu, bütöv daxili çevrə içində saxlayın</string>
     <string name="adaptive_icon_select_image">Şəkil seçin</string>
     <string name="adaptive_icon_change_image">Şəkli dəyişdir</string>
     <string name="adaptive_icon_background_color">Fon rəngi</string>
@@ -207,18 +208,14 @@ Davam etmək istədiyinizə əminsiniz?"</string>
     <string name="adaptive_icon_safe_zone_outer">Örtük yeri (kəsilmiş ola bilər)</string>
     <string name="adaptive_icon_created_success">Uyğun simvol uğurla yaradıldı</string>
     <string name="adaptive_icon_creation_failed">Uyğun simvol yaratmaq olmadı</string>
-    <string name="adaptive_icon_folder_explanation">Yaradılan simvol faylları ilə \'%1$s/%2$s\' qovluğunun harada yaradılacağını seç</string>
-    <string name="notification_icon_preview">Bildiriş simvolu önizləməsi</string>
-    <string name="notification_icon_preview_hint">Ölçüsün dəyişmək üçün sürüşdürmə istifadə et. Mövqeyini dəyişmək üçün sürüklə</string>
+    <string name="adaptive_icon_guide_notification_title">Bildiriş simvolu</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Xüsusi sərlövhə yarat</string>
-    <string name="header_creator_instructions">İşıqlı və qaranlıq koloritlər üçün şəkillər seç, sonra böyütmək üçün çimdikləmə jestləri ilə nizamla</string>
     <string name="header_creator_light_theme">İşıqlı kolorit sərlövhəsi</string>
     <string name="header_creator_dark_theme">Qaranlıq kolorit sərlövhəsi</string>
     <string name="header_creator_no_image">Seçilən şəkil yoxdur</string>
     <string name="header_creator_success">Sərlövhə uğurla yaradıldı</string>
     <string name="header_creator_failed">Sərlövhə yaratmaq olmadı</string>
-    <string name="header_creator_folder_explanation">Yaradılan sərlövhə faylları ilə \'%1$s/%2$s\' qovluğunun harada yaradılacağını seç</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Bu tətbiqi silmək istədiyinizə əminsiniz?</string>
     <string name="home_app_info_remove_app_warning">Bu, həmişəlik silinəcək:</string>
@@ -233,10 +230,8 @@ Davam etmək istədiyinizə əminsiniz?"</string>
     <string name="home_app_info_original_package_name">Əsil paket adı</string>
     <string name="home_app_info_applied_patches">Tətbiq olunan yamaqlar</string>
     <string name="home_app_info_patch_source_used">İşlədilən yamaq mənbəsi</string>
-    <string name="home_app_info_install_type">Quraşdırma növü</string>
     <string name="home_app_info_install_type_custom_installer">Xüsusi quraşdırıcı</string>
     <string name="home_app_info_install_type_system_installer">Sistem quraşdırıcısı</string>
-    <string name="home_app_info_patched_at">Yamaqlandı</string>
     <string name="home_app_info_patch_update_available">Yamaq yenilənməsi var</string>
     <string name="home_app_info_patch_update_available_description">Yamaqların daha yeni versiyası var. Ən son təkmilləşdirmələr və düzəlişlər üçün tətbiqinizi təkrar yamaqlayın</string>
     <string name="home_app_info_app_deleted_warning">Tətbiq quraşdırması silindi</string>
@@ -650,7 +645,7 @@ morphe_header_custom_light.png morphe_header_custom_dark.png
     <string name="settings_system_about">Haqqında</string>
     <string name="settings_system_share_website">Veb saytı paylaş</string>
     <string name="settings_system_share_website_description">Xidməti Morphe veb saytı paylaşılır</string>
-    <string name="settings_system_manager_description">"İcma əlaqələri və töhfələri ilə idarə olunan məşhur Android tətbiqlərinin müasir, rəvan yamaqlanması üçün açıq mənbəli layihə"</string>
+    <string name="settings_system_manager_description">İcma əlaqələri və töhfələri ilə idarə olunan məşhur Android tətbiqlərinin müasir, rəvan yamaqlanması üçün açıq mənbəli layihə</string>
     <string name="credits">Sərmayələr</string>
     <string name="credits_current_development">Hazırkı inkişaf</string>
     <string name="credits_prior_development">Əvvəlki inkişaf</string>
@@ -687,7 +682,9 @@ morphe_header_custom_light.png morphe_header_custom_dark.png
     <string name="selected">Seçildi</string>
     <string name="not_selected">Seçilməyib</string>
     <string name="select_all">Hamısını seç</string>
+    <string name="select_all_done">Hamısı seçilib</string>
     <string name="deselect_all">Hamısın seçməyin</string>
+    <string name="deselect_all_done">Hamısı seçilməyib</string>
     <string name="rename">Təkrar adlandır</string>
     <string name="import_">İdxal et</string>
     <string name="export">Köçür</string>
@@ -749,9 +746,4 @@ morphe_header_custom_light.png morphe_header_custom_dark.png
 
 Hələ də davam etmək istəyirsiniz?"</string>
     <string name="download_update_confirmation">Yeniləmə yüklənilsin?</string>
-    <string name="just_now">İndicə</string>
-    <string name="minutes_ago">%s dəq əvvəl</string>
-    <string name="hours_ago">%s saat əvvəl</string>
-    <string name="days_ago">%s gün əvvəl</string>
-    <string name="invalid_date">Yanlış tarix</string>
 </resources>

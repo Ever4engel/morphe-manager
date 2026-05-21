@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">このアプリを非表示にしますか？</string>
     <string name="home_app_hide_message">このアプリはホーム画面から非表示になります。リスト下部のボタンから再表示できます</string>
     <string name="home_app_will_be_hidden">このアプリは非表示になります</string>
-    <string name="home_app_show_hidden">非表示のアプリを表示する</string>
     <string name="home_app_no_hidden">非表示のアプリはありません</string>
     <string name="home_app_hidden_apps_title">非表示のアプリ</string>
     <string name="home_app_hidden_apps_hint">非表示のアプリを再表示するにはタップします</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">アプリを思いどおりに</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">本日の予報: パッチ確率 100%</string>
+    <string name="home_greeting_7" formatted="false">本日の予報: パッチ確率 100%</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">物足りないを、最高に変える準備はできた？</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@
     <string name="patch_option_required_missing">%s: すべての必須項目を入力してください</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">アダプティブ アイコンを作成</string>
-    <string name="adaptive_icon_instructions">前景画像を選択し、背景色を設定し、スライダーまたはピンチジェスチャーを使用してプレビューを調整します</string>
-    <string name="adaptive_icon_preview">アダプティブ アイコンのプレビュー</string>
-    <string name="adaptive_icon_preview_hint">きれいに表示するためには、アイコンを内側の円の枠内に収めてください</string>
     <string name="adaptive_icon_select_image">画像を選択</string>
     <string name="adaptive_icon_change_image">画像を変更</string>
     <string name="adaptive_icon_background_color">背景色</string>
     <string name="adaptive_icon_reset_transform">位置とスケールをリセット</string>
     <string name="adaptive_icon_safe_zone_inner">セーフゾーン（常に表示される）</string>
     <string name="adaptive_icon_safe_zone_outer">マスクゾーン（切り取られる可能性あり）</string>
+    <string name="adaptive_icon_no_transparency_warning">画像に透明なピクセルはありません。結果が正しく表示されない場合があります。</string>
     <string name="adaptive_icon_created_success">アダプティブ アイコンの作成に成功しました</string>
     <string name="adaptive_icon_creation_failed">アダプティブ アイコンの作成に失敗しました</string>
-    <string name="adaptive_icon_folder_explanation">生成したアイコンファイルを保存する 「%1$s/%2$s」 フォルダを作成する場所を選択します</string>
-    <string name="notification_icon_preview">通知アイコンのプレビュー</string>
-    <string name="notification_icon_preview_hint">スライダーを使ってサイズを変更し、ドラッグして位置を調整します</string>
+    <string name="adaptive_icon_label">アダプティブ</string>
+    <string name="adaptive_icon_monochrome_label">モノクロ</string>
+    <string name="adaptive_icon_guide">アイコン作成ガイド</string>
+    <string name="adaptive_icon_guide_png_title">透明な背景を持つPNGを使用する</string>
+    <string name="adaptive_icon_guide_png_body">前景は、透明な背景を持つPNGファイルである必要があります。単色の背景は正しく表示されません。背景色は、以下の背景ピッカーから選択してください。</string>
+    <string name="adaptive_icon_guide_safe_zones_title">セーフゾーン</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"内側のゾーン（実線）：コンテンツはすべてのランチャーシェイプで常に完全に表示されます。
+外側のゾーン（破線）：ランチャーマスクによってクリップされる可能性があります。重要な詳細は内側のゾーン内に配置してください。"</string>
+    <string name="adaptive_icon_guide_notification_title">通知アイコン</string>
+    <string name="adaptive_icon_guide_notification_body">前景画像から自動的に生成されます。通知スライダーを使用してサイズを調整します。すべての表示コンテンツはステータスバーで白く表示されます。</string>
+    <string name="adaptive_icon_guide_monochrome_title">モノクロアイコン</string>
+    <string name="adaptive_icon_guide_monochrome_body">同じ適応アイコン変換を使用して、前景画像から自動的に生成されます。Android 13以降では、壁紙のアクセントカラーで色調が付けられます。</string>
+    <string name="notification_icon_preview">通知</string>
     <!-- Header Creator -->
     <string name="header_creator_create">カスタム ヘッダーを作成</string>
-    <string name="header_creator_instructions">ライトテーマ用とダークテーマ用の画像を選び、プレビューをピンチで拡大・縮小して調整します</string>
     <string name="header_creator_light_theme">ライトテーマのヘッダー</string>
     <string name="header_creator_dark_theme">ダークテーマのヘッダー</string>
     <string name="header_creator_no_image">画像が選択されていません</string>
     <string name="header_creator_success">ヘッダーの作成に成功しました</string>
     <string name="header_creator_failed">ヘッダーの作成に失敗しました</string>
-    <string name="header_creator_folder_explanation">生成したヘッダー ファイルを保存する 「%1$s/%2$s」 フォルダを作成する場所を選択します</string>
+    <string name="header_creator_guide">ヘッダー作成ガイド</string>
+    <string name="header_creator_guide_image_title">画像要件</string>
+    <string name="header_creator_guide_image_body">PNGまたはJPEGなど、任意の画像ファイルを使用できます。最適な結果を得るには、アスペクト比が約2.7:1のワイドフォーマット画像を使用してください。透明な背景を持つPNGファイルは、アプリのテーマと自然に調和します。</string>
+    <string name="header_creator_guide_themes_title">ライトとダークテーマ</string>
+    <string name="header_creator_guide_themes_body">ほとんどのアプリでは、ライトテーマとダークテーマ用に個別の画像が必要です。一部のアプリ（YouTube Musicなど）では、ダークテーマのみを使用するため、そのセクションのみが表示されます。</string>
+    <string name="header_creator_guide_positioning_title">配置とスケーリング</string>
+    <string name="header_creator_guide_positioning_body">プレビュー内でピンチ・トゥ・ズーム操作とドラッグ操作を直接使用して、画像の位置とスケールを調整します。画像が中央付近にあるときにスナップガイドが表示されます。プレビューの下にあるスライダーも使用できます。</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">このアプリをアンインストールしますか？</string>
     <string name="home_app_info_remove_app_warning">以下を完全に削除します</string>
@@ -238,10 +250,8 @@
     <string name="home_app_info_original_package_name">オリジナルのアプリのパッケージ名</string>
     <string name="home_app_info_applied_patches">適用したパッチ</string>
     <string name="home_app_info_patch_source_used">使用したパッチソース</string>
-    <string name="home_app_info_install_type">インストール タイプ</string>
     <string name="home_app_info_install_type_custom_installer">カスタムインストーラー</string>
     <string name="home_app_info_install_type_system_installer">システムのインストーラー</string>
-    <string name="home_app_info_patched_at">パッチの適用</string>
     <string name="home_app_info_patch_update_available">パッチの更新が利用可能です</string>
     <string name="home_app_info_patch_update_available_description">新しいバージョンのパッチが利用可能です。最新の変更を反映するには、アプリを再パッチしてください</string>
     <string name="home_app_info_app_deleted_warning">アプリがアンインストールされました</string>
@@ -656,7 +666,7 @@ morphe_header_custom_dark.png
     <string name="settings_system_about">Morphe について</string>
     <string name="settings_system_share_website">ウェブサイトを共有</string>
     <string name="settings_system_share_website_description">Morphe の公式ウェブサイトを共有します</string>
-    <string name="settings_system_manager_description">"人気の Android アプリにモダンで効率的にパッチを適用するためのオープンソースプロジェクトです。コミュニティからのフィードバックや貢献によって発展しています"</string>
+    <string name="settings_system_manager_description">人気の Android アプリにモダンで効率的にパッチを適用するためのオープンソースプロジェクトです。コミュニティからのフィードバックや貢献によって発展しています</string>
     <string name="credits">クレジット</string>
     <string name="credits_current_development">現在の開発</string>
     <string name="credits_prior_development">過去の開発</string>
@@ -757,9 +767,4 @@ morphe_header_custom_dark.png
 
 それでも続行しますか？"</string>
     <string name="download_update_confirmation">アップデートをダウンロードしますか？</string>
-    <string name="just_now">たった今</string>
-    <string name="minutes_ago">%sm 前</string>
-    <string name="hours_ago">%sh 前</string>
-    <string name="days_ago">%sd 前</string>
-    <string name="invalid_date">無効な日付</string>
 </resources>

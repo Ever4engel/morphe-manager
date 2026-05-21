@@ -6,7 +6,6 @@
     <string name="home_no_patches_available">કોઈ પેચો ઉપલબ્ધ નથી</string>
     <string name="home_app_hide_title">આ એપ્લિકેશનને છુપાવા માગો છો?</string>
     <string name="home_app_will_be_hidden">આ એપ છુપાવવામાં આવશે</string>
-    <string name="home_app_show_hidden">છુપાવેલ એપ્લિકેશનો બતાવો</string>
     <string name="home_app_no_hidden">કોઈ છુપાવેલી એપ્લિકેશનો નથી</string>
     <string name="home_app_hidden_apps_title">છુપાવેલ એપ્લિકેશનો</string>
     <string name="android_11_bug_dialog_title">એન્ડ્રોઇડ 11 બગ</string>
@@ -36,7 +35,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">ચાલો તમારી એપને જીવંત બનાવીએ</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">આજની આગાહી: પેચિંગની 100% તક</string>
+    <string name="home_greeting_7" formatted="false">આજની આગાહી: પેચિંગની 100% તક</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">શું તમે અશાંતતાને અદ્ભુતતામાં બદલવા માટે તૈયાર છો?</string>
     <!-- Playful exaggeration, making patching feel heroic -->

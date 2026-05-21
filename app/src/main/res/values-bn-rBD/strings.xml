@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">অ্যাপটি গোপন করবেন?</string>
     <string name="home_app_hide_message">এই অ্যাপটি হোম স্ক্রীন থেকে লুকানো হবে। আপনি তালিকাটির নীচে থাকা \'\' বোতামটি ব্যবহার করে পরে এটি পুনরুদ্ধার করতে পারেন</string>
     <string name="home_app_will_be_hidden">এই অ্যাপটি গোপন হবে</string>
-    <string name="home_app_show_hidden">দেখুন গোপন অ্যাপস</string>
     <string name="home_app_no_hidden">কোনো গোপন অ্যাপ নেই</string>
     <string name="home_app_hidden_apps_title">গোপন অ্যাপস</string>
     <string name="home_app_hidden_apps_hint">\"লুকানো অ্যাপ দেখতে ট্যাপ করুন\"</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">চলুন আপনার অ্যাপগুলিকে ভদ্র হতে শেখাই</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">আজকের পূর্বাভাস: প্যাচিংয়ের 100% সম্ভাবনা</string>
+    <string name="home_greeting_7" formatted="false">আজকের পূর্বাভাস: প্যাচিংয়ের 100% সম্ভাবনা</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">সাধারণ কে অসাধারণ করতে প্রস্তুত?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -198,29 +197,42 @@
     <string name="patch_option_required_missing">%s: প্রয়োজনীয় অপশনগুলো পূরণ করুন</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">অ্যাডাপ্টিভ আইকন তৈরি করুন</string>
-    <string name="adaptive_icon_instructions">একটি foreground ছবি নির্বাচন করুন, একটি background রং নির্বাচন করুন, তারপর preview সামঞ্জস্য করতে slider অথবা pinch gesture ব্যবহার করুন</string>
-    <string name="adaptive_icon_preview">Adaptive icon preview</string>
-    <string name="adaptive_icon_preview_hint">সেরা ফলাফলের জন্য, আপনার icon টি কঠিন ভিতরের বৃত্তের মধ্যে রাখুন</string>
     <string name="adaptive_icon_select_image">চিত্র নির্বাচন করুন</string>
     <string name="adaptive_icon_change_image">চিত্র পরিবর্তন করুন</string>
     <string name="adaptive_icon_background_color">ব্যাকগ্রাউন্ড রং</string>
     <string name="adaptive_icon_reset_transform">পজিশন এবং স্কেল রিসেট করুন</string>
     <string name="adaptive_icon_safe_zone_inner">সেফ জোন (সময়কালে দৃশ্যমান)</string>
     <string name="adaptive_icon_safe_zone_outer">মাস্ক জোন (মুছে ফেলা হতে পারে)</string>
+    <string name="adaptive_icon_no_transparency_warning">ছবিতে কোনো স্বচ্ছ পিক্সেল নেই। ফলাফল ভুল দেখাতে পারে</string>
     <string name="adaptive_icon_created_success">অ্যাডাপ্টিভ আইকন সফলভাবে তৈরি হয়েছে</string>
     <string name="adaptive_icon_creation_failed">অ্যাডাপ্টিভ আইকন তৈরি করতে ব্যর্থ হয়েছে</string>
-    <string name="adaptive_icon_folder_explanation">যে স্থানে \'%1$s/%2$s\' ফোল্ডার তৈরি হবে এবং জেনারেটেড আইকন ফাইলগুলো থাকবে, সেখানে নির্বাচন করুন</string>
-    <string name="notification_icon_preview">বিজ্ঞপ্তি icon preview</string>
-    <string name="notification_icon_preview_hint">আকার পরিবর্তন করতে slider ব্যবহার করুন। পুনরায়Position করতে ড্র্যাগ করুন</string>
+    <string name="adaptive_icon_label">অভিযোজিত</string>
+    <string name="adaptive_icon_monochrome_label">একবর্ণ</string>
+    <string name="adaptive_icon_guide">আইকন তৈরি করার নির্দেশিকা</string>
+    <string name="adaptive_icon_guide_png_title">স্বচ্ছ পটভূমি সহ একটি PNG ব্যবহার করুন</string>
+    <string name="adaptive_icon_guide_png_body">foregroundView অবশ্যই একটি স্বচ্ছ পটভূমি সহ একটি PNG ফাইল হতে হবে। একটি সলিড রঙের পটভূমি ভুল দেখাবে - পটভূমির রঙটি নীচের ব্যাকগ্রাউন্ড পিকার থেকে আসা উচিত।</string>
+    <string name="adaptive_icon_guide_safe_zones_title">নিরাপদ অঞ্চল</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"অভ্যন্তরীণ অঞ্চল (সলিড): বিষয়বস্তু সর্বদা সমস্ত লঞ্চার আকারে সম্পূর্ণরূপে দৃশ্যমান হবে।
+বাহ্য অঞ্চল (ড্যাশড): লঞ্চার মাস্ক দ্বারা ক্লিপ করা হতে পারে - গুরুত্বপূর্ণ বিবরণগুলি অভ্যন্তরীণ অঞ্চলে রাখুন।"</string>
+    <string name="adaptive_icon_guide_notification_title">নোটিফিকেশন আইকন</string>
+    <string name="adaptive_icon_guide_notification_body">foregroundView থেকে স্বয়ংক্রিয়ভাবে তৈরি করা হয়েছে। নোটিফিকেশন স্লাইডার ব্যবহার করে এর আকার সামঞ্জস্য করুন। স্ট্যাটাস বারে সমস্ত দৃশ্যমান বিষয়বস্তু সাদা দেখাবে।</string>
+    <string name="adaptive_icon_guide_monochrome_title">একবর্ণ আইকন</string>
+    <string name="adaptive_icon_guide_monochrome_body">foregroundView থেকে একই অভিযোজিত আইকন রূপান্তর ব্যবহার করে স্বয়ংক্রিয়ভাবে তৈরি করা হয়েছে। Android 13 এবং পরবর্তী সংস্করণে এটি ওয়ালপেপার অ্যাকসেন্ট রঙের সাথে টিন্টেড দেখা যাবে।</string>
+    <string name="notification_icon_preview">নোটিফিকেশন</string>
     <!-- Header Creator -->
     <string name="header_creator_create">মুখপাতা তৈরি করুন</string>
-    <string name="header_creator_instructions">লাইট এবং ডার্ক থিমের জন্য ছবি নির্বাচন করুন, তারপর পিন্চ-টু-জুম গেস্টার্স ব্যবহার করে ঝাপটান করুন</string>
     <string name="header_creator_light_theme">লাইট থিম হেডার</string>
     <string name="header_creator_dark_theme">ডার্ক থিম হেডার</string>
     <string name="header_creator_no_image">কোন ছবি নির্বাচন করা হয়নি</string>
     <string name="header_creator_success">হেডার সফলভাবে তৈরি হয়েছে</string>
     <string name="header_creator_failed">হেডার তৈরি করতে ব্যর্থ হয়েছে</string>
-    <string name="header_creator_folder_explanation">যে স্থানে \'%1$s/%2$s\' ফোল্ডার তৈরি হবে এবং জেনারেটেড আইকন ফাইলগুলো থাকবে, সেখানে নির্বাচন করুন</string>
+    <string name="header_creator_guide">হেডার তৈরি করার নির্দেশিকা</string>
+    <string name="header_creator_guide_image_title">ইমেজ প্রয়োজনীয়তা</string>
+    <string name="header_creator_guide_image_body">যেকোনো ইমেজ ফাইল (PNG বা JPEG) ব্যবহার করুন। সেরা ফলাফলের জন্য, প্রায় 2.7:1 এর দিক অনুপাত সহ একটি ওয়াইড-ফরম্যাট ইমেজ ব্যবহার করুন। স্বচ্ছ পটভূমি সহ PNG ফাইলগুলি অ্যাপের থিমের সাথে স্বাভাবিকভাবে মিশে যাবে।</string>
+    <string name="header_creator_guide_themes_title">লাইট এবং ডার্ক থিম</string>
+    <string name="header_creator_guide_themes_body">বেশিরভাগ অ্যাপের জন্য লাইট এবং ডার্ক থিমের জন্য আলাদা ইমেজ প্রয়োজন। কিছু অ্যাপ (যেমন YouTube Music) শুধুমাত্র ডার্ক থিম ব্যবহার করে, তাই শুধুমাত্র সেই অংশটি দেখানো হয়েছে।</string>
+    <string name="header_creator_guide_positioning_title">অবস্থান এবং স্কেলিং</string>
+    <string name="header_creator_guide_positioning_body">অবস্থান এবং স্কেল করার জন্য সরাসরি প্রিভিউতে পিঞ্চ-টু-জুম এবং ড্র্যাগ অঙ্গভঙ্গি ব্যবহার করুন। ইমেজটি কেন্দ্রের কাছাকাছি এলে স্ন্যাপ গাইড প্রদর্শিত হবে। আপনি প্রিভিউর নীচে স্লাইডারটিও ব্যবহার করতে পারেন।</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">আপন কি এই অ্যাপটি মুছে ফেলতে চানেন? </string>
     <string name="home_app_info_remove_app_warning">এইচইলি:</string>
@@ -235,10 +247,8 @@
     <string name="home_app_info_original_package_name">মূল প্যাকেজ নাম</string>
     <string name="home_app_info_applied_patches">প্রয়োগকৃত প্যাচগুলি</string>
     <string name="home_app_info_patch_source_used">প্যাচের উৎস ব্যবহৃত হয়েছে</string>
-    <string name="home_app_info_install_type">ইনস্টলেশন টাইপ</string>
     <string name="home_app_info_install_type_custom_installer">কাস্টম ইনস্টলার</string>
     <string name="home_app_info_install_type_system_installer">সিস্টেম ইনস্টলার</string>
-    <string name="home_app_info_patched_at">প্যাচ করা হয়েছে</string>
     <string name="home_app_info_patch_update_available">প্যাচ আপডেট উপলব্ধ আছে</string>
     <string name="home_app_info_patch_update_available_description">প্যাচের নতুন ভার্সন উপলব্ধ। আপনার অ্যাপকে পুনরায় প্যাচ করুন সর্বশেষ উন্নতির জন্য</string>
     <string name="home_app_info_app_deleted_warning">অ্যাপটি বের করা হয়েছে</string>
@@ -645,7 +655,7 @@ morphe_adaptive_monochrome_custom.xml
     <string name="settings_system_about">মর্ফ সম্পর্কে</string>
     <string name="settings_system_share_website">ওয়েবসাইট শেয়ার করুন</string>
     <string name="settings_system_share_website_description">অফিসিয়াল Morphe ওয়েবসাইট শেয়ার করে।</string>
-    <string name="settings_system_manager_description">"এটি একটি ওপেন-সোর্স প্রকল্প, যা জনপ্রিয় অ্যান্ড্রয়েড অ্যাপগুলির আধুনিক, সরলীকৃত প্যাচিংয়ের জন্য তৈরি করা হয়েছে, এবং এটি কমিউনিটির প্রতিক্রিয়া ও অবদানের মাধ্যমে পরিচালিত।"</string>
+    <string name="settings_system_manager_description">এটি একটি ওপেন-সোর্স প্রকল্প, যা জনপ্রিয় অ্যান্ড্রয়েড অ্যাপগুলির আধুনিক, সরলীকৃত প্যাচিংয়ের জন্য তৈরি করা হয়েছে, এবং এটি কমিউনিটির প্রতিক্রিয়া ও অবদানের মাধ্যমে পরিচালিত।</string>
     <string name="credits">ক্রেডিট</string>
     <string name="credits_current_development">চলমান উন্নয়ন</string>
     <string name="credits_prior_development">পূর্ববর্তী উন্নয়ন</string>
@@ -746,9 +756,4 @@ morphe_adaptive_monochrome_custom.xml
 
 আপনি কি এখনও চালিয়ে যেতে চান?"</string>
     <string name="download_update_confirmation">আপডেট ডাউনলোড করবেন?</string>
-    <string name="just_now">এইমাত্র</string>
-    <string name="minutes_ago">%s মিনিট আগে</string>
-    <string name="hours_ago">%s ঘন্টা আগে</string>
-    <string name="days_ago">%s দিন আগে</string>
-    <string name="invalid_date">অবৈধ তারিখ</string>
 </resources>

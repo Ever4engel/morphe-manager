@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Sakrij ovu aplikaciju?</string>
     <string name="home_app_hide_message">Ова апликација ће бити сакривена са почетног екрана. Можете је касније вратити из скривених апликација помоћу дугмета на дну листе.</string>
     <string name="home_app_will_be_hidden">Ova aplikacija će biti sakrivena</string>
-    <string name="home_app_show_hidden">Prikaži skrivene aplikacije</string>
     <string name="home_app_no_hidden">Nema skrivених aplikacija</string>
     <string name="home_app_hidden_apps_title">Skrivene aplikacije</string>
     <string name="home_app_hidden_apps_hint">Dотраните за приказивање</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Учинимо да ваше апликације буду добре</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Данашња прогноза: 100% шанси за печовање</string>
+    <string name="home_greeting_7" formatted="false">Данашња прогноза: 100% шанси за печовање</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Спремни сте да из просечног створите невероватно?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -200,29 +199,42 @@
     <string name="patch_option_list_empty_state">Nisu dodate nijedne vrednosti</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Направи адаптивни икону</string>
-    <string name="adaptive_icon_instructions">Изаберите позадинску слику, изаберите боју позадине, а затим користите клизач или потисак прстију како бисте подесили преглед</string>
-    <string name="adaptive_icon_preview">Преглед адаптивне иконе</string>
-    <string name="adaptive_icon_preview_hint">За најбољи резултат, задржите икону унутар чврстог унутрашњег круга</string>
     <string name="adaptive_icon_select_image">Изабери слику</string>
     <string name="adaptive_icon_change_image">Промени слику</string>
     <string name="adaptive_icon_background_color">Боја позадине</string>
     <string name="adaptive_icon_reset_transform">Ресетујте положај и скала</string>
     <string name="adaptive_icon_safe_zone_inner">Зона безбедности (увек видљива)</string>
     <string name="adaptive_icon_safe_zone_outer">Маска зона (може бити одсечена)</string>
+    <string name="adaptive_icon_no_transparency_warning">Слика нема пикселе са транспарентношћу. Резултат може изгледати некоректно</string>
     <string name="adaptive_icon_created_success">Адаптивни иконика успјешно створен</string>
     <string name="adaptive_icon_creation_failed">Неуспјех у креирању адаптивног иконика</string>
-    <string name="adaptive_icon_folder_explanation">Odaberite gde da kreirate folder \'%1$s/%2$s\' sa generisanim ikonama fajlovima</string>
-    <string name="notification_icon_preview">Обавештење икона преглед</string>
-    <string name="notification_icon_preview_hint">Користите клизач за промену величине. Повуците да бисте преместили</string>
+    <string name="adaptive_icon_label">Адаптивно</string>
+    <string name="adaptive_icon_monochrome_label">Монохромно</string>
+    <string name="adaptive_icon_guide">Упутство за креирање икона</string>
+    <string name="adaptive_icon_guide_png_title">Користите PNG слику са провидном позадином</string>
+    <string name="adaptive_icon_guide_png_body">Предњи план мора бити PNG датотека са провидном позадином. Пуна позадинска боја ће изгледати неправилно – боја позадине треба да дође са бирача позадине испод.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Сигурносне зоне</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Унутрашња зона (пуна): садржај је увек у потпуности видљив на свим облицима лансера.
+Спољашња зона (испрекидана): може бити исечена маском лансера – држите важне детаље унутар унутрашње зоне."</string>
+    <string name="adaptive_icon_guide_notification_title">Икона обавештења</string>
+    <string name="adaptive_icon_guide_notification_body">Генерише се аутоматски из слике предњег плана. Подесите његову величину помоћу клизача Обавештења. Сав видљив садржај се појављује у белој боји на траци статуса.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Монохромна икона</string>
+    <string name="adaptive_icon_guide_monochrome_body">Генерише се аутоматски из слике предњег плана користећи исте трансформације адаптивне иконе. Појављује се затамњена акцентном бојом позадине на Android 13 и новијим верзијама.</string>
+    <string name="notification_icon_preview">Обавештење</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Направи обични заглавље</string>
-    <string name="header_creator_instructions">Одаберите слике за светле и тамне теме, затим прилагођавајте их жестикулирањем \'притисак за увећање\'</string>
     <string name="header_creator_light_theme">Заглавље светле теме</string>
     <string name="header_creator_dark_theme">Заглавље тамне теме</string>
     <string name="header_creator_no_image">Није одабрана слика</string>
     <string name="header_creator_success">Заглавље успјешно креирано</string>
     <string name="header_creator_failed">Неуспјех у креирању заглавља</string>
-    <string name="header_creator_folder_explanation">Odaberite gde da kreirate folder \'%1$s/%2$s\' sa generisanim zaglavljem fajlovima</string>
+    <string name="header_creator_guide">Упутство за креирање заглавља</string>
+    <string name="header_creator_guide_image_title">Захтеви за слику</string>
+    <string name="header_creator_guide_image_body">Користите било коју датотеку слике (PNG или JPEG). За најбоље резултате, користите слику широког формата са приближном резолуцијом 2,7:1. PNG датотеке са провидним позадинама ће се природно спојити са темом апликације.</string>
+    <string name="header_creator_guide_themes_title">Светле и тамне теме</string>
+    <string name="header_creator_guide_themes_body">Већини апликација су потребне посебне слике за светле и тамне теме. Неке апликације (као што је YouTube Music) користе само тамну тему, па се приказује само та секција.</string>
+    <string name="header_creator_guide_positioning_title">Позиционирање и скалирање</string>
+    <string name="header_creator_guide_positioning_body">Користите гестове пецкања за зумирање и превлачење директно у прегледу да бисте позиционирали и скалирали слику. Водичи се појављују када је слика близу центра. Такође можете користити клизач испод прегледа.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Да ли сте сигурни да желите да уклоните ову апликацију?</string>
     <string name="home_app_info_remove_app_warning">Ово ће трајно обрисати:</string>
@@ -237,10 +249,8 @@
     <string name="home_app_info_original_package_name">Назив пакета</string>
     <string name="home_app_info_applied_patches">Применети патчеви</string>
     <string name="home_app_info_patch_source_used">Korišten je izvorni patch</string>
-    <string name="home_app_info_install_type">Вид инсталације</string>
     <string name="home_app_info_install_type_custom_installer">Прилагођени инсталатер</string>
     <string name="home_app_info_install_type_system_installer">Системски инсталатер</string>
-    <string name="home_app_info_patched_at">Патчето</string>
     <string name="home_app_info_patch_update_available">Доступно ажурирање патчева</string>
     <string name="home_app_info_patch_update_available_description">Доступна је нова верзија патчева. Репатујте своју апликацију да добијете најновије побољшања и исправке</string>
     <string name="home_app_info_app_deleted_warning">Aplikacija je deinstalirana</string>
@@ -655,7 +665,7 @@ morphe_header_custom_dark.png
     <string name="settings_system_about">О програму</string>
     <string name="settings_system_share_website">Дели веб-сајт</string>
     <string name="settings_system_share_website_description">Дели званични веб-сајт Morphe</string>
-    <string name="settings_system_manager_description">"Отворени изворни пројекат за модерно, поједностављено \"пачирање\" популарних Android апликација, вођен повратним давањем и доприносом заједнице"</string>
+    <string name="settings_system_manager_description">Отворени изворни пројекат за модерно, поједностављено \"пачирање\" популарних Android апликација, вођен повратним давањем и доприносом заједнице</string>
     <string name="credits">Послужности</string>
     <string name="credits_current_development">Тренутни развој</string>
     <string name="credits_prior_development">Претходни развој</string>
@@ -756,9 +766,4 @@ morphe_header_custom_dark.png
 
 Да ли и даље желите да наставите?"</string>
     <string name="download_update_confirmation">Преузети ажурирање?</string>
-    <string name="just_now">Управо сада</string>
-    <string name="minutes_ago">пре %s мин</string>
-    <string name="hours_ago">%s сати пре</string>
-    <string name="days_ago">%s дана пре</string>
-    <string name="invalid_date">Неважећи датум</string>
 </resources>

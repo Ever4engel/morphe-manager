@@ -6,7 +6,6 @@
     <string name="home_no_patches_available">Tiada tampalan tersedia</string>
     <string name="home_app_hide_title">Sorokkan aplikasi ini?</string>
     <string name="home_app_will_be_hidden">Aplikasi ini akan disorokkan</string>
-    <string name="home_app_show_hidden">Tunjukkan aplikasi tersorok</string>
     <string name="home_app_no_hidden">Tiada aplikasi tersorok</string>
     <string name="home_app_hidden_apps_title">Aplikasi tersorok</string>
     <string name="home_app_hidden_apps_hint">Sentuh untuk munculkan semula</string>
@@ -43,7 +42,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Mari jadikan aplikasi kamu berkelakuan baik</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Cuaca hari ini: 100% peluang untuk menampal</string>
+    <string name="home_greeting_7" formatted="false">Cuaca hari ini: 100% peluang untuk menampal</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Bersedia untuk menukar ketidakpuasan kepada sesuatu yang hebat?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -159,9 +158,6 @@ Teruskannya mungkin boleh menyebabkan aplikasi tidak dapat berfungsi</string>
     <string name="patch_option_list_empty_state">Tiada nilai ditambah lagi</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Cipta ikon adaptif</string>
-    <string name="adaptive_icon_instructions">Pilih imej latar depan, pilih warna latar belakang, kemudian gunakan gelangser atau isyarat ketuk untuk menyesuaikan pratonton</string>
-    <string name="adaptive_icon_preview">Pratonton ikon adaptif</string>
-    <string name="adaptive_icon_preview_hint">Untuk hasil yang terbaik, simpan ikon anda dalam bulatan dalam yang pepejal</string>
     <string name="adaptive_icon_select_image">Pilih imej</string>
     <string name="adaptive_icon_change_image">Tukar imej</string>
     <string name="adaptive_icon_background_color">Warna latar belakang</string>
@@ -170,18 +166,13 @@ Teruskannya mungkin boleh menyebabkan aplikasi tidak dapat berfungsi</string>
     <string name="adaptive_icon_safe_zone_outer">Zon topeng (mungkin dipotong)</string>
     <string name="adaptive_icon_created_success">Ikon adaptif telah dicipta dengan jayanya</string>
     <string name="adaptive_icon_creation_failed">Gagal untuk mencipta ikon adaptif</string>
-    <string name="adaptive_icon_folder_explanation">Pilih tempat untuk mencipta folder \'%1$s/%2$s\' dengan fail ikon yang dijana</string>
-    <string name="notification_icon_preview">Pratonton ikon notifikasi</string>
-    <string name="notification_icon_preview_hint">Gunakan gelangser untuk menukar saiz. Seret untuk memposisikan semula</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Cipta tajuk khusus</string>
-    <string name="header_creator_instructions">Pilih imej untuk tema terang dan gelap, kemudian laraskan dengan isyarat cengkam-untuk-zum</string>
     <string name="header_creator_light_theme">Tajuk tema terang</string>
     <string name="header_creator_dark_theme">Tajuk tema gelap</string>
     <string name="header_creator_no_image">Tiada imej dipilih</string>
     <string name="header_creator_success">Tajuk telah dicipta dengan jayanya</string>
     <string name="header_creator_failed">Gagal untuk mencipta tajuk</string>
-    <string name="header_creator_folder_explanation">Pilih tempat untuk mencipta folder \'%1$s/%2$s\' dengan fail kepala yang dijana</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Adakah anda pasti mahu menyahpasang aplikasi ini?</string>
     <string name="home_app_info_remove_app_warning">Ini akan dipadam secara kekal:</string>
@@ -196,10 +187,8 @@ Teruskannya mungkin boleh menyebabkan aplikasi tidak dapat berfungsi</string>
     <string name="home_app_info_original_package_name">Nama pakej asal</string>
     <string name="home_app_info_applied_patches">Tampalan yang digunakan</string>
     <string name="home_app_info_patch_source_used">Sumber tampalan digunakan</string>
-    <string name="home_app_info_install_type">Jenis pemasangan</string>
     <string name="home_app_info_install_type_custom_installer">Pemasang tersuai</string>
     <string name="home_app_info_install_type_system_installer">Pemasang sistem</string>
-    <string name="home_app_info_patched_at">Tertampal</string>
     <string name="home_app_info_patch_update_available">Kemas kini tampalan tersedia</string>
     <string name="home_app_info_patch_update_available_description">Versi patch yang lebih baru tersedia. Repatch aplikasi anda untuk mendapatkan penambahbaikan dan pembaikan terkini</string>
     <string name="home_app_info_app_deleted_warning">Aplikasi telah dinyahpasangkan</string>
@@ -637,9 +626,4 @@ Dimensi gambar mestilah seperti berikut:
 
 Adakah anda masih ingin meneruskan?"</string>
     <string name="download_update_confirmation">Mukim kemas kini?</string>
-    <string name="just_now">Baru sahaja</string>
-    <string name="minutes_ago">%s yang lalu</string>
-    <string name="hours_ago">%s yang lalu</string>
-    <string name="days_ago">%s yang lalu</string>
-    <string name="invalid_date">Tarikh tidak sah</string>
 </resources>

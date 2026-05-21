@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Sembunyikan aplikasi ini?</string>
     <string name="home_app_hide_message">Aplikasi ini akan disembunyikan dari layar utama. Anda dapat mengembalikannya nanti dari aplikasi tersembunyi menggunakan tombol di bagian bawah daftar</string>
     <string name="home_app_will_be_hidden">Aplikasi ini akan disembunyikan.</string>
-    <string name="home_app_show_hidden">Tampilkan aplikasi tersembunyi</string>
     <string name="home_app_no_hidden">Tidak ada aplikasi tersembunyi</string>
     <string name="home_app_hidden_apps_title">Aplikasi tersembunyi</string>
     <string name="home_app_hidden_apps_hint">Ketuk untuk menampilkan kembali</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Ayo membuat aplikasi Anda berperilaku baik</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Prediksi cuaca hari ini: 100% kemungkinan menambal</string>
+    <string name="home_greeting_7" formatted="false">Prediksi cuaca hari ini: 100% kemungkinan menambal</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Siap mengubah yang biasa saja menjadi luar biasa?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -58,7 +57,7 @@
     <string name="sources_management_title">Sumber tambalan</string>
     <string name="sources_management_open_in_browser">Buka di peramban</string>
     <string name="sources_management_failed_to_open_url">Gagal membuka URL</string>
-    <string name="sources_management_prerelease_toggle">Patch pra-rilis</string>
+    <string name="sources_management_prerelease_toggle">Tambalan pra-rilis</string>
     <string name="sources_management_prerelease_toggle_description">Menerima akses awal ke versi tambalan baru eksperimental</string>
     <string name="sources_management_experimental_versions_toggle">Versi aplikasi eksperimental</string>
     <string name="sources_management_experimental_versions_toggle_description">Menambal target aplikasi eksperimental jika tersedia</string>
@@ -202,29 +201,42 @@ Harap bersiap untuk perilaku aplikasi yang tidak biasa atau bug yang belum terid
     <string name="patch_option_required_missing">%s: isi semua pilihan yang diperlukan</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Buat ikon adaptif</string>
-    <string name="adaptive_icon_instructions">Pilih gambar latar depan, pilih warna latar belakang, lalu gunakan tombol geser atau gerakan mencubit untuk menyesuaikan pratinjau</string>
-    <string name="adaptive_icon_preview">Pratinjau ikon adaptif</string>
-    <string name="adaptive_icon_preview_hint">Untuk hasil terbaik, tempatkan ikon Anda di dalam lingkaran padat bagian dalam</string>
     <string name="adaptive_icon_select_image">Pilih gambar</string>
     <string name="adaptive_icon_change_image">Ubah gambar</string>
     <string name="adaptive_icon_background_color">Warna latar belakang</string>
     <string name="adaptive_icon_reset_transform">Atur ulang posisi dan skala</string>
     <string name="adaptive_icon_safe_zone_inner">Zona aman (selalu terlihat)</string>
     <string name="adaptive_icon_safe_zone_outer">Zona tertutup (mungkin dipotong)</string>
+    <string name="adaptive_icon_no_transparency_warning">Gambar tidak memiliki piksel transparan. Hasilnya mungkin terlihat tidak benar</string>
     <string name="adaptive_icon_created_success">Ikon adaptif berhasil dibuat</string>
     <string name="adaptive_icon_creation_failed">Gagal membuat ikon adaptif</string>
-    <string name="adaptive_icon_folder_explanation">Pilih lokasi untuk membuat folder \'%1$s/%2$s\' dengan berkas ikon yang sudah dibuat</string>
-    <string name="notification_icon_preview">Pratinjau ikon pemberitahuan</string>
-    <string name="notification_icon_preview_hint">Gunakan tombol geser untuk mengubah ukuran. Seret untuk memposisikan ulang</string>
+    <string name="adaptive_icon_label">Adaptif</string>
+    <string name="adaptive_icon_monochrome_label">Monokrom</string>
+    <string name="adaptive_icon_guide">Panduan pembuatan ikon</string>
+    <string name="adaptive_icon_guide_png_title">Gunakan PNG dengan latar belakang transparan</string>
+    <string name="adaptive_icon_guide_png_body">Foreground harus berupa file PNG dengan latar belakang transparan. Latar belakang berwarna solid akan terlihat salah – warna latar belakang harus diambil dari pemilih latar belakang di bawah.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Zona aman</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Zona dalam (solid): konten selalu terlihat sepenuhnya pada semua bentuk launcher.
+Zona luar (putus-putus): mungkin terpotong oleh masker launcher – jaga detail penting di dalam zona dalam."</string>
+    <string name="adaptive_icon_guide_notification_title">Ikon pemberitahuan</string>
+    <string name="adaptive_icon_guide_notification_body">Dibuat secara otomatis dari gambar foreground. Sesuaikan ukurannya menggunakan slider Notifikasi. Semua konten yang terlihat muncul berwarna putih di bilah status.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Ikon monokrom</string>
+    <string name="adaptive_icon_guide_monochrome_body">Dibuat secara otomatis dari gambar foreground menggunakan transformasi ikon adaptif yang sama. Ikon ini akan muncul berwarna sesuai dengan warna aksen wallpaper di Android 13 ke atas.</string>
+    <string name="notification_icon_preview">Pemberitahuan</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Buat header khusus</string>
-    <string name="header_creator_instructions">Pilih gambar untuk tema terang dan gelap, lalu sesuaikan dengan gerakan mencubit untuk memperbesar</string>
     <string name="header_creator_light_theme">Header tema terang</string>
     <string name="header_creator_dark_theme">Header tema gelap</string>
     <string name="header_creator_no_image">Tidak ada gambar yang dipilih</string>
     <string name="header_creator_success">Header berhasil dibuat</string>
     <string name="header_creator_failed">Gagal membuat header</string>
-    <string name="header_creator_folder_explanation">Pilih lokasi untuk membuat folder \'%1$s/%2$s\' dengan berkas header yang sudah dibuat</string>
+    <string name="header_creator_guide">Panduan pembuatan header</string>
+    <string name="header_creator_guide_image_title">Persyaratan gambar</string>
+    <string name="header_creator_guide_image_body">Gunakan file gambar apa pun (PNG atau JPEG). Untuk hasil terbaik, gunakan gambar berformat lebar dengan rasio aspek sekitar 2,7:1. File PNG dengan latar belakang transparan akan menyatu secara alami dengan tema aplikasi.</string>
+    <string name="header_creator_guide_themes_title">Tema terang dan gelap</string>
+    <string name="header_creator_guide_themes_body">Sebagian besar aplikasi memerlukan gambar terpisah untuk tema terang dan gelap. Beberapa aplikasi (seperti YouTube Music) hanya menggunakan tema gelap, jadi hanya bagian itu yang ditampilkan.</string>
+    <string name="header_creator_guide_positioning_title">Pemosisian dan penskalaan</string>
+    <string name="header_creator_guide_positioning_body">Gunakan gerakan pinch-to-zoom dan seret langsung di pratinjau untuk memposisikan dan menskalakan gambar Anda. Panduan jepret muncul ketika gambar berada dekat dengan tengah. Anda juga dapat menggunakan slider di bawah pratinjau.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Apakah Anda yakin ingin mencopot pemasangan aplikasi ini?</string>
     <string name="home_app_info_remove_app_warning">Ini akan menghapus secara permanen:</string>
@@ -239,10 +251,8 @@ Harap bersiap untuk perilaku aplikasi yang tidak biasa atau bug yang belum terid
     <string name="home_app_info_original_package_name">Nama paket asli</string>
     <string name="home_app_info_applied_patches">Tambalan yang diterapkan</string>
     <string name="home_app_info_patch_source_used">Sumber tambalan yang digunakan</string>
-    <string name="home_app_info_install_type">Jenis pemasangan</string>
     <string name="home_app_info_install_type_custom_installer">Pemasang khusus</string>
     <string name="home_app_info_install_type_system_installer">Pemasang sistem</string>
-    <string name="home_app_info_patched_at">Ditambal</string>
     <string name="home_app_info_patch_update_available">Pembaruan tambalan tersedia</string>
     <string name="home_app_info_patch_update_available_description">Versi tambalan lebih baru tersedia. Tambal ulang aplikasi Anda untuk mendapatkan pembaruan terbaru dan perbaikan</string>
     <string name="home_app_info_app_deleted_warning">Aplikasi telah dihapus</string>
@@ -657,7 +667,7 @@ Dimensi gambar harus sebagai berikut:
     <string name="settings_system_about">Tentang</string>
     <string name="settings_system_share_website">Bagikan situs web</string>
     <string name="settings_system_share_website_description">Membagikan situs web resmi Morphe</string>
-    <string name="settings_system_manager_description">"Sebuah proyek sumber terbuka untuk penambalan yang modern dan efisien pada aplikasi Android populer, dikembangkan berdasarkan masukan dan kontribusi dari komunitas"</string>
+    <string name="settings_system_manager_description">Sebuah proyek sumber terbuka untuk penambalan yang modern dan efisien pada aplikasi Android populer, dikembangkan berdasarkan masukan dan kontribusi dari komunitas</string>
     <string name="credits">Kredits</string>
     <string name="credits_current_development">Pengembangan saat ini</string>
     <string name="credits_prior_development">Pengembangan sebelumnya</string>
@@ -696,7 +706,7 @@ Dimensi gambar harus sebagai berikut:
     <string name="select_all">Pilih semua</string>
     <string name="select_all_done">Semua dipilih</string>
     <string name="deselect_all">Batal pilih semua</string>
-    <string name="deselect_all_done">Semua dibatalkan</string>
+    <string name="deselect_all_done">Semua tidak dipilih</string>
     <string name="rename">Ganti nama</string>
     <string name="import_">Impor</string>
     <string name="export">Ekspor</string>
@@ -758,9 +768,4 @@ Dimensi gambar harus sebagai berikut:
 
 Apakah Anda masih ingin melanjutkan?"</string>
     <string name="download_update_confirmation">Unduh pembaruan?</string>
-    <string name="just_now">Baru saja</string>
-    <string name="minutes_ago">%sm yang lalu</string>
-    <string name="hours_ago">%sh yang lalu</string>
-    <string name="days_ago">%sd yang lalu</string>
-    <string name="invalid_date">Tanggal tidak sah</string>
 </resources>

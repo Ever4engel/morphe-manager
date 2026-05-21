@@ -6,7 +6,6 @@
     <string name="home_no_patches_available">No hi ha pegats disponibles</string>
     <string name="home_app_hide_title">Amagar aquesta aplicació?</string>
     <string name="home_app_will_be_hidden">Aquesta aplicació s\'ocultarà</string>
-    <string name="home_app_show_hidden">Mostrar aplicacions ocultes</string>
     <string name="home_app_no_hidden">No hi ha aplicacions ocultes</string>
     <string name="home_app_hidden_apps_title">Aplicacions ocultes</string>
     <string name="android_11_bug_dialog_title">Error de l\'Android 11</string>
@@ -35,7 +34,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Fem que les teves aplicacions es comportin</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Pronòstic d\'avui: 100% de probabilitat de pedaços</string>
+    <string name="home_greeting_7" formatted="false">Pronòstic d\'avui: 100% de probabilitat de pedaços</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Llestos per canviar de decebedor a fantàstic?</string>
     <!-- Playful exaggeration, making patching feel heroic -->

@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Skjul denne appen?</string>
     <string name="home_app_hide_message">Denne appen vil være skjult fra startskjermen. Du kan gjenopprette den senere fra de skjulte appene ved hjelp av knappen nederst i listen</string>
     <string name="home_app_will_be_hidden">Denne appen vil bli skjult</string>
-    <string name="home_app_show_hidden">Vis skjulte apper</string>
     <string name="home_app_no_hidden">Ingen skjulte apper</string>
     <string name="home_app_hidden_apps_title">Skjulte apper</string>
     <string name="home_app_hidden_apps_hint">Trykk for å vise</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">La oss få appene dine til å oppføre seg</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Dagens værmelding: 100 % sjanse for oppdateringer</string>
+    <string name="home_greeting_7" formatted="false">Dagens værmelding: 100 % sjanse for oppdateringer</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Klar til å forvandle kjedelig til fantastisk?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@ For de beste resultatene anbefaler denne appen å patche en &lt;b&gt;full APK-fi
     <string name="patch_option_required_missing">%s: fyll ut alle obligatoriske alternativer</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Opprett adaptivt ikon</string>
-    <string name="adaptive_icon_instructions">Velg hvor du vil opprette \'%1$s/%2$s\'-mappen med genererte ikonfiler</string>
-    <string name="adaptive_icon_preview">Adaptive ikon-forhåndsvisning</string>
-    <string name="adaptive_icon_preview_hint">For best resultat, hold ikonet innenfor den solide indre sirkelen</string>
     <string name="adaptive_icon_select_image">Velg bilde</string>
     <string name="adaptive_icon_change_image">Endre bilde</string>
     <string name="adaptive_icon_background_color">Bakgrunnsfarge</string>
     <string name="adaptive_icon_reset_transform">Tilbakestill posisjon og skala</string>
     <string name="adaptive_icon_safe_zone_inner">Sikker sone (alltid synlig)</string>
     <string name="adaptive_icon_safe_zone_outer">Maskesone (kan bli avkuttet)</string>
+    <string name="adaptive_icon_no_transparency_warning">Bildet har ingen transparente piksler. Resultatet kan se feil ut</string>
     <string name="adaptive_icon_created_success">Adaptivt ikon opprettet</string>
     <string name="adaptive_icon_creation_failed">Kunne ikke opprette adaptivt ikon</string>
-    <string name="adaptive_icon_folder_explanation">Velg hvor du vil opprette mappen \'%1$s/%2$s\' med genererte ikonfiler</string>
-    <string name="notification_icon_preview">Varslingsikon-forhåndsvisning</string>
-    <string name="notification_icon_preview_hint">Bruk skyvebryteren for å endre størrelsen. Dra for å omplassere</string>
+    <string name="adaptive_icon_label">Adaptiv</string>
+    <string name="adaptive_icon_monochrome_label">Monokrom</string>
+    <string name="adaptive_icon_guide">Veiledning for ikonoppretting</string>
+    <string name="adaptive_icon_guide_png_title">Bruk en PNG med en gjennomsiktig bakgrunn</string>
+    <string name="adaptive_icon_guide_png_body">Forgrunnen må være en PNG-fil med en gjennomsiktig bakgrunn. En ensfarget bakgrunn vil se feil ut – bakgrunnsfargen skal hentes fra fargevelgeren nedenfor.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Sikre soner</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Indre sone (solid): innholdet er alltid fullt synlig på alle launcherformer.
+Ytre sone (stiplet): kan bli beskåret av launcher-masken – hold viktig informasjon inne i den indre sonen."</string>
+    <string name="adaptive_icon_guide_notification_title">Ikon for varsling</string>
+    <string name="adaptive_icon_guide_notification_body">Genereres automatisk fra forgrunnsbildet. Juster størrelsen med skyvebryteren for varsler. Alt synlig innhold vises i hvitt i statuslinjen.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Monokromatisk ikon</string>
+    <string name="adaptive_icon_guide_monochrome_body">Genereres automatisk fra forgrunnsbildet ved hjelp av de samme adaptive ikontransformasjonene. Det vises tonet med bakgrunnsfargen i Android 13 og nyere.</string>
+    <string name="notification_icon_preview">Varsling</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Opprett egendefinert header</string>
-    <string name="header_creator_instructions">Velg bilder for lyse og mørke temaer, og juster deretter ved hjelp av zoombevegelser</string>
     <string name="header_creator_light_theme">Lyst tema-hode</string>
     <string name="header_creator_dark_theme">Mørkt tema-hode</string>
     <string name="header_creator_no_image">Ingen bilder valgt</string>
     <string name="header_creator_success">Hode opprettet</string>
     <string name="header_creator_failed">Kunne ikke opprette hode</string>
-    <string name="header_creator_folder_explanation">Velg hvor du vil opprette mappen \'%1$s/%2$s\' med genererte header-filer</string>
+    <string name="header_creator_guide">Veiledning for header-oppretting</string>
+    <string name="header_creator_guide_image_title">Bildekrav</string>
+    <string name="header_creator_guide_image_body">Bruk hvilken som helst bildefil (PNG eller JPEG). For best resultat, bruk et bredformatbilde med et aspektforhold på omtrent 2,7:1. PNG-filer med gjennomsiktig bakgrunn vil smelte naturlig sammen med app-temaet.</string>
+    <string name="header_creator_guide_themes_title">Lyse og mørke temaer</string>
+    <string name="header_creator_guide_themes_body">De fleste apper krever separate bilder for lyse og mørke temaer. Noen apper (som YouTube Music) bruker bare det mørke temaet, så bare den delen vises.</string>
+    <string name="header_creator_guide_positioning_title">Posisjonering og skalering</string>
+    <string name="header_creator_guide_positioning_body">Bruk klype-for-zoom og dra-bevegelser direkte i forhåndsvisningen for å posisjonere og skalere bildet. Snap-guider vises når bildet er nær senteret. Du kan også bruke skyvebryteren under forhåndsvisningen.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Er du sikker på at du vil avinstallere denne appen?</string>
     <string name="home_app_info_remove_app_warning">Dette vil permanent slette:</string>
@@ -238,10 +250,8 @@ For de beste resultatene anbefaler denne appen å patche en &lt;b&gt;full APK-fi
     <string name="home_app_info_original_package_name">Originalt pakkenavn</string>
     <string name="home_app_info_applied_patches">Brukte patcher</string>
     <string name="home_app_info_patch_source_used">Patch-kilde brukt</string>
-    <string name="home_app_info_install_type">Installasjonstype</string>
     <string name="home_app_info_install_type_custom_installer">Tilpasset installasjonsprogram</string>
     <string name="home_app_info_install_type_system_installer">Systeminstallasjonsprogram</string>
-    <string name="home_app_info_patched_at">Patchet</string>
     <string name="home_app_info_patch_update_available">Patch-oppdatering tilgjengelig</string>
     <string name="home_app_info_patch_update_available_description">En nyere versjon av patcher er tilgjengelig. Patch appen din på nytt for å få de nyeste forbedringene og reparasjonene</string>
     <string name="home_app_info_app_deleted_warning">Appen ble avinstallert</string>
@@ -656,7 +666,7 @@ morphe_header_custom_dark.png
     <string name="settings_system_about">Om</string>
     <string name="settings_system_share_website">Del nettsiden</string>
     <string name="settings_system_share_website_description">Deler den offisielle Morphe-nettsiden</string>
-    <string name="settings_system_manager_description">"Et åpen kildekode-prosjekt for moderne, strømlinjeformet patching av populære Android-apper, drevet av fellesskapets tilbakemeldinger og bidrag"</string>
+    <string name="settings_system_manager_description">Et åpen kildekode-prosjekt for moderne, strømlinjeformet patching av populære Android-apper, drevet av fellesskapets tilbakemeldinger og bidrag</string>
     <string name="credits">Credits</string>
     <string name="credits_current_development">Nåværende utvikling</string>
     <string name="credits_prior_development">Tidligere utvikling</string>
@@ -757,9 +767,4 @@ morphe_header_custom_dark.png
 
 Vil du likevel fortsette?"</string>
     <string name="download_update_confirmation">Last ned oppdatering?</string>
-    <string name="just_now">Akkurat nå</string>
-    <string name="minutes_ago">%s minutter siden</string>
-    <string name="hours_ago">%s timer siden</string>
-    <string name="days_ago">%s dager siden</string>
-    <string name="invalid_date">Ugyldig dato</string>
 </resources>

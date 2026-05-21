@@ -6,7 +6,6 @@
     <string name="home_no_patches_available">Non hai parches dispoñibles</string>
     <string name="home_app_hide_title">Ocultar esta aplicación?</string>
     <string name="home_app_will_be_hidden">Ocultarase esta aplicación</string>
-    <string name="home_app_show_hidden">Mostrar aplicacións ocultas</string>
     <string name="home_app_no_hidden">Non hai aplicacións ocultas</string>
     <string name="home_app_hidden_apps_title">Aplicacións ocultas</string>
     <string name="android_11_bug_dialog_title">Erro de Android 11</string>
@@ -38,7 +37,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Faga que as súas aplicacións se comporten</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Previsión do día: 100% de probabilidade de parcheo</string>
+    <string name="home_greeting_7" formatted="false">Previsión do día: 100% de probabilidade de parcheo</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Listo para transformar o mediocre en algo incrible?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -145,10 +144,8 @@
     <string name="home_app_info_original_package_name">Nome orixinal do paquete</string>
     <string name="home_app_info_applied_patches">Parches aplicados</string>
     <string name="home_app_info_patch_source_used">Fonte de parche empregada</string>
-    <string name="home_app_info_install_type">Tipo de instalación</string>
     <string name="home_app_info_install_type_custom_installer">Instalador personalizado</string>
     <string name="home_app_info_install_type_system_installer">Instalador do sistema</string>
-    <string name="home_app_info_patched_at">Parcheado</string>
     <string name="home_app_info_patch_update_available">Actualización de parche dispoñible</string>
     <string name="home_app_info_app_deleted_description">Esta aplicación foi desinstalada fóra de Morphe. Volva a parchear para restaurar a súa funcionalidade</string>
     <!-- Home Screen - Root Mode -->

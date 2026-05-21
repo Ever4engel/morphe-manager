@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Masquer cette application ?</string>
     <string name="home_app_hide_message">Cette application sera masquée de l’écran d’accueil. Vous pourrez la restaurer plus tard depuis les applications masquées en utilisant le bouton situé en bas de la liste</string>
     <string name="home_app_will_be_hidden">Cette application sera masquée</string>
-    <string name="home_app_show_hidden">Afficher les applications masquées</string>
     <string name="home_app_no_hidden">Aucune application masquée</string>
     <string name="home_app_hidden_apps_title">Applications masquées</string>
     <string name="home_app_hidden_apps_hint">Appuyez pour afficher</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Faisons en sorte que vos applications fonctionnent parfaitement</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Prévisions du jour : 100% de chance de patchage</string>
+    <string name="home_greeting_7" formatted="false">Prévisions du jour : 100% de chance de patchage</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Prêt à transformer le médiocre en extraordinaire ?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -58,7 +57,7 @@
     <string name="sources_management_title">Sources de patchs</string>
     <string name="sources_management_open_in_browser">Ouvrir dans le navigateur</string>
     <string name="sources_management_failed_to_open_url">Échec de l\'ouverture de l\'URL</string>
-    <string name="sources_management_prerelease_toggle">Correctifs de prépublication</string>
+    <string name="sources_management_prerelease_toggle">Pré-version de patchs</string>
     <string name="sources_management_prerelease_toggle_description">Reçoit un accès anticipé aux nouvelles versions expérimentales des patchs</string>
     <string name="sources_management_experimental_versions_toggle">Versions expérimentales de l’application</string>
     <string name="sources_management_experimental_versions_toggle_description">Patche les cibles de l’application expérimentale si disponibles</string>
@@ -200,29 +199,42 @@ Pour de meilleurs résultats, cette application recommande de patcher un &lt;b&g
     <string name="patch_option_required_missing">%s: remplissez toutes les options obligatoires</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Créer une icône adaptative</string>
-    <string name="adaptive_icon_instructions">Choisissez une image de premier plan, sélectionnez une couleur d’arrière-plan, puis utilisez le curseur ou les gestes de pincement pour ajuster l’aperçu</string>
-    <string name="adaptive_icon_preview">Aperçu de l’icône adaptative</string>
-    <string name="adaptive_icon_preview_hint">Pour un résultat optimal, placez votre icône à l’intérieur du cercle plein</string>
     <string name="adaptive_icon_select_image">Sélectionner une image</string>
     <string name="adaptive_icon_change_image">Changer l\'image</string>
     <string name="adaptive_icon_background_color">Couleur d\'arrière-plan</string>
     <string name="adaptive_icon_reset_transform">Réinitialiser la position et la taille</string>
     <string name="adaptive_icon_safe_zone_inner">Zone de sécurité (toujours visible)</string>
     <string name="adaptive_icon_safe_zone_outer">Zone de masquage (peut être rognée)</string>
+    <string name="adaptive_icon_no_transparency_warning">L\'image ne contient pas de pixels transparents. Le résultat pourrait être incorrect.</string>
     <string name="adaptive_icon_created_success">Icône adaptative créée avec succès</string>
     <string name="adaptive_icon_creation_failed">Échec de la création de l\'icône adaptative</string>
-    <string name="adaptive_icon_folder_explanation">Sélectionnez l\'emplacement pour créer le dossier \'%1$s/%2$s\' avec les fichiers d\'icônes générés</string>
-    <string name="notification_icon_preview">Aperçu de l’icône de notification</string>
-    <string name="notification_icon_preview_hint">Utilisez le curseur pour redimensionner. Faites glisser pour repositionner</string>
+    <string name="adaptive_icon_label">Adaptatif</string>
+    <string name="adaptive_icon_monochrome_label">Monochrome</string>
+    <string name="adaptive_icon_guide">Guide de création d\'icônes</string>
+    <string name="adaptive_icon_guide_png_title">Utilisez une image PNG avec un fond transparent</string>
+    <string name="adaptive_icon_guide_png_body">Le premier plan doit être un fichier PNG avec un fond transparent. Un fond de couleur unie apparaîtra incorrectement : la couleur du fond doit provenir du sélecteur de fond ci-dessous.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Zones de sécurité</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Zone interne (pleine) : le contenu est toujours entièrement visible sur toutes les formes de lanceur.
+Zone externe (en pointillés) : peut être rognée par le masque du lanceur. Gardez les détails importants à l'intérieur de la zone interne."</string>
+    <string name="adaptive_icon_guide_notification_title">Icône de notification</string>
+    <string name="adaptive_icon_guide_notification_body">Généré automatiquement à partir de l\'image du premier plan. Ajustez sa taille à l\'aide du curseur de notification. Tout le contenu visible apparaît en blanc dans la barre d\'état.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Icône monochrome</string>
+    <string name="adaptive_icon_guide_monochrome_body">Générée automatiquement à partir de l\'image du premier plan en utilisant les mêmes transformations d\'icône adaptative. Elle apparaît teintée de la couleur d\'accent du fond d\'écran sur Android 13 et versions ultérieures.</string>
+    <string name="notification_icon_preview">Notification</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Créer un en-tête personnalisé</string>
-    <string name="header_creator_instructions">Choisissez des images pour les thèmes clair et sombre, puis ajustez-les avec des gestes de pincement pour zoomer</string>
     <string name="header_creator_light_theme">En-tête du thème clair</string>
     <string name="header_creator_dark_theme">En-tête du thème sombre</string>
     <string name="header_creator_no_image">Aucune image sélectionnée</string>
     <string name="header_creator_success">En-tête créé avec succès</string>
     <string name="header_creator_failed">Échec de la création de l\'en-tête</string>
-    <string name="header_creator_folder_explanation">Sélectionnez l\'emplacement pour créer le dossier \'%1$s/%2$s\' avec les fichiers d\'en-tête générés</string>
+    <string name="header_creator_guide">Guide de création d\'en-tête</string>
+    <string name="header_creator_guide_image_title">Exigences relatives à l\'image</string>
+    <string name="header_creator_guide_image_body">Utilisez n\'importe quel fichier image (PNG ou JPEG). Pour de meilleurs résultats, utilisez une image au format large avec un rapport hauteur/largeur d\'environ 2,7:1. Les fichiers PNG avec des fonds transparents se fondront naturellement dans le thème de l\'application.</string>
+    <string name="header_creator_guide_themes_title">Thèmes clair et sombre</string>
+    <string name="header_creator_guide_themes_body">La plupart des applications nécessitent des images distinctes pour les thèmes clair et sombre. Certaines applications (telles que YouTube Music) n\'utilisent que le thème sombre, donc seule cette section est affichée.</string>
+    <string name="header_creator_guide_positioning_title">Positionnement et mise à l\'échelle</string>
+    <string name="header_creator_guide_positioning_body">Utilisez les gestes de pincement pour zoomer et de glisser directement dans l\'aperçu pour positionner et mettre à l\'échelle votre image. Des guides de snap s\'affichent lorsque l\'image est proche du centre. Vous pouvez également utiliser le curseur sous l\'aperçu.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Êtes-vous sûr de vouloir désinstaller cette application ?</string>
     <string name="home_app_info_remove_app_warning">Cela supprimera définitivement :</string>
@@ -237,10 +249,8 @@ Pour de meilleurs résultats, cette application recommande de patcher un &lt;b&g
     <string name="home_app_info_original_package_name">Nom de package d\'origine</string>
     <string name="home_app_info_applied_patches">Patchs appliqués</string>
     <string name="home_app_info_patch_source_used">Source de patchs utilisée</string>
-    <string name="home_app_info_install_type">Type d\'installation</string>
     <string name="home_app_info_install_type_custom_installer">Installateur personnalisé</string>
     <string name="home_app_info_install_type_system_installer">Installateur système</string>
-    <string name="home_app_info_patched_at">Patchée</string>
     <string name="home_app_info_patch_update_available">Mise à jour de patch disponible</string>
     <string name="home_app_info_patch_update_available_description">Une version plus récente des patchs est disponible. Repatchez votre application pour bénéficier des dernières améliorations et corrections</string>
     <string name="home_app_info_app_deleted_warning">L’application a été désinstallée</string>
@@ -633,7 +643,7 @@ Les dimensions des images doivent respecter les valeurs suivantes :
     <string name="settings_system_original_apks_delete_confirm">Supprimer l\'APK d\'origine pour %s ? Vous ne pourrez pas repatcher sans fournir un nouvel APK</string>
     <!-- Settings - System Tab - Storage Management - Patch Selection Management -->
     <string name="settings_system_patch_selections_title">Sélections de patchs</string>
-    <string name="settings_system_patch_selections_description">Sélections de patch enregistrées, conservées après la désinstallation</string>
+    <string name="settings_system_patch_selections_description">Sélections de patchs enregistrées, conservées après la désinstallation</string>
     <string name="settings_system_patch_selection_reset_all_confirm_title">Réinitialiser toutes les sélections ?</string>
     <string name="settings_system_patch_selection_reset_package_confirm_title">Réinitialiser les sélections de package ?</string>
     <string name="settings_system_patch_selection_reset_source_confirm_title">Réinitialiser la sélection de source ?</string>
@@ -657,7 +667,7 @@ Les dimensions des images doivent respecter les valeurs suivantes :
     <string name="settings_system_about">À propos</string>
     <string name="settings_system_share_website">Partager le site web</string>
     <string name="settings_system_share_website_description">Partage le site web officiel de Morphe</string>
-    <string name="settings_system_manager_description">"Un projet open source expérimental pour le patchage moderne et simplifié des applications Android populaires, guidé par les retours et les contributions de la communauté"</string>
+    <string name="settings_system_manager_description">Un projet open source expérimental pour le patchage moderne et simplifié des applications Android populaires, guidé par les retours et les contributions de la communauté</string>
     <string name="credits">Crédits</string>
     <string name="credits_current_development">Développement en cours</string>
     <string name="credits_prior_development">Développements antérieurs</string>
@@ -758,9 +768,4 @@ Les dimensions des images doivent respecter les valeurs suivantes :
 
 Voulez-vous tout de même continuer ?"</string>
     <string name="download_update_confirmation">Télécharger la mise à jour ?</string>
-    <string name="just_now">Actuellement</string>
-    <string name="minutes_ago">Il y a %s minute(s)</string>
-    <string name="hours_ago">Il y a %s heures</string>
-    <string name="days_ago">Il y a %s jours</string>
-    <string name="invalid_date">Date invalide</string>
 </resources>

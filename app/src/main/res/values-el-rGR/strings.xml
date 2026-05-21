@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Θέλεις να αποκρύψεις αυτή την εφαρμογή;</string>
     <string name="home_app_hide_message">Η εφαρμογή θα αποκρυφτεί από την αρχική οθόνη. Μπορείτε να την επαναφέρετε αργότερα χρησιμοποιώντας το κουμπί ‘\' στο κάτω μέρος της λίστας.</string>
     <string name="home_app_will_be_hidden">Η εφαρμογή θα αποκρυφτεί</string>
-    <string name="home_app_show_hidden">Εμφάνιση κρυμμένων εφαρμογών</string>
     <string name="home_app_no_hidden">Δεν υπάρχουν κρυμμένες εφαρμογές</string>
     <string name="home_app_hidden_apps_title">Κρυμμένες εφαρμογές</string>
     <string name="home_app_hidden_apps_hint">Πατήστε για επανεμφάνιση</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Ας συνετίσουμε τις εφαρμογές σας</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Σημερινή πρόγνωση: 100% πιθανότητα τροποποίησης</string>
+    <string name="home_greeting_7" formatted="false">Σημερινή πρόγνωση: 100% πιθανότητα τροποποίησης</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Έτοιμοι να αλλάξετε το απογοητευτικό σε εκπληκτικό;</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@
     <string name="patch_option_required_missing">%s: συμπληρώστε όλες τις απαιτούμενες επιλογές</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Δημιουργία προσαρμοσμένου εικονιδίου</string>
-    <string name="adaptive_icon_instructions">Επιλέξτε εικόνα προσκηνίου, επιλέξτε ένα χρώμα φόντου, στη συνέχεια χρησιμοποιήστε τον ολισθητή ή τις χειρονομίες τσιμπήματος για να προσαρμόσετε την προεπισκόπηση</string>
-    <string name="adaptive_icon_preview">Προεπισκόπηση προσαρμοσμένου εικονιδίου</string>
-    <string name="adaptive_icon_preview_hint">Για καλύτερο αποτέλεσμα, κρατήστε το εικονίδιό σας μέσα στον στερεό εσωτερικό κύκλο</string>
     <string name="adaptive_icon_select_image">Επιλογή εικόνας</string>
     <string name="adaptive_icon_change_image">Αλλαγή εικόνας</string>
     <string name="adaptive_icon_background_color">Χρώμα φόντου</string>
     <string name="adaptive_icon_reset_transform">Επαναφορά θέσης και κλίμακας</string>
     <string name="adaptive_icon_safe_zone_inner">Περιοχή ασφαλείας (πάντα ορατός)</string>
     <string name="adaptive_icon_safe_zone_outer">Περιοχή μάσκας (μπορεί να κοπεί)</string>
+    <string name="adaptive_icon_no_transparency_warning">Η εικόνα δεν έχει διαφανή pixel. Το αποτέλεσμα ενδέχεται να μην είναι σωστό</string>
     <string name="adaptive_icon_created_success">Δημιουργήθηκε επιτυχώς το προσαρμοσμένο εικονίδιο</string>
     <string name="adaptive_icon_creation_failed">Αποτυχία δημιουργίας του προσαρμοσμένου εικονιδίου</string>
-    <string name="adaptive_icon_folder_explanation">Επιλέξτε που να δημιουργήσετε το φάκελο \'%1$s/%2$s\' με τα δημιουργημένα αρχεία εικονιδίων</string>
-    <string name="notification_icon_preview">Προεπισκόπηση εικονιδίου ειδοποίησης</string>
-    <string name="notification_icon_preview_hint">Χρησιμοποιήστε τον ολισθητή για να αλλάξετε το μέγεθος. Σύρετε για να επανατοποθετήσετε</string>
+    <string name="adaptive_icon_label">Προσαρμοστική</string>
+    <string name="adaptive_icon_monochrome_label">Μονόχρωμος</string>
+    <string name="adaptive_icon_guide">Οδηγός δημιουργίας εικονιδίου</string>
+    <string name="adaptive_icon_guide_png_title">Χρησιμοποιήστε ένα PNG με διαφανές φόντο</string>
+    <string name="adaptive_icon_guide_png_body">Το προσκήνιο πρέπει να είναι ένα αρχείο PNG με διαφανές φόντο. Ένα φόντο με συμπαγές χρώμα θα φαίνεται λανθασμένο - το χρώμα φόντου θα πρέπει να προέρχεται από τον επιλογέα φόντου παρακάτω.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Ασφαλείς ζώνες</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Εσωτερική ζώνη (συμπαγής): το περιεχόμενο είναι πάντα πλήρως ορατό σε όλα τα σχήματα εκτοξευτή.
+Εξωτερική ζώνη (διακεκομμένη): μπορεί να αποκοπεί από τη μάσκα εκτοξευτή - κρατήστε σημαντικές λεπτομέρειες μέσα στην εσωτερική ζώνη."</string>
+    <string name="adaptive_icon_guide_notification_title">Εικονίδιο ειδοποίησης</string>
+    <string name="adaptive_icon_guide_notification_body">Δημιουργείται αυτόματα από την εικόνα προσκηνίου. Ρυθμίστε το μέγεθός του χρησιμοποιώντας το ρυθμιστικό ειδοποιήσεων. Όλο το ορατό περιεχόμενο εμφανίζεται λευκό στη γραμμή κατάστασης.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Μονόχρωμο εικονίδιο</string>
+    <string name="adaptive_icon_guide_monochrome_body">Δημιουργείται αυτόματα από την εικόνα προσκηνίου χρησιμοποιώντας τις ίδιες μετατροπές προσαρμοσμένου εικονιδίου. Εμφανίζεται με απόχρωση του χρώματος έμφασης της ταπετσαρίας στο Android 13 και νεότερες εκδόσεις.</string>
+    <string name="notification_icon_preview">Ειδοποιήσεις</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Δημιουργία προσαρμοσμένης επικεφαλίδας</string>
-    <string name="header_creator_instructions">Επιλέξτε εικόνες για φωτεινά και σκοτεινά θέματα, στη συνέχεια προσαρμόστε με χειρονομίες τσιμπήματος για μεγέθυνση και σμίκρυνση</string>
     <string name="header_creator_light_theme">Επικεφαλίδα φωτεινού θέματος</string>
     <string name="header_creator_dark_theme">Επικεφαλίδα σκοτεινού θέματος</string>
     <string name="header_creator_no_image">Δεν επιλέχθηκε εικόνα</string>
     <string name="header_creator_success">Η επικεφαλίδα δημιουργήθηκε επιτυχώς</string>
     <string name="header_creator_failed">Αποτυχία δημιουργίας της επικεφαλίδας</string>
-    <string name="header_creator_folder_explanation">Επιλέξτε που να δημιουργήσετε το φάκελο \'%1$s/%2$s\' με τα δημιουργημένα αρχεία επικεφαλίδων</string>
+    <string name="header_creator_guide">Οδηγός δημιουργίας κεφαλίδας</string>
+    <string name="header_creator_guide_image_title">Απαιτήσεις εικόνας</string>
+    <string name="header_creator_guide_image_body">Χρησιμοποιήστε οποιοδήποτε αρχείο εικόνας (PNG ή JPEG). Για καλύτερα αποτελέσματα, χρησιμοποιήστε μια εικόνα ευρείας μορφής με λόγο διαστάσεων περίπου 2,7:1. Τα αρχεία PNG με διαφανές φόντο θα ενσωματωθούν φυσικά με το θέμα της εφαρμογής.</string>
+    <string name="header_creator_guide_themes_title">Θέματα φωτός και σκούρου</string>
+    <string name="header_creator_guide_themes_body">Οι περισσότερες εφαρμογές απαιτούν ξεχωριστές εικόνες για τα θέματα φωτός και σκούρου. Ορισμένες εφαρμογές (όπως το YouTube Music) χρησιμοποιούν μόνο το σκούρο θέμα, επομένως εμφανίζεται μόνο αυτή η ενότητα.</string>
+    <string name="header_creator_guide_positioning_title">Τοποθέτηση και κλιμάκωση</string>
+    <string name="header_creator_guide_positioning_body">Χρησιμοποιήστε χειρονομίες ζουμ και μεταφοράς απευθείας στην προεπισκόπηση για να τοποθετήσετε και να κλιμακώσετε την εικόνα σας. Εμφανίζονται καθοδηγητικοί οδηγοί όταν η εικόνα είναι κοντά στο κέντρο. Μπορείτε επίσης να χρησιμοποιήσετε το ρυθμιστικό κάτω από την προεπισκόπηση.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Είστε βέβαιοι ότι θέλετε να απεγκαταστήσετε αυτή την εφαρμογή;</string>
     <string name="home_app_info_remove_app_warning">Αυτό θα διαγράψει οριστικά:</string>
@@ -238,10 +250,8 @@
     <string name="home_app_info_original_package_name">Πρωτότυπο όνομα πακέτου</string>
     <string name="home_app_info_applied_patches">Εφαρμοσμένες τροποποιήσεις</string>
     <string name="home_app_info_patch_source_used">Χρησιμοποιούμενη πηγή τροποποίησης</string>
-    <string name="home_app_info_install_type">Τύπος εγκατάστασης</string>
     <string name="home_app_info_install_type_custom_installer">Προσαρμοσμένος εγκαταστάτης</string>
     <string name="home_app_info_install_type_system_installer">Εγκαταστάτης συστήματος</string>
-    <string name="home_app_info_patched_at">Τροποποιήθηκε</string>
     <string name="home_app_info_patch_update_available">Διαθέσιμη ενημέρωση τροποποιήσεων</string>
     <string name="home_app_info_patch_update_available_description">Μια καινούρια έκδοση τροποποιήσεων είναι διαθέσιμη. Τροποποιήσετε ξανά την εφαρμογή για να λάβετε τις τελευταίες βελτιώσεις και διορθώσεις</string>
     <string name="home_app_info_app_deleted_warning">Η εφαρμογή έχει απεγκατασταθεί</string>
@@ -656,7 +666,7 @@ morphe_header_custom_dark.png
     <string name="settings_system_about">Σχετικά με</string>
     <string name="settings_system_share_website">Διαμοίραση ιστότοπου</string>
     <string name="settings_system_share_website_description">Διαμοιράστε τον επίσημο ιστότοπο του Morphe</string>
-    <string name="settings_system_manager_description">"Ένα έργο ανοικτού κώδικα για σύγχρονη, βελτιστοποιημένη ενημέρωση δημοφιλών εφαρμογών Android, που υποστηρίζεται από την κοινότητα και τις συνεισφορές της"</string>
+    <string name="settings_system_manager_description">Ένα έργο ανοικτού κώδικα για σύγχρονη, βελτιστοποιημένη ενημέρωση δημοφιλών εφαρμογών Android, που υποστηρίζεται από την κοινότητα και τις συνεισφορές της</string>
     <string name="credits">Εύσημα</string>
     <string name="credits_current_development">Τρέχουσα ανάπτυξη</string>
     <string name="credits_prior_development">Προηγούμενη ανάπτυξη</string>
@@ -757,9 +767,4 @@ morphe_header_custom_dark.png
 
 Θέλετε ακόμα να συνεχίσετε;"</string>
     <string name="download_update_confirmation">Λήψη ενημέρωσης;</string>
-    <string name="just_now">Μόλις τώρα</string>
-    <string name="minutes_ago">πριν από %s λεπτά</string>
-    <string name="hours_ago">πριν από %s ώρες</string>
-    <string name="days_ago">πριν από %s ημέρες</string>
-    <string name="invalid_date">Μη έγκυρη ημερομηνία</string>
 </resources>

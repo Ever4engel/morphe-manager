@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Piilota tämä sovellus?</string>
     <string name="home_app_hide_message">Tämä sovellus piilotetaan aloitusnäytöstä. Voit palauttaa sen myöhemmin piilotettujen sovellusten joukosta luettelon alareunassa olevalla painikkeella.</string>
     <string name="home_app_will_be_hidden">Tämä sovellus piilotetaan</string>
-    <string name="home_app_show_hidden">Näytä piilotetut sovellukset</string>
     <string name="home_app_no_hidden">Ei piilotettuja sovelluksia</string>
     <string name="home_app_hidden_apps_title">Piilotetut sovellukset</string>
     <string name="home_app_hidden_apps_hint">Napauta näyttääksesi</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Opetetaanpa sovelluksesi tavoille</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Päivän ennuste: 100 % todennäköisyys muokkaukselle</string>
+    <string name="home_greeting_7" formatted="false">Päivän ennuste: 100 % todennäköisyys muokkaukselle</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Valmiina muuttamaan keskinkertainen mahtavaksi?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -200,29 +199,42 @@ Parhaan tuloksen saavuttamiseksi sovellus suosittelee &lt;b&gt;kokonaisen APK:n&
     <string name="patch_option_required_missing">%s: täytä kaikki pakolliset kentät</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Luo adaptiivinen kuvake</string>
-    <string name="adaptive_icon_instructions">Valitse etualan kuva ja taustaväri ja säädä sitten esikatselua liukusäätimellä tai nipistämällä</string>
-    <string name="adaptive_icon_preview">Adaptiivisen kuvakkeen esikatselu</string>
-    <string name="adaptive_icon_preview_hint">Saat parhaan tuloksen, jos pidät kuvakkeen yhtenäisen sisäympyrän sisällä</string>
     <string name="adaptive_icon_select_image">Valitse kuva</string>
     <string name="adaptive_icon_change_image">Vaihda kuva</string>
     <string name="adaptive_icon_background_color">Taustaväri</string>
     <string name="adaptive_icon_reset_transform">Palauta sijainti ja mittakaava</string>
     <string name="adaptive_icon_safe_zone_inner">Turva-alue (aina näkyvissä)</string>
     <string name="adaptive_icon_safe_zone_outer">Maskialue (saattaa rajautua)</string>
+    <string name="adaptive_icon_no_transparency_warning">Kuvassa ei ole läpinäkyviä pikseleitä. Tulos saattaa näyttää virheelliseltä.</string>
     <string name="adaptive_icon_created_success">Adaptiivinen kuvake on luotu</string>
     <string name="adaptive_icon_creation_failed">Adaptiivisen kuvakkeen luominen epäonnistui</string>
-    <string name="adaptive_icon_folder_explanation">Valitse, mihin \"%1$s/%2$s\"-kansio ja sen sisältämät kuvaketiedostot luodaan.</string>
-    <string name="notification_icon_preview">Ilmoituskuvakkeen esikatselu</string>
-    <string name="notification_icon_preview_hint">Muuta kokoa liukusäätimellä. Siirrä vetämällä</string>
+    <string name="adaptive_icon_label">Mukautuva</string>
+    <string name="adaptive_icon_monochrome_label">Yksivärinen</string>
+    <string name="adaptive_icon_guide">Mukautetun kuvakkeen opas</string>
+    <string name="adaptive_icon_guide_png_title">Käytä PNG-tiedostoa, jossa on läpinäkyvä tausta</string>
+    <string name="adaptive_icon_guide_png_body">Etualan täytyy olla PNG-tiedosto, jossa on läpinäkyvä tausta. Yksivärinen tausta näyttää väärältä – taustaväri tulee valita alla olevasta taustavärivalitsimesta.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Turva-alueet</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Sisäalue (yhtenäinen): sisältö on aina täysin näkyvissä kaikissa käynnistimen muodoissa.
+Ulkopuolinen alue (katkoviiva): käynnistimen maski saattaa leikata osia siitä – pidä tärkeät tiedot sisäalueella."</string>
+    <string name="adaptive_icon_guide_notification_title">Ilmoituskuvake</string>
+    <string name="adaptive_icon_guide_notification_body">Luodaan automaattisesti etuosan kuvasta. Säädä sen kokoa Ilmoitukset-liukusäätimellä. Kaikki näkyvä sisältö on valkoista tilarivillä.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Yksivärinen kuvake</string>
+    <string name="adaptive_icon_guide_monochrome_body">Luodaan automaattisesti etuosan kuvasta käyttäen samoja mukautettuja kuvakemuunnoksia. Se on sävytetty taustakuvan korostusvärillä Android 13:ssa ja uudemmissa versioissa.</string>
+    <string name="notification_icon_preview">Ilmoitus</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Luo oma ylätunniste</string>
-    <string name="header_creator_instructions">Valitse kuvat vaalealle ja tummalle teemalle ja säädä niitä nipistämällä ja zoomaamalla</string>
     <string name="header_creator_light_theme">Vaalean teeman ylätunniste</string>
     <string name="header_creator_dark_theme">Tumman teeman ylätunniste</string>
     <string name="header_creator_no_image">Ei valittua kuvaa</string>
     <string name="header_creator_success">Ylätunniste on luotu</string>
     <string name="header_creator_failed">Ylätunnisteen luominen epäonnistui</string>
-    <string name="header_creator_folder_explanation">Valitse, mihin \"%1$s/%2$s\"-kansio ja sen sisältämät ylätunnistetiedostot luodaan.</string>
+    <string name="header_creator_guide">Ylätunnuksen luontiopas</string>
+    <string name="header_creator_guide_image_title">Kuvan vaatimukset</string>
+    <string name="header_creator_guide_image_body">Käytä mitä tahansa kuvatiedostoa (PNG tai JPEG). Parhaan tuloksen saat käyttämällä leveäkuvasuhdetta noin 2,7:1. PNG-tiedostot, joissa on läpinäkyvä tausta, sulautuvat luonnollisesti sovelluksen teemaan.</string>
+    <string name="header_creator_guide_themes_title">Vaalea ja tumma teema</string>
+    <string name="header_creator_guide_themes_body">Useimmat sovellukset vaativat erilliset kuvat vaaleaa ja tummaa teemaa varten. Jotkut sovellukset (kuten YouTube Music) käyttävät vain tummaa teemaa, joten vain tämä osio näytetään.</string>
+    <string name="header_creator_guide_positioning_title">Sijainti ja skaalaus</string>
+    <string name="header_creator_guide_positioning_body">Käytä nipistyszoom- ja vedä-eleitä suoraan esikatselussa kuvan sijoittamiseen ja skaalaamiseen. Ohjaimet näkyvät, kun kuva on lähellä keskustaa. Voit käyttää myös esikatselun alla olevaa liukusäädintä.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Haluatko varmasti poistaa tämän sovelluksen?</string>
     <string name="home_app_info_remove_app_warning">Tämä poistaa pysyvästi:</string>
@@ -237,10 +249,8 @@ Parhaan tuloksen saavuttamiseksi sovellus suosittelee &lt;b&gt;kokonaisen APK:n&
     <string name="home_app_info_original_package_name">Alkuperäinen paketin nimi</string>
     <string name="home_app_info_applied_patches">Käytössä olevat lisäosat</string>
     <string name="home_app_info_patch_source_used">Käytetty lisäosien lähde</string>
-    <string name="home_app_info_install_type">Asennustyyppi</string>
     <string name="home_app_info_install_type_custom_installer">Oma asennusohjelma</string>
     <string name="home_app_info_install_type_system_installer">Järjestelmän asennusohjelma</string>
-    <string name="home_app_info_patched_at">Muokattu</string>
     <string name="home_app_info_patch_update_available">Lisäosien päivitys saatavilla</string>
     <string name="home_app_info_patch_update_available_description">Uudempi lisäosien versio on saatavilla. Muokkaa sovellusta uudestaan saadaksesi uusimmat parannukset ja korjaukset</string>
     <string name="home_app_info_app_deleted_warning">Sovellus poistettiin</string>
@@ -655,7 +665,7 @@ Kuvien mittojen on oltava seuraavat:
     <string name="settings_system_about">Tietoja</string>
     <string name="settings_system_share_website">Jaa verkkosivusto</string>
     <string name="settings_system_share_website_description">Jaa Morphen virallinen verkkosivusto</string>
-    <string name="settings_system_manager_description">"Avoin lähdekoodin projekti, jonka tavoitteena on moderni ja tehokas Android-sovellusten korjaus, yhteisön palautteen ja panosten ohjaamana"</string>
+    <string name="settings_system_manager_description">Avoin lähdekoodin projekti, jonka tavoitteena on moderni ja tehokas Android-sovellusten korjaus, yhteisön palautteen ja panosten ohjaamana</string>
     <string name="credits">Tekijät</string>
     <string name="credits_current_development">Nykyinen kehitys</string>
     <string name="credits_prior_development">Aikaisempi kehitys</string>
@@ -756,9 +766,4 @@ Kuvien mittojen on oltava seuraavat:
 
 Haluatko silti jatkaa?"</string>
     <string name="download_update_confirmation">Ladataanko päivitys?</string>
-    <string name="just_now">Juuri äsken</string>
-    <string name="minutes_ago">%s minuuttia sitten</string>
-    <string name="hours_ago">%s tuntia sitten</string>
-    <string name="days_ago">%sd sitten</string>
-    <string name="invalid_date">Virheellinen päivämäärä</string>
 </resources>

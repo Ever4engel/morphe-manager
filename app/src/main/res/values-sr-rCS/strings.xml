@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Sakrij ovu aplikaciju?</string>
     <string name="home_app_hide_message">Ova aplikacija biće sakrivena sa početne slike. Mošete je vratiti kasnije iz sakrivenih aplikacija pomoću dugmeta na dnu liste.</string>
     <string name="home_app_will_be_hidden">Ova aplikacija će biti sakrivena</string>
-    <string name="home_app_show_hidden">Prikaži sakrivene aplikacije</string>
     <string name="home_app_no_hidden">Nema sakrivenih aplikacija</string>
     <string name="home_app_hidden_apps_title">Sakrivene aplikacije</string>
     <string name="home_app_hidden_apps_hint">Dodirnite da otkrijete</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Učinimo da tvoje aplikacije postanu besprekorne</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Današnja prognoza: 100% verovatno zakrpljavanje</string>
+    <string name="home_greeting_7" formatted="false">Današnja prognoza: 100% verovatno zakrpljavanje</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Spreman da pretvoriš obično u fantastično?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@ Da li ste sigurni da želite nastaviti?"</string>
     <string name="patch_option_required_missing">%s: popunite sve obavezne opcije</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Napravi adaptivni ikon</string>
-    <string name="adaptive_icon_instructions">Izaberite pozadinsku sliku, izaberite boju pozadine, a zatim koristite klizač ili potezom prsta za podešavanje 미리보기에 대한 설명</string>
-    <string name="adaptive_icon_preview"> 미리보기에 대한 설명</string>
-    <string name="adaptive_icon_preview_hint"> Za najbolje rezultate držite ikonu unutar čvrstog unutrašnjeg kruga</string>
     <string name="adaptive_icon_select_image">Izaberi sliku</string>
     <string name="adaptive_icon_change_image">Promeni sliku</string>
     <string name="adaptive_icon_background_color">Boja pozadine</string>
     <string name="adaptive_icon_reset_transform">Resetuj položaj i razmeru </string>
     <string name="adaptive_icon_safe_zone_inner">Sigurna zona (uvek vidljiva)</string>
     <string name="adaptive_icon_safe_zone_outer">Maskirana zona (može biti isečena)</string>
+    <string name="adaptive_icon_no_transparency_warning">Slika nema transparentne piksele. Rezultat može da izgleda netačno</string>
     <string name="adaptive_icon_created_success">Adaptivni ikona uspešno kreirana</string>
     <string name="adaptive_icon_creation_failed">Neuspešno kreiranje adaptivne ikone</string>
-    <string name="adaptive_icon_folder_explanation">Odaberi lokaciju za stvaranje foldera \'%1$s/%2$s\' sa generisanim ikona datotekama</string>
-    <string name="notification_icon_preview">Dugme „Obaveštenje” je skriveno</string>
-    <string name="notification_icon_preview_hint">Koristite klizač za promenu veličine. Povucite da biste premestili</string>
+    <string name="adaptive_icon_label">Adaptivni</string>
+    <string name="adaptive_icon_monochrome_label">Monohrom</string>
+    <string name="adaptive_icon_guide">Uputstvo za kreiranje ikone</string>
+    <string name="adaptive_icon_guide_png_title">Koristite PNG sa transparentnom pozadinom</string>
+    <string name="adaptive_icon_guide_png_body">Prednji plan mora biti PNG datoteka sa transparentnom pozadinom. Jednobojna pozadina će izgledati pogrešno – boja pozadine bi trebalo da bude izabran iz birača pozadine ispod.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Sigurne zone</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Unutrašnja zona (puna): sadržaj je uvek potpuno vidljiv na svim oblicima pokretača.
+Spoljna zona (isprekidana): može biti isečena maskom pokretača – držite važne detalje unutar unutrašnje zone."</string>
+    <string name="adaptive_icon_guide_notification_title">Ikona obaveštenja</string>
+    <string name="adaptive_icon_guide_notification_body">Automatski generisana iz prednje slike. Prilagodite veličinu pomoću klizača obaveštenja. Savi vidljivi sadržaji se pojavljuju belo u statusnoj traci.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Monohromna ikona</string>
+    <string name="adaptive_icon_guide_monochrome_body">Automatski generisana iz prednje slike, koristeći iste transformacije adaptivne ikone. Prikazuje se sa nijansom boje akcenta pozadine na Android 13 i novijim verzijama.</string>
+    <string name="notification_icon_preview">Obaveštenje</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Napravi personalizovanu zaglavlje</string>
-    <string name="header_creator_instructions">Odaberite slike za svetle i tamne teme, a zatim prilagodite sa gestama za prstima za prstima</string>
     <string name="header_creator_light_theme">Glavna tema za svetlo</string>
     <string name="header_creator_dark_theme">Glavna tema za tamno</string>
     <string name="header_creator_no_image">Nema odabrane slike</string>
     <string name="header_creator_success">Glavna tema uspešno kreirana</string>
     <string name="header_creator_failed">Neuspešno kreiranje glavne teme</string>
-    <string name="header_creator_folder_explanation">Odaberi lokaciju za stvaranje foldera \'%1$s/%2$s\' sa generisanim zaglavljem datotekama</string>
+    <string name="header_creator_guide">Uputstvo za kreiranje zaglavlja</string>
+    <string name="header_creator_guide_image_title">Zahtevi za sliku</string>
+    <string name="header_creator_guide_image_body">Koristite bilo koju datoteku slike (PNG ili JPEG). Za najbolje rezultate, koristite širokoformatnu sliku sa pribličnim odnosom stranica 2.7:1. PNG datoteke sa transparentnom pozadinom će se prirodno uklopiti sa temom aplikacije.</string>
+    <string name="header_creator_guide_themes_title">Svetle i tamne teme</string>
+    <string name="header_creator_guide_themes_body">Većini aplikacija su potrebne zasebne slike za svetlu i tamnu temu. Neke aplikacije (kao što je YouTube Music) koriste samo tamnu temu, pa se prikazuje samo taj deo.</string>
+    <string name="header_creator_guide_positioning_title">Pozicioniranje i skaliranje</string>
+    <string name="header_creator_guide_positioning_body">Koristite geste zumiranja i povlačenja direktno u pregledu da biste pozicionirali i skalirali sliku. Vodeće linije se pojavljuju kada je slika blizu centra. Takođe možete koristiti klizač ispod pregleda.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Da li zaista želite da ponišete ovu aplikaciju?</string>
     <string name="home_app_info_remove_app_warning">Ovo će trajno obrisati:</string>
@@ -238,10 +250,8 @@ Da li ste sigurni da želite nastaviti?"</string>
     <string name="home_app_info_original_package_name">Orginalno ime paketa</string>
     <string name="home_app_info_applied_patches">Primenuti patchovi</string>
     <string name="home_app_info_patch_source_used">Korišten je patch izvora</string>
-    <string name="home_app_info_install_type">Tip instalacije</string>
     <string name="home_app_info_install_type_custom_installer">Prilagođeni instalater</string>
     <string name="home_app_info_install_type_system_installer">Sistemski instalater</string>
-    <string name="home_app_info_patched_at">Patcheirano</string>
     <string name="home_app_info_patch_update_available">Dostupno je nova verzija patchova</string>
     <string name="home_app_info_patch_update_available_description">Nova verzija patchova je dostupna. Ponovno patchirajte svoju aplikaciju da bi dobili najnovije poboljšanja i ispravke</string>
     <string name="home_app_info_app_deleted_warning">Aplikacija je deinstalirana</string>
@@ -640,7 +650,7 @@ Opciono, putanja sadrži ikonu obaveštenja u jednom od sledećih formata:
     <string name="settings_system_about">O programu</string>
     <string name="settings_system_share_website">Podeli mrežni-sajt</string>
     <string name="settings_system_share_website_description">Podele zvanični veb sajt aplikacije Morphe</string>
-    <string name="settings_system_manager_description">"Otvoreni projekat za moderno, pojednostavljeno ispravljanje popularnih Android aplikacija, pokretan povratnim odzivom i doprinosima zajednice"</string>
+    <string name="settings_system_manager_description">Otvoreni projekat za moderno, pojednostavljeno ispravljanje popularnih Android aplikacija, pokretan povratnim odzivom i doprinosima zajednice</string>
     <string name="credits">Заслуге</string>
     <string name="credits_current_development">Тренутни развој</string>
     <string name="credits_prior_development">Претходни развој</string>
@@ -741,9 +751,4 @@ Opciono, putanja sadrži ikonu obaveštenja u jednom od sledećih formata:
 
 Da li i dalje želite da nastavite?"</string>
     <string name="download_update_confirmation">Preuzeti ažuriranje?</string>
-    <string name="just_now">Upravo sada</string>
-    <string name="minutes_ago">Pre %sm</string>
-    <string name="hours_ago">Pre %sč</string>
-    <string name="days_ago">Pre %sd</string>
-    <string name="invalid_date">Nevažeći datum</string>
 </resources>

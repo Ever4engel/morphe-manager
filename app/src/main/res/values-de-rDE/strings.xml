@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Diese App ausblenden?</string>
     <string name="home_app_hide_message">Diese App wird auf dem Startbildschirm ausgeblendet. Sie können sie später über die Schaltfläche \"\" am Ende der Liste wiederherstellen.</string>
     <string name="home_app_will_be_hidden">Diese App wird ausgeblendet</string>
-    <string name="home_app_show_hidden">Zeige ausgeblendete Apps</string>
     <string name="home_app_no_hidden">Keine ausgeblendeten Apps</string>
     <string name="home_app_hidden_apps_title">Ausgeblendete Apps</string>
     <string name="home_app_hidden_apps_hint">Tippen, um anzuzeigen</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Bringen wir Ihren Apps Verhalten bei</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Heutige Vorhersage: 100%ige Chance auf Patchen</string>
+    <string name="home_greeting_7" formatted="false">Heutige Vorhersage: 100%ige Chance auf Patchen</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Bereit, aus enttäuschend einfach großartig zu machen?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@ Für optimale Ergebnisse empfiehlt diese App eine &lt;b&gt;vollständige APK&lt;
     <string name="patch_option_required_missing">%s: Alle Pflichtfelder ausfüllen</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Adaptives Icon erstellen</string>
-    <string name="adaptive_icon_instructions">Wählen Sie ein Hintergrundbild, wählen Sie eine Hintergrundfarbe und verwenden Sie dann den Schieberegler oder Zoom-Gesten, um die Vorschau anzupassen</string>
-    <string name="adaptive_icon_preview">Adaptive Icon-Vorschau</string>
-    <string name="adaptive_icon_preview_hint">Halten Sie Ihr Icon innerhalb des soliden inneren Kreisen für das beste Ergebnis</string>
     <string name="adaptive_icon_select_image">Bild auswählen</string>
     <string name="adaptive_icon_change_image">Bild ändern</string>
     <string name="adaptive_icon_background_color">Hintergrundfarbe</string>
     <string name="adaptive_icon_reset_transform">Position und Skalierung zurücksetzen</string>
     <string name="adaptive_icon_safe_zone_inner">Sicherheitszone (immer sichtbar)</string>
     <string name="adaptive_icon_safe_zone_outer">Maskenzone (kann abgeschnitten werden)</string>
+    <string name="adaptive_icon_no_transparency_warning">Das Bild hat keine transparenten Pixel. Das Ergebnis kann falsch aussehen.</string>
     <string name="adaptive_icon_created_success">Adaptives Icon erfolgreich erstellt</string>
     <string name="adaptive_icon_creation_failed">Erstellen des adaptiven Icons fehlgeschlagen</string>
-    <string name="adaptive_icon_folder_explanation">Wählen Sie, wo Sie den Ordner \'%1$s/%2$s\' mit generierten Icon-Dateien erstellen möchten</string>
-    <string name="notification_icon_preview">Benachrichtigung Symbol-Vorschau</string>
-    <string name="notification_icon_preview_hint">Verwenden Sie den Schieberegler, um die Größe anzupassen. Ziehen Sie, um die Position zu ändern</string>
+    <string name="adaptive_icon_label">Adaptiv</string>
+    <string name="adaptive_icon_monochrome_label">Monochrom</string>
+    <string name="adaptive_icon_guide">Anleitung zur Erstellung von Icons</string>
+    <string name="adaptive_icon_guide_png_title">Verwenden Sie eine PNG-Datei mit transparentem Hintergrund</string>
+    <string name="adaptive_icon_guide_png_body">Der Vordergrund muss eine PNG-Datei mit transparentem Hintergrund sein. Ein einfarbiger Hintergrund sieht falsch aus – die Hintergrundfarbe sollte aus dem Hintergrundauswahlfeld unten übernommen werden.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Sichere Bereiche</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Innerer Bereich (durchgezogen): Der Inhalt ist auf allen Launcher-Formen immer vollständig sichtbar.
+Äußerer Bereich (gestrichelt): Kann von der Launcher-Maske abgeschnitten werden – halten Sie wichtige Details im inneren Bereich."</string>
+    <string name="adaptive_icon_guide_notification_title">Benachrichtigungsicon</string>
+    <string name="adaptive_icon_guide_notification_body">Wird automatisch aus dem Vordergrundbild generiert. Passen Sie die Größe mit dem Schieberegler für Benachrichtigungen an. Alle sichtbaren Inhalte erscheinen weiß in der Statusleiste.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Monochromes Icon</string>
+    <string name="adaptive_icon_guide_monochrome_body">Wird automatisch aus dem Vordergrundbild generiert, wobei die gleichen adaptiven Icon-Transformationen verwendet werden. Es erscheint ab Android 13 und neuer mit der Wallpaper-Akzentfarbe eingefärbt.</string>
+    <string name="notification_icon_preview">Benachrichtigungen</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Benutzerdefinierten Header erstellen</string>
-    <string name="header_creator_instructions">Wählen Sie Bilder für helle und dunkle Themen aus und passen Sie sie mit Zoom-Gesten an</string>
     <string name="header_creator_light_theme">Header für helles Thema</string>
     <string name="header_creator_dark_theme">Header für dunkles Thema</string>
     <string name="header_creator_no_image">Kein Bild ausgewählt</string>
     <string name="header_creator_success">Header erfolgreich erstellt</string>
     <string name="header_creator_failed">Erstellen des Headers fehlgeschlagen</string>
-    <string name="header_creator_folder_explanation">Wählen Sie, wo Sie den Ordner \'%1$s/%2$s\' mit generierten Header-Dateien erstellen möchten</string>
+    <string name="header_creator_guide">Anleitung zum Header-Creator</string>
+    <string name="header_creator_guide_image_title">Bildanforderungen</string>
+    <string name="header_creator_guide_image_body">Verwenden Sie eine beliebige Bilddatei (PNG oder JPEG). Für beste Ergebnisse verwenden Sie ein Breitformatbild mit einem Seitenverhältnis von ca. 2,7:1. PNG-Dateien mit transparenten Hintergründen fügen sich nahtlos in das App-Design ein.</string>
+    <string name="header_creator_guide_themes_title">Helle und dunkle Designs</string>
+    <string name="header_creator_guide_themes_body">Die meisten Apps benötigen separate Bilder für die hellen und dunklen Designs. Einige Apps (wie YouTube Music) verwenden nur das dunkle Design, daher wird nur dieser Abschnitt angezeigt.</string>
+    <string name="header_creator_guide_positioning_title">Positionierung und Skalierung</string>
+    <string name="header_creator_guide_positioning_body">Verwenden Sie Pinch-to-Zoom- und Drag-Gesten direkt in der Vorschau, um Ihr Bild zu positionieren und zu skalieren. Wenn das Bild in der Nähe der Mitte ist, erscheinen Führungslinien. Sie können auch den Schieberegler unterhalb der Vorschau verwenden.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Sind Sie sicher, dass Sie diese App deinstallieren möchten?</string>
     <string name="home_app_info_remove_app_warning">Dies löscht dauerhaft:</string>
@@ -238,10 +250,8 @@ Für optimale Ergebnisse empfiehlt diese App eine &lt;b&gt;vollständige APK&lt;
     <string name="home_app_info_original_package_name">Originaler Paketname</string>
     <string name="home_app_info_applied_patches">Angewandte Patches</string>
     <string name="home_app_info_patch_source_used">Verwendete Patch-Quelle</string>
-    <string name="home_app_info_install_type">Installationstyp</string>
     <string name="home_app_info_install_type_custom_installer">Benutzerdefinierter Installer</string>
     <string name="home_app_info_install_type_system_installer">System-Installer</string>
-    <string name="home_app_info_patched_at">Gepatcht am</string>
     <string name="home_app_info_patch_update_available">Patch-Update verfügbar</string>
     <string name="home_app_info_patch_update_available_description">Eine neuere Version von Patches ist verfügbar. Repatchen Sie Ihre App, um die neuesten Verbesserungen und Fehlerbehebungen zu erhalten</string>
     <string name="home_app_info_app_deleted_warning">App wurde deinstalliert</string>
@@ -656,7 +666,7 @@ Die Bildgrößen müssen wie folgt sein:
     <string name="settings_system_about">Über</string>
     <string name="settings_system_share_website">Website teilen</string>
     <string name="settings_system_share_website_description">Teilt die offizielle Morphe-Website</string>
-    <string name="settings_system_manager_description">"Ein Open-Source-Projekt für modernes, optimiertes Patchen beliebter Android-Apps, das von Community-Feedback und -beiträgen angetrieben wird"</string>
+    <string name="settings_system_manager_description">Ein Open-Source-Projekt für modernes, optimiertes Patchen beliebter Android-Apps, das von Community-Feedback und -beiträgen angetrieben wird</string>
     <string name="credits">Credits</string>
     <string name="credits_current_development">Aktuelle Entwicklung</string>
     <string name="credits_prior_development">Frühere Entwicklung</string>
@@ -757,9 +767,4 @@ Die Bildgrößen müssen wie folgt sein:
 
 Wollen Sie trotzdem fortfahren?"</string>
     <string name="download_update_confirmation">Update herunterladen?</string>
-    <string name="just_now">Gerade eben</string>
-    <string name="minutes_ago">vor %s Minuten</string>
-    <string name="hours_ago">vor %s Stunden</string>
-    <string name="days_ago">vor %s Tagen</string>
-    <string name="invalid_date">Ungültiges Datum</string>
 </resources>

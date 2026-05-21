@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Скрыть это приложение?</string>
     <string name="home_app_hide_message">Это приложение будет скрыто из домашнего экрана. Вы можете восстановить его позже из скрытых приложений, используя кнопку внизу списка.</string>
     <string name="home_app_will_be_hidden">Это приложение будет скрыто</string>
-    <string name="home_app_show_hidden">Показать скрытые приложения</string>
     <string name="home_app_no_hidden">Нет скрытых приложений</string>
     <string name="home_app_hidden_apps_title">Скрытые приложения</string>
     <string name="home_app_hidden_apps_hint">Нажмите, чтобы показать</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Давайте сделаем ваши приложения послушными</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Прогноз на сегодня: 100% шансов на патчинг</string>
+    <string name="home_greeting_7" formatted="false">Прогноз на сегодня: 100% шансов на патчинг</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Готовы превратить неудовлетворительное в потрясающее?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@
     <string name="patch_option_required_missing">%s: заполните все обязательные поля</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Создать адаптивную иконку</string>
-    <string name="adaptive_icon_instructions">Выберите изображение переднего плана, выберите цвет фона, а затем используйте ползунок или жест масштабирования для настройки предварительного просмотра.</string>
-    <string name="adaptive_icon_preview">Предварительный просмотр адаптивного значка</string>
-    <string name="adaptive_icon_preview_hint">Для достижения наилучшего результата разместите свой значок внутри сплошного внутреннего круга.</string>
     <string name="adaptive_icon_select_image">Выбрать изображение</string>
     <string name="adaptive_icon_change_image">Изменить изображение</string>
     <string name="adaptive_icon_background_color">Цвет фона</string>
     <string name="adaptive_icon_reset_transform">Сбросить положение и масштаб</string>
     <string name="adaptive_icon_safe_zone_inner">Безопасная зона (всегда видна)</string>
     <string name="adaptive_icon_safe_zone_outer">Зона маски (может быть обрезано)</string>
+    <string name="adaptive_icon_no_transparency_warning">В изображении нет прозрачных пикселей. Результат может выглядеть некорректно</string>
     <string name="adaptive_icon_created_success">Адаптивный значок создан успешно</string>
     <string name="adaptive_icon_creation_failed">Не удалось создать адаптивный значок</string>
-    <string name="adaptive_icon_folder_explanation">Выберите, где создать папку \'%1$s/%2$s\' со сгенерированными файлами иконок</string>
-    <string name="notification_icon_preview">Кнопка уведомлений скрыта</string>
-    <string name="notification_icon_preview_hint">Используйте ползунок для изменения размера. Перетащите, чтобы переместить</string>
+    <string name="adaptive_icon_label">Адаптивный</string>
+    <string name="adaptive_icon_monochrome_label">Монохромный</string>
+    <string name="adaptive_icon_guide">Руководство по созданию значка</string>
+    <string name="adaptive_icon_guide_png_title">Используйте PNG с прозрачным фоном</string>
+    <string name="adaptive_icon_guide_png_body">Передний план должен быть PNG-файлом с прозрачным фоном. Сплошной цвет фона будет выглядеть некорректно — цвет фона должен быть выбран из палитры ниже.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Безопасные зоны</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Внутренняя зона (сплошная): контент всегда полностью виден на всех формах лаунчера.
+Внешняя зона (пунктирная): может быть обрезана маской лаунчера — держите важные детали внутри внутренней зоны."</string>
+    <string name="adaptive_icon_guide_notification_title">Значок уведомления</string>
+    <string name="adaptive_icon_guide_notification_body">Генерируется автоматически из изображения переднего плана. Отрегулируйте его размер, используя ползунок «Уведомления». Весь видимый контент отображается белым цветом в строке состояния.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Монохромный значок</string>
+    <string name="adaptive_icon_guide_monochrome_body">Генерируется автоматически из изображения переднего плана с использованием тех же преобразований адаптивного значка. Он отображается с оттенком цвета акцента обоев на Android 13 и более поздних версиях.</string>
+    <string name="notification_icon_preview">Уведомление</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Создать собственный заголовок</string>
-    <string name="header_creator_instructions">Выберите изображения для светлой и темной тем, затем отрегулируйте их с помощью жеста масштабирования</string>
     <string name="header_creator_light_theme">Заголовок светлой темы</string>
     <string name="header_creator_dark_theme">Заголовок темной темы</string>
     <string name="header_creator_no_image">Изображение не выбрано</string>
     <string name="header_creator_success">Заголовок успешно создан</string>
     <string name="header_creator_failed">Не удалось создать заголовок</string>
-    <string name="header_creator_folder_explanation">Выберите, где можно создать папку \'%1$s/%2$s\' со сгенерированными файлами заголовков</string>
+    <string name="header_creator_guide">Руководство по созданию заголовка</string>
+    <string name="header_creator_guide_image_title">Требования к изображению</string>
+    <string name="header_creator_guide_image_body">Используйте любой файл изображения (PNG или JPEG). Для достижения наилучших результатов используйте широкоформатное изображение с соотношением сторон примерно 2,7:1. PNG-файлы с прозрачным фоном будут естественным образом сочетаться с темой приложения.</string>
+    <string name="header_creator_guide_themes_title">Светлые и темные темы</string>
+    <string name="header_creator_guide_themes_body">Большинству приложений требуются отдельные изображения для светлой и темной тем. Некоторые приложения (такие как YouTube Music) используют только темную тему, поэтому отображается только этот раздел.</string>
+    <string name="header_creator_guide_positioning_title">Позиционирование и масштабирование</string>
+    <string name="header_creator_guide_positioning_body">Используйте жесты масштабирования и перетаскивания непосредственно в предварительном просмотре, чтобы позиционировать и масштабировать изображение. Направляющие появляются, когда изображение находится рядом с центром. Вы также можете использовать ползунок ниже предварительного просмотра.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Вы уверены, что хотите удалить это приложение?</string>
     <string name="home_app_info_remove_app_warning">Это навсегда удалит:</string>
@@ -238,10 +250,8 @@
     <string name="home_app_info_original_package_name">Исходное имя пакета</string>
     <string name="home_app_info_applied_patches">Примененные патчи</string>
     <string name="home_app_info_patch_source_used">Использованный источник патча</string>
-    <string name="home_app_info_install_type">Тип установки</string>
     <string name="home_app_info_install_type_custom_installer">Пользовательский установщик</string>
     <string name="home_app_info_install_type_system_installer">Системный установщик</string>
-    <string name="home_app_info_patched_at">Пропатчен</string>
     <string name="home_app_info_patch_update_available">Доступно обновление патчей</string>
     <string name="home_app_info_patch_update_available_description">Доступна более новая версия патчей. Обновите приложение, чтобы получить последние улучшения и исправления.</string>
     <string name="home_app_info_app_deleted_warning">Приложение было удалено.</string>
@@ -656,7 +666,7 @@ morphe_header_custom_dark.png
     <string name="settings_system_about">Об интеграции</string>
     <string name="settings_system_share_website">Поделиться веб-сайтом</string>
     <string name="settings_system_share_website_description">Делится официальным веб-сайтом Morphe</string>
-    <string name="settings_system_manager_description">"Проект с открытым исходным кодом для современного, упрощенного патчинга популярных Android-приложений, развиваемый на основе отзывов и вкладов сообщества"</string>
+    <string name="settings_system_manager_description">Проект с открытым исходным кодом для современного, упрощенного патчинга популярных Android-приложений, развиваемый на основе отзывов и вкладов сообщества</string>
     <string name="credits">Благодарности</string>
     <string name="credits_current_development">Текущая разработка</string>
     <string name="credits_prior_development">Предыдущая разработка</string>
@@ -757,9 +767,4 @@ morphe_header_custom_dark.png
 
 Вы все еще хотите продолжить?"</string>
     <string name="download_update_confirmation">Загрузить обновление?</string>
-    <string name="just_now">Только что</string>
-    <string name="minutes_ago">%s минуту назад</string>
-    <string name="hours_ago">%s час назад</string>
-    <string name="days_ago">%s день назад</string>
-    <string name="invalid_date">Неверная дата</string>
 </resources>

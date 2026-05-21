@@ -54,12 +54,6 @@
         <item quantity="few">%s popravki so izbrani</item>
         <item quantity="other">%s popravki so izbrani</item>
     </plurals>
-    <plurals name="home_app_show_selected">
-        <item quantity="one">Prikaži %s aplikacijo</item>
-        <item quantity="two">Pokaži %s aplikaciji</item>
-        <item quantity="few">Pokaži %s aplikacije</item>
-        <item quantity="other">Pokaži %s aplikacije</item>
-    </plurals>
     <plurals name="home_app_show_hidden_count">
         <item quantity="one">%s skrita aplikacija</item>
         <item quantity="two">%s skriti aplikaciji</item>

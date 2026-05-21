@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Versteek hierdie program?</string>
     <string name="home_app_hide_message">Hierdie app sal van die tuisskerm weggesteek word. Jy kan dit later herstel deur die \'\'-knoppie onderaan die lys te gebruik</string>
     <string name="home_app_will_be_hidden">Hierdie program sal versteek word</string>
-    <string name="home_app_show_hidden">Wys versteekte programme</string>
     <string name="home_app_no_hidden">Geen versteekte program nie</string>
     <string name="home_app_hidden_apps_title">Versteekte programme</string>
     <string name="home_app_hidden_apps_hint">Tik om te wys</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Laat ons jou programme gehoorsaam maak</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Vandag se voorspelling: 100% kans op verandering</string>
+    <string name="home_greeting_7" formatted="false">Vandag se voorspelling: 100% kans op verandering</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Reg om onstellend in wonderlik te verander?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@ Vir die beste resultate beveel hierdie app aan om 'n &lt;b&gt;volle APK&lt;/b&gt
     <string name="patch_option_required_missing">%s: vul al die vereiste opsies in</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Skep adaptiewe ikoon</string>
-    <string name="adaptive_icon_instructions">Kies waar om die agtergrondbeeld, kleur en snaakspeletjies aan te pas</string>
-    <string name="adaptive_icon_preview">Aanpasbare ikoonvoorskou</string>
-    <string name="adaptive_icon_preview_hint">Vir die beste resultaat, hou jou ikoon binne die soliede binnekring</string>
     <string name="adaptive_icon_select_image">Kies beeld</string>
     <string name="adaptive_icon_change_image">Verander beeld</string>
     <string name="adaptive_icon_background_color">Agtergrondkleur</string>
     <string name="adaptive_icon_reset_transform">Herstel posisie en skaal</string>
     <string name="adaptive_icon_safe_zone_inner">Veilige sone (altyd sigbaar)</string>
     <string name="adaptive_icon_safe_zone_outer">Masker sone (kan afgesny word)</string>
+    <string name="adaptive_icon_no_transparency_warning">Die beeld het geen deursigtige pixels nie. Die resultaat kan verkeerd lyk.</string>
     <string name="adaptive_icon_created_success">Adaptiewe ikoon suksesvol geskep</string>
     <string name="adaptive_icon_creation_failed">Kon nie adaptiewe ikoon skep nie</string>
-    <string name="adaptive_icon_folder_explanation">Kies waar om die \'%1$s/%2$s\'-vouer met gegenereerde ikoonlêers te skep</string>
-    <string name="notification_icon_preview">Kennisgewingikoonvoorskou</string>
-    <string name="notification_icon_preview_hint">Gebruik die skyfie om die grootte te verander. Sleep om te herposisioneer</string>
+    <string name="adaptive_icon_label">Adaptief</string>
+    <string name="adaptive_icon_monochrome_label">Monochroom</string>
+    <string name="adaptive_icon_guide">Ikoongids</string>
+    <string name="adaptive_icon_guide_png_title">Gebruik \'n PNG met \'n deurskynende agtergrond</string>
+    <string name="adaptive_icon_guide_png_body">Die voorgrond moet \'n PNG-lêer wees met \'n deurskynende agtergrond. \'n Soliede kleur agtergrond sal verkeerd lyk - die agtergrond kleur moet van die agtergrond kieslys hieronder kom.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Veilige sones</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Innerlike sone (solied): inhoud is altyd ten volle sigbaar op alle lanseerder vorms.
+Outerlike sone (gestippel): kan deur die lanseerder masker afgesny word - hou belangrike besonderhede binne die innerlike sone."</string>
+    <string name="adaptive_icon_guide_notification_title">Kennisgewingikoon</string>
+    <string name="adaptive_icon_guide_notification_body">Outomaties gegenereer uit die voorgrond beeld. Pas die grootte aan met behulp van die Kennisgewing skyfie. Alle sigbare inhoud verskyn wit in die statusbalk.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Monochroom ikoon</string>
+    <string name="adaptive_icon_guide_monochrome_body">Outomaties gegenereer uit die voorgrond beeld met behulp van dieselfde aanpassingsikoon transformasies. Dit verskyn getint met die muurpapier aksent kleur op Android 13 en later.</string>
+    <string name="notification_icon_preview">Kennisgewingikoon</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Skep pasgemaakte kop</string>
-    <string name="header_creator_instructions">Kies beelde vir ligte en donker temas, pas dan aan met \'n knyp-na-zoom gestuur</string>
     <string name="header_creator_light_theme">Ligtema kop</string>
     <string name="header_creator_dark_theme">Donker tema kop</string>
     <string name="header_creator_no_image">Geen beeld gekies nie</string>
     <string name="header_creator_success">Kop suksesvol geskep</string>
     <string name="header_creator_failed">Kon nie kop skep nie</string>
-    <string name="header_creator_folder_explanation">Kies waar om die \'%1$s/%2$s\'-vouer met gegenereerde headerlêers te skep</string>
+    <string name="header_creator_guide">Header skeppingsgids</string>
+    <string name="header_creator_guide_image_title">Beeldvereistes</string>
+    <string name="header_creator_guide_image_body">Gebruik enige beeldlêer (PNG of JPEG). Vir die beste resultate, gebruik \'n wyd-formaat beeld met \'n ongeveer 2.7:1 aspekverhouding. PNG-lêers met deurskynende agtergronde sal natuurlik meng met die app-tema.</string>
+    <string name="header_creator_guide_themes_title">Ligte en donker temas</string>
+    <string name="header_creator_guide_themes_body">Die meeste toepassings vereis aparte beelde vir die ligte en donker temas. Sommige toepassings (soos YouTube Music) gebruik slegs die donker tema, so slegs daardie afdeling word gewys.</string>
+    <string name="header_creator_guide_positioning_title">Posisionering en skaal</string>
+    <string name="header_creator_guide_positioning_body">Gebruik knyp-om-zoem en sleep gebare direk in die voorskou om jou beeld te posisioneer en te skaal. Snap gidse verskyn wanneer die beeld naby die middel is. Jy kan ook die skyfie onder die voorskou gebruik.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Is jy seker jy wil hierdie app deïnstalleer?</string>
     <string name="home_app_info_remove_app_warning">Dit sal permanent uitvee:</string>
@@ -238,10 +250,8 @@ Vir die beste resultate beveel hierdie app aan om 'n &lt;b&gt;volle APK&lt;/b&gt
     <string name="home_app_info_original_package_name">Oorspronklike pakketnaam</string>
     <string name="home_app_info_applied_patches">Toegpaste patchings</string>
     <string name="home_app_info_patch_source_used">Patch bron gebruik</string>
-    <string name="home_app_info_install_type">Installasietipe</string>
     <string name="home_app_info_install_type_custom_installer">Pasgemaakte installer</string>
     <string name="home_app_info_install_type_system_installer">Stelsel installer</string>
-    <string name="home_app_info_patched_at">Gepatch op</string>
     <string name="home_app_info_patch_update_available">Patch opdatering beskikbaar</string>
     <string name="home_app_info_patch_update_available_description">\'n Nuwer weergawe van patches is beskikbaar. Herpatch jou app om die nuutste verbeterings en regstellings te kry</string>
     <string name="home_app_info_app_deleted_warning">App is verwyder</string>
@@ -656,7 +666,7 @@ Die beeld afmetings moet soos volg wees:
     <string name="settings_system_about">Oor</string>
     <string name="settings_system_share_website">Deel webtuiste</string>
     <string name="settings_system_share_website_description">Deel die amptelike Morphe-webwerf</string>
-    <string name="settings_system_manager_description">"Kon nie '%1$s' aflaai nie: %2$s"</string>
+    <string name="settings_system_manager_description">Kon nie \'%1$s\' aflaai nie: %2$s</string>
     <string name="credits">Krediete</string>
     <string name="credits_current_development">Huidige ontwikkeling</string>
     <string name="credits_prior_development">Vorige ontwikkeling</string>
@@ -757,9 +767,4 @@ Die beeld afmetings moet soos volg wees:
 
 Wil jy voortgaan?"</string>
     <string name="download_update_confirmation">Opdatering aflaai?</string>
-    <string name="just_now">Netnou</string>
-    <string name="minutes_ago">%sm gelede</string>
-    <string name="hours_ago">%sh gelede</string>
-    <string name="days_ago">%sd gelede</string>
-    <string name="invalid_date">Ongeldige datum</string>
 </resources>

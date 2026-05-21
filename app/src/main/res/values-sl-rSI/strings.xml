@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Ali bi skrili to aplikacijo?</string>
     <string name="home_app_hide_message">Ta aplikacija bo skrita iz začetnega zaslona. Lahko jo obnovite pozneje iz skritih aplikacij s klikom na gumb na dnu seznama.</string>
     <string name="home_app_will_be_hidden">Ta aplikacija bo skrita</string>
-    <string name="home_app_show_hidden">Pokaži skrite aplikacije</string>
     <string name="home_app_no_hidden">Ni skritih aplikacij</string>
     <string name="home_app_hidden_apps_title">Skrite aplikacije</string>
     <string name="home_app_hidden_apps_hint">Klikni da pokažeš</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Poskrbimo, da se vaše aplikacije obnašajo spodobno</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Danes napoved: 100-odstotna verjetnost popravka</string>
+    <string name="home_greeting_7" formatted="false">Danes napoved: 100-odstotna verjetnost popravka</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Si pripravljen spremeniti nezadostno v fantastično?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@ Za najboljše rezultate ta aplikacija priporoča popravljanje &lt;b&gt;polne APK
     <string name="patch_option_required_missing">%s: izpolni vsa zahtevana polja</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Ustvari ikono prilagojeno</string>
-    <string name="adaptive_icon_instructions">Izberite sliko ozadja, izberite barvo ozadja, nato uporabite drsnik ali povlecite s prstom za prilagoditev predogleda</string>
-    <string name="adaptive_icon_preview">Predogled ikone za prilagajanje</string>
-    <string name="adaptive_icon_preview_hint">Za najboljši rezultat ohranite ikono v trdni notranji krog</string>
     <string name="adaptive_icon_select_image">Izberite sliko</string>
     <string name="adaptive_icon_change_image">Spremenite sliko</string>
     <string name="adaptive_icon_background_color">Barva ozadja</string>
     <string name="adaptive_icon_reset_transform">Ponastavi položaj in merilo</string>
     <string name="adaptive_icon_safe_zone_inner">Varno območje (vedno vidno)</string>
     <string name="adaptive_icon_safe_zone_outer">Maskirno območje (lahko se obreže)</string>
+    <string name="adaptive_icon_no_transparency_warning">Slika nima preglednih slikovnih pik. Rezultat je lahko prikazan napačno</string>
     <string name="adaptive_icon_created_success">Ikona prilagojena uspešno</string>
     <string name="adaptive_icon_creation_failed">Pri ustvarjanju prilagojene ikone je prišlo do napake</string>
-    <string name="adaptive_icon_folder_explanation">Izberi, kje ustvariti mapo \'%1$s/%2$s\' z ustvarjenimi datotekami ikone</string>
-    <string name="notification_icon_preview">Predogled ikone za obvestila</string>
-    <string name="notification_icon_preview_hint">Uporabite drsnik za spreminjanje velikosti. Povlecite za prestavljanje</string>
+    <string name="adaptive_icon_label">Prilagodljiv</string>
+    <string name="adaptive_icon_monochrome_label">Monokromatsko</string>
+    <string name="adaptive_icon_guide">Navodilo za ustvarjanje ikone</string>
+    <string name="adaptive_icon_guide_png_title">Uporabite PNG sliko s pregledno ozadje</string>
+    <string name="adaptive_icon_guide_png_body">Prednja stran mora biti datoteka PNG s preglednim ozadjem. Enobarvno ozadje bo videti napačno – barva ozadja mora biti izbrano spodaj.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Varni območji</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Notranji območji (solidno): vsebina je vedno v celoti vidna na vseh oblikah zaganjalnika.
+Zunanji območji (črtkano): ga lahko maska zaganjalnika obreže – pomembne podrobnosti naj bodo v notranjem območju."</string>
+    <string name="adaptive_icon_guide_notification_title">Ikona obvestila</string>
+    <string name="adaptive_icon_guide_notification_body">Ustvarjeno samodejno iz prednje slike. Prilagodite njegovo velikost s pomočjo drsnika za obvestila. Vsa vidna vsebina je na statusni vrstici bela.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Monokromatska ikona</string>
+    <string name="adaptive_icon_guide_monochrome_body">Ustvarjeno samodejno iz prednje slike z uporabo istih preoblikovanj prilagodljive ikone. Na napravah Android 13 in novejših je poudarjeno z barvo ozadja.</string>
+    <string name="notification_icon_preview">Obvestilo</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Ustvari prilagojeno glavo</string>
-    <string name="header_creator_instructions">Izberite slike za svetle in temne teme, nato pa jih prilagodite z gestami za zožanje in razširitev</string>
     <string name="header_creator_light_theme">Glava svetle teme</string>
     <string name="header_creator_dark_theme">Glava temne teme</string>
     <string name="header_creator_no_image">Ni izbrana nobena slika</string>
     <string name="header_creator_success">Glava uspešno ustvarjena</string>
     <string name="header_creator_failed">Pri ustvarjanju glave je prišlo do napake</string>
-    <string name="header_creator_folder_explanation">Izberi, kje ustvariti mapo \'%1$s/%2$s\' z ustvarjenimi datotekami glave</string>
+    <string name="header_creator_guide">Navodilo za ustvarjanje glave</string>
+    <string name="header_creator_guide_image_title">Zahteve za sliko</string>
+    <string name="header_creator_guide_image_body">Uporabite poljubno sliko (PNG ali JPEG). Za najboljše rezultate uporabite sliko v širokem formatu z razmerjem stranic približno 2,7:1. Datoteke PNG s preglednim ozadjem se bodo naravno zmešale s temo aplikacije.</string>
+    <string name="header_creator_guide_themes_title">Svetle in temne teme</string>
+    <string name="header_creator_guide_themes_body">Večina aplikacij zahteva ločene slike za svetlo in temno temo. Nekatere aplikacije (kot je YouTube Music) uporabljajo samo temno temo, zato je prikazan samo ta del.</string>
+    <string name="header_creator_guide_positioning_title">Pozicioniranje in skaliranje</string>
+    <string name="header_creator_guide_positioning_body">Uporabite geste stiskanja za povečavo in povlecite neposredno v predogledu, da pozicionirate in skalirate sliko. Vodila se pojavijo, ko je slika blizu sredine. Lahko uporabite tudi drsnik pod predogledom.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Ali ste prepričani, da želite odstraniti to aplikacijo?</string>
     <string name="home_app_info_remove_app_warning">To bo trajno izbrisalo:</string>
@@ -238,10 +250,8 @@ Za najboljše rezultate ta aplikacija priporoča popravljanje &lt;b&gt;polne APK
     <string name="home_app_info_original_package_name">Izvirno ime paketa</string>
     <string name="home_app_info_applied_patches">Uporabljeni popravki</string>
     <string name="home_app_info_patch_source_used">Uporabljen vir popravka</string>
-    <string name="home_app_info_install_type">Vrsta namestitve</string>
     <string name="home_app_info_install_type_custom_installer">Prilagojena namestitev</string>
     <string name="home_app_info_install_type_system_installer">Sistemska namestitev</string>
-    <string name="home_app_info_patched_at">Popravljeno</string>
     <string name="home_app_info_patch_update_available">Na voljo posodobitev popravkov</string>
     <string name="home_app_info_patch_update_available_description">Na voljo je novejša različica popravkov. Popravite svojo aplikacijo, da pridobite najnovejše izboljšave in popravke.</string>
     <string name="home_app_info_app_deleted_warning">Aplikacija je bila odstranjena</string>
@@ -657,7 +667,7 @@ Dimenzije slike morajo biti naslednje:
     <string name="settings_system_about">O aplikaciji</string>
     <string name="settings_system_share_website">Delite spletno mesto</string>
     <string name="settings_system_share_website_description">Deli uradno spletno stran Morphe</string>
-    <string name="settings_system_manager_description">"Odprtokodni projekt za sodobno in prilagojeno popravljanje priljubljenih aplikacij za Android, ki ga gonijo povratne informacije in prispevki skupnosti"</string>
+    <string name="settings_system_manager_description">Odprtokodni projekt za sodobno in prilagojeno popravljanje priljubljenih aplikacij za Android, ki ga gonijo povratne informacije in prispevki skupnosti</string>
     <string name="credits">Zasluge</string>
     <string name="credits_current_development">Trenutna razvojanost</string>
     <string name="credits_prior_development">Prejšnja razvojanost</string>
@@ -756,9 +766,4 @@ Dimenzije slike morajo biti naslednje:
     <string name="resume_download">Ponavadi prenos</string>
     <string name="download_confirmation_metered">"Trenutno ste povezani na varčno povezavo in vam lahko zaračunajo stroški ponudnika storitev. Želite nadaljevati?"</string>
     <string name="download_update_confirmation">Prenesti posodobitev?</string>
-    <string name="just_now">Zdaj</string>
-    <string name="minutes_ago">%s nazaj</string>
-    <string name="hours_ago">%s nazaj</string>
-    <string name="days_ago">%s nazaj</string>
-    <string name="invalid_date">Neveljaven datum</string>
 </resources>

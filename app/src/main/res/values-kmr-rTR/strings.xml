@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Epp şifre bike?</string>
     <string name="home_app_hide_message">Evê app wê ji dîroka sereke ve bê neşînîn. Hûn dikarin paşê wê ji appên veşartî vegerînin bişkoika li jorî navnîşê re.</string>
     <string name="home_app_will_be_hidden">Epp şifre be</string>
-    <string name="home_app_show_hidden">Appên veşartiye werin bike.</string>
     <string name="home_app_no_hidden">Appên veşartiye tune</string>
     <string name="home_app_hidden_apps_title">Appên veşartiye</string>
     <string name="home_app_hidden_apps_hint">İ kilavê rê bifikin</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Ezaplikasyonên we çêbike.</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Îhtîmala 100% vê gotinê ji veşartinê heye</string>
+    <string name="home_greeting_7" formatted="false">Îhtîmala 100% vê gotinê ji veşartinê heye</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Hazîre ji kêfê u serastiyê ve bigihîne?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -199,29 +198,42 @@ Ji bo mezgînî, ev sepan pêşniyar dike ku paketek &lt;b&gt;full APK&lt;/b&gt;
     <string name="patch_option_required_missing">%s: hemû rêzika pêwist tê dîtin</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Îkon adaptî çêkîn</string>
-    <string name="adaptive_icon_instructions">Wekşîna wêneyek pêşîn hilbijêre, rûxana rengî hilbijêre, paşê ji bo danûşandina pêşbîniyê silser an gestên qutkirinê bikar bîne</string>
-    <string name="adaptive_icon_preview">Pêşbîniya ikona adaptîf</string>
-    <string name="adaptive_icon_preview_hint">Ji bo encamên çêtir, ikona xwe di nav devê hundir ê qelîv de bihêle</string>
     <string name="adaptive_icon_select_image">Wêne hilbijartin</string>
     <string name="adaptive_icon_change_image">Wêne biguherîn</string>
     <string name="adaptive_icon_background_color">Reng paşîn</string>
     <string name="adaptive_icon_reset_transform">Pozisyon û qiyasê sererast bike</string>
     <string name="adaptive_icon_safe_zone_inner">Zonaya ewle (her tim dîtbar e)</string>
     <string name="adaptive_icon_safe_zone_outer">Zonaya maskê (dibe ku biqewimin)</string>
+    <string name="adaptive_icon_no_transparency_warning">Wêne pîkseleke şeffaf nîne. Dibe ku encam rasterast xuya neke</string>
     <string name="adaptive_icon_created_success">Îkona adaptîv bi serketinê sererast dibe</string>
     <string name="adaptive_icon_creation_failed">Ji sererastkirina îkonaya adaptîv neçîbe</string>
-    <string name="adaptive_icon_folder_explanation">Li wir bibînin ku pelê \'%1$s/%2$s\' bi pelên îkonên çêkirî were çêkirin</string>
-    <string name="notification_icon_preview">Pêşbîniya ikona ragihîner</string>
-    <string name="notification_icon_preview_hint">Silserê bikar bîne ku mezinahiyê zêde bike. Ji bo veşartinê kişandine bikar bîne</string>
+    <string name="adaptive_icon_label">Adaptîf</string>
+    <string name="adaptive_icon_monochrome_label">Monokrom</string>
+    <string name="adaptive_icon_guide">Rêbernameya çêkirina îkonê</string>
+    <string name="adaptive_icon_guide_png_title">PNG-yek bi paşnaveya şeffaf bikar bîne</string>
+    <string name="adaptive_icon_guide_png_body">Pêşî çêker divê pelgeyek PNG ya bi paşnaveya şeffaf be. Paşnavê rengîn dê xirab xuya bike - rengê paşnavê divê ji hilbijêra rengan a jorîn were girtin.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Herêmên ewle</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Herêma hundurîn (hewşem): naverok her gav di hemû şeklên launcher'an de tê dîtin.
+Herêma derveyî (qutkirî): dikare ji aliyê maskeya launcher'ê ve were qutkirin - hûrguliyên girîng di herêma hundurîn de bihêlin."</string>
+    <string name="adaptive_icon_guide_notification_title">Îkona notîfîkasyonê</string>
+    <string name="adaptive_icon_guide_notification_body">Otomatîkî ji wêneyê pêşîn hatî çêkirin. Mezinahiyê wê bi têkîlîya notîfîkasyonê tê guhertin. Hemû naveroka ku tê dîtin di bara rewşê de spî xuya dike.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Îkona monokrom</string>
+    <string name="adaptive_icon_guide_monochrome_body">Otomatîkî ji wêneyê pêşîn hatî çêkirin bi heman guhertoyên îkonê adapteyî. Di Android 13 û paşîn de bi rengê sînorê wallpaper\'ê ve tê kirin.</string>
+    <string name="notification_icon_preview">Notîfîkasyon</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Serdestin xwerû çêkîn</string>
-    <string name="header_creator_instructions">Hilbijarina wêne ji bo temaên ronah û tarik, wê gavên rêzê pitandin-ji-dûra sererast bike</string>
     <string name="header_creator_light_theme">Serê tema ronah</string>
     <string name="header_creator_dark_theme">Serê tema tarik</string>
     <string name="header_creator_no_image">Wêne tune</string>
     <string name="header_creator_success">Serê bi serketinê sererast dibe</string>
     <string name="header_creator_failed">Serivsê serdestin çêkirin domaniya</string>
-    <string name="header_creator_folder_explanation">Li wir bibînin ku pelê \'%1$s/%2$s\' bi pelên sernavê çêkirî were çêkirin</string>
+    <string name="header_creator_guide">Rêbernameya çêkirina sernihêrê</string>
+    <string name="header_creator_guide_image_title">Pêdiviyên wêne</string>
+    <string name="header_creator_guide_image_body">Her wêneyek (PNG an JPEG) bikar bîne. Ji bo encamên çêtirîn, wîneyek bi rêjeya enspêr a nêzikî 2.7:1 bikar bîne. Pelgên PNG-yê bi paşnavên şeffaf dê bi xwezayî bi tema app-ê tevdî bin.</string>
+    <string name="header_creator_guide_themes_title">Tema hêsîn û tarî</string>
+    <string name="header_creator_guide_themes_body">Piraniya sepanan wêneyên cihêreng ji bo temayên hêsîn û tarî hewce ne. Hinek sepanan (wek YouTube Music) tenê tema tarî bikar tînin, ji ber vê yekê tenê wê beşa wê tê nîşandan.</string>
+    <string name="header_creator_guide_positioning_title">Cîkirin û mezînkirin</string>
+    <string name="header_creator_guide_positioning_body">Ji bo cîkirin û mezînkirina wêneya we rasterast di pêşdîtinê de tevgerên dîtin û drag bikar bîne. Rêberên snap-ê dema ku wêne nêzî navendê dibe xuya dibin. Hûn dikarin her wiha ji slidera jorîn jî bikar bînin.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Ma hûn pê ewaz in ku ev sepan paqij bikin?</string>
     <string name="home_app_info_remove_app_warning">Ev dê bi dawîbûna domdar:</string>
@@ -236,10 +248,8 @@ Ji bo mezgînî, ev sepan pêşniyar dike ku paketek &lt;b&gt;full APK&lt;/b&gt;
     <string name="home_app_info_original_package_name">Navê pakêta orjînal</string>
     <string name="home_app_info_applied_patches">Paqijkirinên kirin</string>
     <string name="home_app_info_patch_source_used">Kanîyeka veşartin serê re hatiye sererastkirin</string>
-    <string name="home_app_info_install_type">Tîpa danîn</string>
     <string name="home_app_info_install_type_custom_installer">Danerê xwezî</string>
     <string name="home_app_info_install_type_system_installer">Danerê sistemê</string>
-    <string name="home_app_info_patched_at">Paqij kirin</string>
     <string name="home_app_info_patch_update_available">Nûvekirina paqijkirinê peyda bûye</string>
     <string name="home_app_info_patch_update_available_description">Versîyonê nû ya qelvaton ava bûye. Bo cîgirtinê sepanê bi qelbûna herî dawî, pêşbirîyên nûîn kirin û çareseriyê bibin</string>
     <string name="home_app_info_app_deleted_warning">App hate laşkirin</string>
@@ -652,7 +662,7 @@ Qasîyên wêneyan divê wiha bin:
     <string name="settings_system_about">Derbarê</string>
     <string name="settings_system_share_website">Malperê parve bike</string>
     <string name="settings_system_share_website_description">Malpera fermî ya Morphe’yê parve bike</string>
-    <string name="settings_system_manager_description">"Projektek ferman-çavkanî ji bo nûjenkirin, sazkirina bingeş an sepanên popûler ên Android, bi bandora vegerandinên dîmen û ji bo beşdarîyên civakê ve girêdayî ye."</string>
+    <string name="settings_system_manager_description">Projektek ferman-çavkanî ji bo nûjenkirin, sazkirina bingeş an sepanên popûler ên Android, bi bandora vegerandinên dîmen û ji bo beşdarîyên civakê ve girêdayî ye.</string>
     <string name="credits">Kredît</string>
     <string name="credits_current_development">Gelişîna heyî</string>
     <string name="credits_prior_development">Gelişîna berê</string>
@@ -753,9 +763,4 @@ Qasîyên wêneyan divê wiha bin:
 
 Ma hûn hê jî dixwazin dom bikevin?"</string>
     <string name="download_update_confirmation">Nûvekirinê dakêvin?</string>
-    <string name="just_now">Îro</string>
-    <string name="minutes_ago">%s demê berê</string>
-    <string name="hours_ago">%s saetan berê</string>
-    <string name="days_ago">%s rojan berê</string>
-    <string name="invalid_date">Tarîkha bêyî qebûlê</string>
 </resources>

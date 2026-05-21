@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Ukryć tę aplikację?</string>
     <string name="home_app_hide_message">Ta aplikacja zostanie ukryta na ekranie głównym. Możesz ją później przywrócić z ukrytych aplikacji za pomocą przycisku na dole listy</string>
     <string name="home_app_will_be_hidden">Ta aplikacja zostanie ukryta</string>
-    <string name="home_app_show_hidden">Pokaż ukryte aplikacje</string>
     <string name="home_app_no_hidden">Brak ukrytych aplikacji</string>
     <string name="home_app_hidden_apps_title">Ukryte aplikacje</string>
     <string name="home_app_hidden_apps_hint">Dotknij, aby pokazać</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Nauczmy aplikacje dobrych manier</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Dzisiejsza prognoza: 100% szans na zmodyfikowanie</string>
+    <string name="home_greeting_7" formatted="false">Dzisiejsza prognoza: 100% szans na zmodyfikowanie</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Czas zamienić nudę w coś świetnego?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -58,7 +57,7 @@
     <string name="sources_management_title">Źródła modyfikacji</string>
     <string name="sources_management_open_in_browser">Otwórz w przeglądarce</string>
     <string name="sources_management_failed_to_open_url">Nie udało się otworzyć strony</string>
-    <string name="sources_management_prerelease_toggle">Płatki przedpremierowe</string>
+    <string name="sources_management_prerelease_toggle">Przedpremierowe modyfikacje</string>
     <string name="sources_management_prerelease_toggle_description">Zapewnia wczesny dostęp do nowych, eksperymentalnych wersji modyfikacji</string>
     <string name="sources_management_experimental_versions_toggle">Eksperymentalne wersje aplikacji</string>
     <string name="sources_management_experimental_versions_toggle_description">Modyfikuje wersje eksperymentalne aplikacji, jeśli są dostępne</string>
@@ -201,29 +200,42 @@ Aby uzyskać najlepszy efekt, zalecamy zmodyfikowanie &lt;b&gt;pełnego pliku AP
     <string name="patch_option_required_missing">%s: uzupełnij wymagane opcje</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Utwórz ikonę adaptacyjną</string>
-    <string name="adaptive_icon_instructions">Wybierz grafikę pierwszego planu i kolor tła, a następnie użyj suwaka lub uszczypnij ekran, aby dostosować podgląd</string>
-    <string name="adaptive_icon_preview">Podgląd ikony adaptacyjnej</string>
-    <string name="adaptive_icon_preview_hint">Aby uzyskać najlepszy efekt, umieść ikonę w obrębie wewnętrznego koła</string>
     <string name="adaptive_icon_select_image">Wybierz obraz</string>
     <string name="adaptive_icon_change_image">Zmień obraz</string>
     <string name="adaptive_icon_background_color">Kolor tła</string>
     <string name="adaptive_icon_reset_transform">Resetuj pozycję i skalę</string>
     <string name="adaptive_icon_safe_zone_inner">Strefa bezpieczna (zawsze widoczna)</string>
     <string name="adaptive_icon_safe_zone_outer">Strefa maskowania (może być przycięta)</string>
+    <string name="adaptive_icon_no_transparency_warning">Obraz nie zawiera pikseli przezroczystych. Wynik może wyglądać nieprawidłowo</string>
     <string name="adaptive_icon_created_success">Ikona adaptacyjna utworzona pomyślnie</string>
     <string name="adaptive_icon_creation_failed">Nie udało się utworzyć ikony adaptacyjnej</string>
-    <string name="adaptive_icon_folder_explanation">Wybierz, gdzie utworzyć folder \"%1$s/%2$s\" z wygenerowanymi ikonami</string>
-    <string name="notification_icon_preview">Podgląd ikony powiadomień</string>
-    <string name="notification_icon_preview_hint">Użyj suwaka, aby zmienić rozmiar. Przeciągnij, aby zmienić pozycję</string>
+    <string name="adaptive_icon_label">Adaptacyjny</string>
+    <string name="adaptive_icon_monochrome_label">Monochromatyczny</string>
+    <string name="adaptive_icon_guide">Przewodnik tworzenia ikon</string>
+    <string name="adaptive_icon_guide_png_title">Użyj pliku PNG z przezroczystym tłem</string>
+    <string name="adaptive_icon_guide_png_body">Warstwa przednia musi być plikiem PNG z przezroczystym tłem. Jednolite tło będzie wyglądać niepoprawnie – kolor tła powinien pochodzić z selektora tła poniżej.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Strefy bezpieczeństwa</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Wewnętrzna strefa (jednolita): zawartość jest zawsze w pełni widoczna na wszystkich kształtach nakładki.
+Zewnętrzna strefa (przerywana): może być obcinana przez maskę nakładki – zachowaj ważne szczegóły wewnątrz wewnętrznej strefy."</string>
+    <string name="adaptive_icon_guide_notification_title">Ikona powiadomienia</string>
+    <string name="adaptive_icon_guide_notification_body">Generowana automatycznie z obrazu warstwy przedniej. Dostosuj jej rozmiar za pomocą suwaka Powiadomienia. Cała widoczna zawartość pojawia się na biało na pasku stanu.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Ikona monochromatyczna</string>
+    <string name="adaptive_icon_guide_monochrome_body">Generowana automatycznie z obrazu warstwy przedniej przy użyciu tych samych przekształceń ikony adaptacyjnej. Wyświetlana w odcieniu koloru akcentu tapety na Androidzie 13 i nowszych.</string>
+    <string name="notification_icon_preview">Powiadomienie</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Utwórz własny nagłówek</string>
-    <string name="header_creator_instructions">Wybierz obrazy dla jasnego i ciemnego motywu, a następnie dostosuj je gestem uszczypnięcia</string>
     <string name="header_creator_light_theme">Nagłówek jasnego motywu</string>
     <string name="header_creator_dark_theme">Nagłówek ciemnego motywu</string>
     <string name="header_creator_no_image">Nie wybrano obrazu</string>
     <string name="header_creator_success">Nagłówek utworzony pomyślnie</string>
     <string name="header_creator_failed">Nie udało się utworzyć nagłówka</string>
-    <string name="header_creator_folder_explanation">Wybierz, gdzie utworzyć folder \"%1$s/%2$s\" z wygenerowanymi nagłówkami</string>
+    <string name="header_creator_guide">Przewodnik tworzenia nagłówka</string>
+    <string name="header_creator_guide_image_title">Wymagania dotyczące obrazu</string>
+    <string name="header_creator_guide_image_body">Użyj dowolnego pliku obrazu (PNG lub JPEG). Aby uzyskać najlepsze wyniki, użyj obrazu w formacie szerokoekranowym o współczynniku proporcji około 2,7:1. Pliki PNG z przezroczystym tłem dobrze wpasują się w motyw aplikacji.</string>
+    <string name="header_creator_guide_themes_title">Tryby jasny i ciemny</string>
+    <string name="header_creator_guide_themes_body">Większość aplikacji wymaga oddzielnych obrazów dla trybów jasnego i ciemnego. Niektóre aplikacje (np. YouTube Music) używają tylko trybu ciemnego, więc wyświetlana jest tylko ta sekcja.</string>
+    <string name="header_creator_guide_positioning_title">Pozycjonowanie i skalowanie</string>
+    <string name="header_creator_guide_positioning_body">Użyj gestów szczypania i przeciągania bezpośrednio w podglądzie, aby ustawić pozycję i skalę obrazu. Przewodniki przyciągania pojawiają się, gdy obraz jest w pobliżu środka. Możesz również użyć suwaka poniżej podglądu.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Czy na pewno chcesz odinstalować tę aplikację?</string>
     <string name="home_app_info_remove_app_warning">Spowoduje to trwałe usunięcie:</string>
@@ -238,10 +250,8 @@ Aby uzyskać najlepszy efekt, zalecamy zmodyfikowanie &lt;b&gt;pełnego pliku AP
     <string name="home_app_info_original_package_name">Oryginalna nazwa pakietu</string>
     <string name="home_app_info_applied_patches">Zastosowane modyfikacje</string>
     <string name="home_app_info_patch_source_used">Użyte źródło modyfikacji</string>
-    <string name="home_app_info_install_type">Typ instalacji</string>
     <string name="home_app_info_install_type_custom_installer">Niestandardowy instalator</string>
     <string name="home_app_info_install_type_system_installer">Instalator systemowy</string>
-    <string name="home_app_info_patched_at">Zmodyfikowano</string>
     <string name="home_app_info_patch_update_available">Dostępna aktualizacja modyfikacji</string>
     <string name="home_app_info_patch_update_available_description">Dostępna jest nowsza wersja modyfikacji. Zmodyfikuj aplikację ponownie, aby otrzymać najnowsze ulepszenia i poprawki</string>
     <string name="home_app_info_app_deleted_warning">Aplikacja została odinstalowana</string>
@@ -656,7 +666,7 @@ Wymagane są następujące wymiary obrazów:
     <string name="settings_system_about">Informacje</string>
     <string name="settings_system_share_website">Udostępnij stronę</string>
     <string name="settings_system_share_website_description">Udostępnia oficjalną stronę internetową Morphe</string>
-    <string name="settings_system_manager_description">"Projekt otwartoźródłowy służący do nowoczesnego i sprawnego modyfikowania popularnych aplikacji na Androida, rozwijany dzięki opiniom i zaangażowaniu społeczności"</string>
+    <string name="settings_system_manager_description">Projekt otwartoźródłowy służący do nowoczesnego i sprawnego modyfikowania popularnych aplikacji na Androida, rozwijany dzięki opiniom i zaangażowaniu społeczności</string>
     <string name="credits">Podziękowania</string>
     <string name="credits_current_development">Obecni twórcy</string>
     <string name="credits_prior_development">Poprzedni twórcy</string>
@@ -693,9 +703,9 @@ Wymagane są następujące wymiary obrazów:
     <string name="selected">Wybrano</string>
     <string name="not_selected">Nie wybrano</string>
     <string name="select_all">Zaznacz wszystko</string>
-    <string name="select_all_done">Wszystkie wybrane</string>
+    <string name="select_all_done">Zaznaczono wszystko</string>
     <string name="deselect_all">Odznacz wszystko</string>
-    <string name="deselect_all_done">Wszystkie odznaczone</string>
+    <string name="deselect_all_done">Odznaczono wszystko</string>
     <string name="rename">Zmień nazwę</string>
     <string name="import_">Importuj</string>
     <string name="export">Eksportuj</string>
@@ -757,9 +767,4 @@ Wymagane są następujące wymiary obrazów:
 
 Czy mimo to chcesz kontynuować?"</string>
     <string name="download_update_confirmation">Pobrać aktualizację?</string>
-    <string name="just_now">Teraz</string>
-    <string name="minutes_ago">%s min. temu</string>
-    <string name="hours_ago">%s godz. temu</string>
-    <string name="days_ago">%s d. temu</string>
-    <string name="invalid_date">Nieprawidłowa data</string>
 </resources>

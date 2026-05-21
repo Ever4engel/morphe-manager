@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Deze app verbergen?</string>
     <string name="home_app_hide_message">Deze app wordt verborgen op het startscherm. Je kunt hem later weer zichtbaar maken met de knop \'\' onderaan de lijst.</string>
     <string name="home_app_will_be_hidden">Deze app wordt verborgen</string>
-    <string name="home_app_show_hidden">Toon verborgen apps</string>
     <string name="home_app_no_hidden">Geen verborgen apps</string>
     <string name="home_app_hidden_apps_title">Verborgen apps</string>
     <string name="home_app_hidden_apps_hint">Tik om te tonen</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Laten we ervoor zorgen dat uw apps zich goed gedragen</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">De voorspelling voor vandaag: 100% kans op reparaties</string>
+    <string name="home_greeting_7" formatted="false">De voorspelling voor vandaag: 100% kans op reparaties</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Ben je klaar om van een teleurstellende ervaring iets geweldigs te maken?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -198,29 +197,42 @@ Voor de beste resultaten beveelt deze app aan om een &lt;b&gt;volledig APK&lt;/b
     <string name="patch_option_required_missing">%s: vul alle verplichte opties in</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Adaptieve icoon maken</string>
-    <string name="adaptive_icon_instructions">Kies een voorgrondafbeelding, selecteer een achtergrondkleur en gebruik vervolgens de schuifregelaar of knijpbewerking om de voorbeeldweergave aan te passen</string>
-    <string name="adaptive_icon_preview">Voorbeeldweergave adaptief pictogram</string>
-    <string name="adaptive_icon_preview_hint">Voor het beste resultaat, houd uw pictogram binnen de solide binnen cirkel</string>
     <string name="adaptive_icon_select_image">Afbeelding selecteren</string>
     <string name="adaptive_icon_change_image">Afbeelding wijzigen</string>
     <string name="adaptive_icon_background_color">Achtergrondkleur</string>
     <string name="adaptive_icon_reset_transform">Reset positie en schaal</string>
     <string name="adaptive_icon_safe_zone_inner">Veilige zone (altijd zichtbaar)</string>
     <string name="adaptive_icon_safe_zone_outer">Maskerzone (mag worden geknipt)</string>
+    <string name="adaptive_icon_no_transparency_warning">De afbeelding heeft geen transparante pixels. Het resultaat kan er onjuist uitzien</string>
     <string name="adaptive_icon_created_success">Adaptieve icoon succesvol gemaakt</string>
     <string name="adaptive_icon_creation_failed">Mislukt om adaptieve icoon te maken</string>
-    <string name="adaptive_icon_folder_explanation">Selecteer waar je de map \'%1$s/%2$s\' met gegenereerde iconbestanden wilt maken</string>
-    <string name="notification_icon_preview">Meldingpictogram voorbeeld</string>
-    <string name="notification_icon_preview_hint">Gebruik de schuifregelaar om de grootte aan te passen. Sleep om te verplaatsen</string>
+    <string name="adaptive_icon_label">Adaptief</string>
+    <string name="adaptive_icon_monochrome_label">Monochroom</string>
+    <string name="adaptive_icon_guide">Handleiding voor het maken van pictogrammen</string>
+    <string name="adaptive_icon_guide_png_title">Gebruik een PNG met een transparante achtergrond</string>
+    <string name="adaptive_icon_guide_png_body">De voorgrond moet een PNG-bestand zijn met een transparante achtergrond. Een effen achtergrond ziet er verkeerd uit - de achtergrondkleur moet afkomstig zijn van de achtergrondkiezer hieronder.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Veilige zones</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Binnenste zone (effen): inhoud is altijd volledig zichtbaar op alle launcher-vormen.
+Buitenste zone (gestippeld): kan worden afgesneden door het launcher-masker - houd belangrijke details binnen de binnenste zone."</string>
+    <string name="adaptive_icon_guide_notification_title">Meldingenpictogram</string>
+    <string name="adaptive_icon_guide_notification_body">Automatisch gegenereerd op basis van de voorgrondafbeelding. Pas de grootte aan met de schuifregelaar voor meldingen. Alle zichtbare inhoud verschijnt wit in de statusbalk.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Monochroom pictogram</string>
+    <string name="adaptive_icon_guide_monochrome_body">Automatisch gegenereerd op basis van de voorgrondafbeelding met behulp van dezelfde adaptieve pictogramtransformaties. Het wordt gekleurd weergegeven met de achtergrondkleur van het wallpaper op Android 13 en hoger.</string>
+    <string name="notification_icon_preview">Melding</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Aangepaste koptekst maken</string>
-    <string name="header_creator_instructions">Selecteer beelden voor lichte en donkere thema\'s, en justeer met pinch-to-zoom-gesten</string>
     <string name="header_creator_light_theme">Lichte thema header</string>
     <string name="header_creator_dark_theme">Donkere thema header</string>
     <string name="header_creator_no_image">Geen afbeelding geselecteerd</string>
     <string name="header_creator_success">Header succesvol gemaakt</string>
     <string name="header_creator_failed">Mislukt om header te maken</string>
-    <string name="header_creator_folder_explanation">Selecteer waar je de map \'%1$s/%2$s\' met gegenereerde headerbestanden wilt maken</string>
+    <string name="header_creator_guide">Handleiding voor header-maker</string>
+    <string name="header_creator_guide_image_title">Afbeeldingseisen</string>
+    <string name="header_creator_guide_image_body">Gebruik elk afbeeldingsbestand (PNG of JPEG). Voor de beste resultaten gebruikt u een breedformaat afbeelding met een aspectratio van ongeveer 2,7:1. PNG-bestanden met transparante achtergronden passen naadloos bij het thema van de app.</string>
+    <string name="header_creator_guide_themes_title">Lichte en donkere thema\'s</string>
+    <string name="header_creator_guide_themes_body">De meeste apps vereisen aparte afbeeldingen voor de lichte en donkere thema\'s. Sommige apps (zoals YouTube Music) gebruiken alleen het donkere thema, dus alleen dat gedeelte wordt weergegeven.</string>
+    <string name="header_creator_guide_positioning_title">Positionering en schaling</string>
+    <string name="header_creator_guide_positioning_body">Gebruik knijp-om-zoomen en sleepgeesten direct in de preview om uw afbeelding te positioneren en te schalen. Snap-richtlijnen verschijnen wanneer de afbeelding zich dicht bij het midden bevindt. U kunt ook de schuifregelaar onder de preview gebruiken.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Weet u zeker dat u deze app wilt verwijderen?</string>
     <string name="home_app_info_remove_app_warning">Dit zal permanent verwijderen:</string>
@@ -235,10 +247,8 @@ Voor de beste resultaten beveelt deze app aan om een &lt;b&gt;volledig APK&lt;/b
     <string name="home_app_info_original_package_name">Originele pakketnaam</string>
     <string name="home_app_info_applied_patches">Toegepaste patches</string>
     <string name="home_app_info_patch_source_used">Gebruikte bronpatch</string>
-    <string name="home_app_info_install_type">Installatietype</string>
     <string name="home_app_info_install_type_custom_installer">Aangepaste installer</string>
     <string name="home_app_info_install_type_system_installer">Systeeminstaller</string>
-    <string name="home_app_info_patched_at">Gepatcht</string>
     <string name="home_app_info_patch_update_available">Patchupdate beschikbaar</string>
     <string name="home_app_info_patch_update_available_description">Er is een nieuwere versie van patches beschikbaar. Repatch uw app om de laatste verbeteringen en correcties te krijgen</string>
     <string name="home_app_info_app_deleted_warning">App was verwijderd</string>
@@ -653,7 +663,7 @@ De afbeelddimensionen moeten als volgt zijn:
     <string name="settings_system_about">Over</string>
     <string name="settings_system_share_website">Website delen</string>
     <string name="settings_system_share_website_description">Deelt de officiële Morphe-website</string>
-    <string name="settings_system_manager_description">"Een open-source project voor het modern, gestroomlijnd patchen van populaire Android-apps, aangedreven door communityfeedback en -bijdragen"</string>
+    <string name="settings_system_manager_description">Een open-source project voor het modern, gestroomlijnd patchen van populaire Android-apps, aangedreven door communityfeedback en -bijdragen</string>
     <string name="credits">Credits</string>
     <string name="credits_current_development">Huidige ontwikkeling</string>
     <string name="credits_prior_development">Eerdere ontwikkeling</string>
@@ -754,9 +764,4 @@ De afbeelddimensionen moeten als volgt zijn:
 
 Wilt u toch doorgaan?"</string>
     <string name="download_update_confirmation">Update downloaden?</string>
-    <string name="just_now">Zojuist</string>
-    <string name="minutes_ago">%sm geleden</string>
-    <string name="hours_ago">%su geleden</string>
-    <string name="days_ago">%sd geleden</string>
-    <string name="invalid_date">Ongeldige datum</string>
 </resources>

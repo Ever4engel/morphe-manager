@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Esconder esta aplicação?</string>
     <string name="home_app_hide_message">Esta aplicação irá ficar oculta do ecrã principal. Podes restaurá-la posteriormente a partir das aplicações ocultas utilizando o botão na parte inferior da lista.</string>
     <string name="home_app_will_be_hidden">Esta aplicação será ocultada</string>
-    <string name="home_app_show_hidden">Mostrar aplicações ocultas</string>
     <string name="home_app_no_hidden">Não há aplicações ocultas</string>
     <string name="home_app_hidden_apps_title">Aplicações ocultas</string>
     <string name="home_app_hidden_apps_hint">Toca para desocultar</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Vamos fazer as tuas aplicações comportarem-se</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Previsão para hoje: 100% de chance de modificar</string>
+    <string name="home_greeting_7" formatted="false">Previsão para hoje: 100% de chance de modificar</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Pronto para transformar o medíocre em incrível?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -58,9 +57,9 @@
     <string name="sources_management_title">Fontes de modificações</string>
     <string name="sources_management_open_in_browser">Abrir links no navegador</string>
     <string name="sources_management_failed_to_open_url">Erro ao abrir URL</string>
-    <string name="sources_management_prerelease_toggle">Patches pré-lançamento</string>
+    <string name="sources_management_prerelease_toggle">Modificações pré-lançamento</string>
     <string name="sources_management_prerelease_toggle_description">Recebe acesso antecipado às novas versões experimentais de modificações</string>
-    <string name="sources_management_experimental_versions_toggle">Versões experimentais do aplicativo</string>
+    <string name="sources_management_experimental_versions_toggle">Versões experimentais da aplicação</string>
     <string name="sources_management_experimental_versions_toggle_description">Aplicar modificações em versões experimentais das aplicações, se disponíveis</string>
     <string name="sources_management_already_exists">Esta fonte já foi adicionada</string>
     <string name="sources_management_invalid_url">URL de origem inválida. Verifique o endereço e tente novamente</string>
@@ -201,29 +200,42 @@ Para obteres os melhores resultados, este ficheiro recomenda a modificação de 
     <string name="patch_option_required_missing">%s: preencher todas as opções obrigatórias</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Criar ícone adaptável</string>
-    <string name="adaptive_icon_instructions">Escolhe uma imagem de fundo, seleciona uma cor de fundo e, de seguida, usa o controlo deslizante ou gestos em pinça para ajustar a pré-visualização</string>
-    <string name="adaptive_icon_preview">Pré-visualização do ícone adaptável</string>
-    <string name="adaptive_icon_preview_hint">Para obteres os melhores resultados, mantém o ícone dentro do círculo interno sólido</string>
     <string name="adaptive_icon_select_image">Selecionar imagem</string>
     <string name="adaptive_icon_change_image">Alterar imagem</string>
     <string name="adaptive_icon_background_color">Cor de fundo</string>
     <string name="adaptive_icon_reset_transform">Redefinir posição e escala</string>
     <string name="adaptive_icon_safe_zone_inner">Área segura (sempre visível)</string>
     <string name="adaptive_icon_safe_zone_outer">Área de máscara (poderá ser recortada)</string>
+    <string name="adaptive_icon_no_transparency_warning">A imagem não possui pixels transparentes. O resultado pode parecer incorreto</string>
     <string name="adaptive_icon_created_success">Ícone adaptável criado com sucesso</string>
     <string name="adaptive_icon_creation_failed">Erro ao criar ícone adaptável</string>
-    <string name="adaptive_icon_folder_explanation">Seleciona onde criar a pasta \'%1$s/%2$s\' com os ficheiros de ícone gerados</string>
-    <string name="notification_icon_preview">Pré-visualização do ícone das notificações</string>
-    <string name="notification_icon_preview_hint">Utiliza o controlo deslizante para redimensionar. Arrasta para reposicionar</string>
+    <string name="adaptive_icon_label">Adaptável</string>
+    <string name="adaptive_icon_monochrome_label">Monocromático</string>
+    <string name="adaptive_icon_guide">Guia de criação de ícones</string>
+    <string name="adaptive_icon_guide_png_title">Use um PNG com fundo transparente</string>
+    <string name="adaptive_icon_guide_png_body">O primeiro plano deve ser um arquivo PNG com um fundo transparente. Um fundo de cor sólida ficará incorreto - a cor do fundo deve vir do seletor de fundo abaixo.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Zonas de segurança</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Zona interna (sólida): o conteúdo é sempre totalmente visível em todas as formas de iniciador.
+Zona externa (tracejada): pode ser cortada pela máscara do iniciador - mantenha os detalhes importantes dentro da zona interna."</string>
+    <string name="adaptive_icon_guide_notification_title">Ícone de notificação</string>
+    <string name="adaptive_icon_guide_notification_body">Gerado automaticamente a partir da imagem do primeiro plano. Ajuste seu tamanho usando o controle deslizante de notificações. Todo o conteúdo visível aparece em branco na barra de status.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Ícone monocromático</string>
+    <string name="adaptive_icon_guide_monochrome_body">Gerado automaticamente a partir da imagem do primeiro plano usando as mesmas transformações de ícone adaptável. Ele aparece tons com a cor de destaque do papel de parede no Android 13 e versões mais recentes.</string>
+    <string name="notification_icon_preview">Notificação</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Criar cabeçalho personalizado</string>
-    <string name="header_creator_instructions">Escolhe imagens para os temas claro e escuro, depois ajusta com gestos de zoom com dois dedos</string>
     <string name="header_creator_light_theme">Cabeçalho do tema claro</string>
     <string name="header_creator_dark_theme">Cabeçalho do tema escuro</string>
     <string name="header_creator_no_image">Nenhuma imagem selecionada</string>
     <string name="header_creator_success">Cabeçalho criado com sucesso</string>
     <string name="header_creator_failed">Erro ao criar cabeçalho</string>
-    <string name="header_creator_folder_explanation">Seleciona onde criar a pasta \'%1$s/%2$s\' com os ficheiros de cabeçalho gerados</string>
+    <string name="header_creator_guide">Guia de criação de cabeçalho</string>
+    <string name="header_creator_guide_image_title">Requisitos de imagem</string>
+    <string name="header_creator_guide_image_body">Use qualquer arquivo de imagem (PNG ou JPEG). Para obter os melhores resultados, use uma imagem no formato largo com uma proporção de aproximadamente 2,7:1. Arquivos PNG com fundos transparentes se misturarão naturalmente com o tema do aplicativo.</string>
+    <string name="header_creator_guide_themes_title">Temas claro e escuro</string>
+    <string name="header_creator_guide_themes_body">A maioria dos aplicativos requer imagens separadas para os temas claro e escuro. Alguns aplicativos (como o YouTube Music) usam apenas o tema escuro, portanto, apenas essa seção é exibida.</string>
+    <string name="header_creator_guide_positioning_title">Posicionamento e dimensionamento</string>
+    <string name="header_creator_guide_positioning_body">Use gestos de pinça para ampliar e arrastar diretamente na visualização para posicionar e dimensionar sua imagem. Guias de ajuste aparecem quando a imagem está perto do centro. Você também pode usar o controle deslizante abaixo da visualização.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Tens a certeza de que queres desinstalar esta aplicação?</string>
     <string name="home_app_info_remove_app_warning">Isto irá eliminar permanentemente:</string>
@@ -238,10 +250,8 @@ Para obteres os melhores resultados, este ficheiro recomenda a modificação de 
     <string name="home_app_info_original_package_name">Nome do pacote original</string>
     <string name="home_app_info_applied_patches">Modificações aplicadas</string>
     <string name="home_app_info_patch_source_used">Fonte da modificação utilizada</string>
-    <string name="home_app_info_install_type">Tipo de instalação</string>
     <string name="home_app_info_install_type_custom_installer">Instalador personalizado</string>
     <string name="home_app_info_install_type_system_installer">Instalador do sistema</string>
-    <string name="home_app_info_patched_at">Modificado</string>
     <string name="home_app_info_patch_update_available">Atualização de modificação disponível</string>
     <string name="home_app_info_patch_update_available_description">Está disponível uma versão mais recente das modificações. Modifica a tua aplicação de novo para obteres as últimas melhorias e correções</string>
     <string name="home_app_info_app_deleted_warning">A aplicação foi desinstalada</string>
@@ -656,7 +666,7 @@ As dimensões das imagens devem ser as seguintes:
     <string name="settings_system_about">Acerca de</string>
     <string name="settings_system_share_website">Partilhar site</string>
     <string name="settings_system_share_website_description">Partilhar o site oficial do Morphe</string>
-    <string name="settings_system_manager_description">"Um projeto de código aberto para a modificação de aplicações Android populares, moderno e otimizado, impulsionado pelas opiniões e contribuições da comunidade"</string>
+    <string name="settings_system_manager_description">Um projeto de código aberto para a modificação de aplicações Android populares, moderno e otimizado, impulsionado pelas opiniões e contribuições da comunidade</string>
     <string name="credits">Créditos</string>
     <string name="credits_current_development">Desenvolvimento atual</string>
     <string name="credits_prior_development">Desenvolvimento anterior</string>
@@ -757,9 +767,4 @@ As dimensões das imagens devem ser as seguintes:
 
 Queres continuar na mesma?"</string>
     <string name="download_update_confirmation">Descarregar atualização?</string>
-    <string name="just_now">Agora mesmo</string>
-    <string name="minutes_ago">Há %s min</string>
-    <string name="hours_ago">Há %s h</string>
-    <string name="days_ago">Há %sd</string>
-    <string name="invalid_date">Data inválida</string>
 </resources>

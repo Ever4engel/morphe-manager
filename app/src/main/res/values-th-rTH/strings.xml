@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">ซ่อนแอปหรือไม่</string>
     <string name="home_app_hide_message">แอปนี้จะถูกซ่อนจากหน้าจอหลัก คุณสามารถกู้คืนได้ภายหลังโดยใช้ปุ่ม \'\' ที่ด้านล่างของรายการ</string>
     <string name="home_app_will_be_hidden">แอปนี้จะถูกซ่อน</string>
-    <string name="home_app_show_hidden">แสดงแอปที่ซ่อนอยู่</string>
     <string name="home_app_no_hidden">ไม่มีแอปที่ซ่อนอยู่</string>
     <string name="home_app_hidden_apps_title">แอปที่ซ่อนอยู่</string>
     <string name="home_app_hidden_apps_hint">แตะเพื่อแสดง</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">มาปรับตัวแอปของคุณให้มีพฤติกรรมดีขึ้นเถอะ</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">พยากรณ์วันนี้: การแพตซ์แอปพลิเคชันสำเร็จ 100%</string>
+    <string name="home_greeting_7" formatted="false">พยากรณ์วันนี้: การแพตซ์แอปพลิเคชันสำเร็จ 100%</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">พร้อมไหมที่จะเปลี่ยนแอปพลิเคชันดังเดิมที่แสนน่าเบื่อให้สุดยอดมากขึ้น</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@
     <string name="patch_option_required_missing">%s: กรอกตัวเลือกที่จำเป็นทั้งหมด</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">สร้างไอคอนปรับแต่ง</string>
-    <string name="adaptive_icon_instructions">เลือกภาพพื้นหน้า, เลือกสีพื้นหลัง จากนั้นใช้แถบเลื่อนหรือท่าทางกริชชะเพื่อปรับตัวอย่าง</string>
-    <string name="adaptive_icon_preview">ตัวอย่างไอคอนแบบปรับเปลี่ยน</string>
-    <string name="adaptive_icon_preview_hint">เพื่อให้ได้ผลลัพธ์ที่ดีที่สุด ให้เก็บไอคอนของคุณไว้ในวงกลมชั้นในที่เป็นสีทึบ</string>
     <string name="adaptive_icon_select_image">เลือกภาพ</string>
     <string name="adaptive_icon_change_image">เปลี่ยนภาพ</string>
     <string name="adaptive_icon_background_color">สีพื้นหลัง</string>
     <string name="adaptive_icon_reset_transform">รีเซ็ตตำแหน่งและขนาด</string>
     <string name="adaptive_icon_safe_zone_inner">เขตปลอดภัย (ปรากฏเสมอ)</string>
     <string name="adaptive_icon_safe_zone_outer">เขตมาสก์ (อาจถูกตัด)</string>
+    <string name="adaptive_icon_no_transparency_warning">รูปภาพไม่มีพิกเซลโปร่งใส ผลลัพธ์ที่ได้อาจไม่ถูกต้อง</string>
     <string name="adaptive_icon_created_success">สร้างภาพประจำกิจการสำเร็จ</string>
     <string name="adaptive_icon_creation_failed">ล้มเหลวในการสร้างภาพประจำกิจการ</string>
-    <string name="adaptive_icon_folder_explanation">เลือกที่จะสร้างโฟลเดอร์ \'%1$s/%2$s\' ที่มีไฟล์ไอคอนที่สร้างขึ้น</string>
-    <string name="notification_icon_preview">ตัวอย่างไอคอนการแจ้งเตือน</string>
-    <string name="notification_icon_preview_hint">ใช้แถบเลื่อนเพื่อปรับขนาด ลากเพื่อจัดตำแหน่ง</string>
+    <string name="adaptive_icon_label">ปรับเปลี่ยนได้</string>
+    <string name="adaptive_icon_monochrome_label">ขาวดำ</string>
+    <string name="adaptive_icon_guide">คำแนะนำในการสร้างไอคอน</string>
+    <string name="adaptive_icon_guide_png_title">ใช้ PNG ที่มีพื้นหลังโปร่งใส</string>
+    <string name="adaptive_icon_guide_png_body">ส่วนหน้าต้องเป็นไฟล์ PNG ที่มีพื้นหลังโปร่งใส พื้นหลังสีทึบจะดูไม่ถูกต้อง - สีพื้นหลังควรมาจากตัวเลือกสีพื้นหลังด้านล่าง</string>
+    <string name="adaptive_icon_guide_safe_zones_title">พื้นที่ปลอดภัย</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"โซนด้านใน (สีทึบ): เนื้อหาจะแสดงผลอย่างสมบูรณ์เสมอในทุกรูปร่างของตัวเปิด
+โซนด้านนอก (เส้นประ): อาจถูกครอบตัดโดยมาสก์ของตัวเปิด - เก็บรายละเอียดสำคัญไว้ในโซนด้านใน"</string>
+    <string name="adaptive_icon_guide_notification_title">ไอคอนการแจ้งเตือน</string>
+    <string name="adaptive_icon_guide_notification_body">สร้างขึ้นโดยอัตโนมัติจากรูปภาพส่วนหน้า ปรับขนาดโดยใช้แถบเลื่อนการแจ้งเตือน เนื้อหาที่มองเห็นทั้งหมดจะปรากฏเป็นสีขาวในแถบสถานะ</string>
+    <string name="adaptive_icon_guide_monochrome_title">ไอคอนขาวดำ</string>
+    <string name="adaptive_icon_guide_monochrome_body">สร้างขึ้นโดยอัตโนมัติจากรูปภาพส่วนหน้าโดยใช้การแปลงไอคอนปรับเปลี่ยนแบบเดียวกัน จะปรากฏสีเดียวกับสีเน้นของวอลเปเปอร์บน Android 13 ขึ้นไป</string>
+    <string name="notification_icon_preview">การแจ้งเตือน</string>
     <!-- Header Creator -->
     <string name="header_creator_create">สร้างเฮดเดอร์กำหนดเอง</string>
-    <string name="header_creator_instructions">เลือกภาพสำหรับธีมสว่างกับมืด แล้วปรับลดขยายภาพด้วยการซูมภาพเข้าออกแบบถ่างนิ้ว</string>
     <string name="header_creator_light_theme">เฮดเดอร์ธีมมืด</string>
     <string name="header_creator_dark_theme">เลือกภาพธีมแสงสว่าง</string>
     <string name="header_creator_no_image">ส่งคำขอของคุณสำเร็จ</string>
     <string name="header_creator_success">ล้มเหลวในการสร้างหัวข้อ</string>
     <string name="header_creator_failed">เลือกที่จะสร้างโฟลเดอร์ \'morphe_branding/morphe_header\' ที่มีไฟล์หัวข้อ</string>
-    <string name="header_creator_folder_explanation">เลือกที่จะสร้างโฟลเดอร์ \'%1$s/%2$s\' ที่มีไฟล์หัวข้อที่สร้างขึ้น</string>
+    <string name="header_creator_guide">คำแนะนำในการสร้างส่วนหัว</string>
+    <string name="header_creator_guide_image_title">ข้อกำหนดของรูปภาพ</string>
+    <string name="header_creator_guide_image_body">ใช้ไฟล์รูปภาพใดก็ได้ (PNG หรือ JPEG) เพื่อให้ได้ผลลัพธ์ที่ดีที่สุด ให้ใช้รูปภาพรูปแบบกว้างที่มีอัตราส่วนภาพประมาณ 2.7:1 ไฟล์ PNG ที่มีพื้นหลังโปร่งใสจะผสมผสานกับธีมของแอปได้อย่างเป็นธรรมชาติ</string>
+    <string name="header_creator_guide_themes_title">ธีมสว่างและธีมมืด</string>
+    <string name="header_creator_guide_themes_body">แอปส่วนใหญ่ต้องการรูปภาพที่แยกกันสำหรับธีมสว่างและธีมมืด บางแอป (เช่น YouTube Music) ใช้เฉพาะธีมมืดเท่านั้น ดังนั้นจึงแสดงเฉพาะส่วนนั้นเท่านั้น</string>
+    <string name="header_creator_guide_positioning_title">ตำแหน่งและการปรับขนาด</string>
+    <string name="header_creator_guide_positioning_body">ใช้ท่าทางหนีบเพื่อซูมและลากโดยตรงในการแสดงตัวอย่างเพื่อวางตำแหน่งและปรับขนาดรูปภาพของคุณ แนวไกด์จะปรากฏขึ้นเมื่อรูปภาพอยู่ใกล้ศูนย์ คุณยังสามารถใช้แถบเลื่อนด้านล่างการแสดงตัวอย่างได้</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">คุณแน่ใจหรือไม่ว่าต้องการลบแอปนี้?</string>
     <string name="home_app_info_remove_app_warning">นี่จะลบถาวร:</string>
@@ -238,10 +250,8 @@
     <string name="home_app_info_original_package_name">ชื่อแพ็กเกจดังเดิม</string>
     <string name="home_app_info_applied_patches">แพตช์ที่ถูกนำพัท์</string>
     <string name="home_app_info_patch_source_used">ใช้ซอร์สปัทช์</string>
-    <string name="home_app_info_install_type">ชนิดตั้งการติดตั้ง</string>
     <string name="home_app_info_install_type_custom_installer">ตัวกรองติดตั้งเอง</string>
     <string name="home_app_info_install_type_system_installer">ตัวกรองติดตั้งระบบ</string>
-    <string name="home_app_info_patched_at">อัปเด็ดท์แล้ว</string>
     <string name="home_app_info_patch_update_available">มีอัพเดทแพตซ์ใหม่ให้ใช้งานแล้ว</string>
     <string name="home_app_info_patch_update_available_description">มีแพตซ์เวอร์ชันใหม่พร้อมใช้งานแล้ว ให้แพตซ์อีกครั้งเพื่อรับการปรับปรุงและการแก้ไขสำหรับเวอร์ชันล่าสุด</string>
     <string name="home_app_info_app_deleted_warning">แอปถูกลบออก</string>
@@ -656,7 +666,7 @@ morphe_header_custom_dark.png
     <string name="settings_system_about">เกี่ยวกับ</string>
     <string name="settings_system_share_website">ไม่พบผลลัพธ์สำหรับ</string>
     <string name="settings_system_share_website_description">แบ่งปันเว็บไซต์อย่างเป็นทางการของ Morphe</string>
-    <string name="settings_system_manager_description">"โครงการโอเพนซอร์สสำหรับการแพตช์แอป Android ยอดนิยมที่ทันสมัยและราบรื่น ซึ่งขับเคลื่อนด้วยข้อเสนอแนะและการมีส่วนร่วมจากชุมชน"</string>
+    <string name="settings_system_manager_description">โครงการโอเพนซอร์สสำหรับการแพตช์แอป Android ยอดนิยมที่ทันสมัยและราบรื่น ซึ่งขับเคลื่อนด้วยข้อเสนอแนะและการมีส่วนร่วมจากชุมชน</string>
     <string name="credits">เครดิต</string>
     <string name="credits_current_development">การพัฒนาปัจจุบัน</string>
     <string name="credits_prior_development">การพัฒนาที่ผ่านมา</string>
@@ -757,9 +767,4 @@ morphe_header_custom_dark.png
 
 คุณยังต้องการดำเนินการต่อหรือไม่?"</string>
     <string name="download_update_confirmation">ดาวน์โหลดอัปเดตหรือไม่?</string>
-    <string name="just_now">เมื่อสักครู่</string>
-    <string name="minutes_ago">เมื่อ %s นาทีที่แล้ว</string>
-    <string name="hours_ago">เมื่อ %s ชั่วโมงที่แล้ว</string>
-    <string name="days_ago">เมื่อ %s วันที่แล้ว</string>
-    <string name="invalid_date">วันที่ไม่ถูกต้อง</string>
 </resources>

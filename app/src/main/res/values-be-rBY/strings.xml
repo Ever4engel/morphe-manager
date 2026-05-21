@@ -16,7 +16,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Давайце зробім так, каб вашы праграмы паводзілі сябе добра</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Прагноз на сёння: 100% верагоднасць выпраўлення</string>
+    <string name="home_greeting_7" formatted="false">Прагноз на сёння: 100% верагоднасць выпраўлення</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Гатовыя змяніць непрыемнае на цудоўнае?</string>
     <!-- Playful exaggeration, making patching feel heroic -->

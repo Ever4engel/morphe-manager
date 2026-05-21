@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">An bhfuil tú ag iarraidh an aip seo a cheilt?</string>
     <string name="home_app_hide_message">Beidh an aip seo i bhfolach ón scáileán baile. Is féidir leat é a chur ar ais níos déanaí ó na apps i bhfolach ag baint úsáide as an gcnaipe ag bun an liosta</string>
     <string name="home_app_will_be_hidden">Beidh an aip seo i bhfolach</string>
-    <string name="home_app_show_hidden">Taispeáin aipeanna i bhfolach</string>
     <string name="home_app_no_hidden">Gan aon aipeanna i bhfolach</string>
     <string name="home_app_hidden_apps_title">Aipeanna i bhfolach</string>
     <string name="home_app_hidden_apps_hint">Tapáil chun é a nochtadh</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Déanaimis do aipeanna iompar</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Réamhaisnéis an lae inniu: seans 100% go ndéanfar paisteáil</string>
+    <string name="home_greeting_7" formatted="false">Réamhaisnéis an lae inniu: seans 100% go ndéanfar paisteáil</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Réidh le hathrú neamhshuimiúil go hiontach?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@ Chun na torthaí is fearr a fháil, molann an aip seo paiste a chur ar &lt;b&gt;
     <string name="patch_option_required_missing">%s: líon isteach na roghanna riachtanacha go léir</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Cruthaigh deilbhín oiriúnaitheach</string>
-    <string name="adaptive_icon_instructions">Roghnaigh íomhá sa tulra, roghnaigh dath cúlra, ansin bain úsáid as an sleamhnán nó as gothaí pinch chun an réamhamharc a choigeartú</string>
-    <string name="adaptive_icon_preview">Réamhamharc deilbhín oiriúnaitheach</string>
-    <string name="adaptive_icon_preview_hint">Chun an toradh is fearr a fháil, coinnigh do dheilbhín laistigh den chiorcal istigh soladach</string>
     <string name="adaptive_icon_select_image">Roghnaigh íomhá</string>
     <string name="adaptive_icon_change_image">Athraigh íomhá</string>
     <string name="adaptive_icon_background_color">Dath an chúlra</string>
     <string name="adaptive_icon_reset_transform">Athshocraigh suíomh agus scála</string>
     <string name="adaptive_icon_safe_zone_inner">Crios sábháilte (le feiceáil i gcónaí)</string>
     <string name="adaptive_icon_safe_zone_outer">Crios maisc (féadfar é a bhearradh)</string>
+    <string name="adaptive_icon_no_transparency_warning">Níl pixels trédhearcacha sa bhreacán. D’fhéadfadh go mbeidh an toradh mícheart</string>
     <string name="adaptive_icon_created_success">Cruthaíodh deilbhín oiriúnaitheach go rathúil</string>
     <string name="adaptive_icon_creation_failed">Theip ar dheilbhín oiriúnaitheach a chruthú</string>
-    <string name="adaptive_icon_folder_explanation">Roghnaigh cá háit le fillteán \'%1$s/%2$s\' a chruthú leis na comhaid deilbhín a ghintear</string>
-    <string name="notification_icon_preview">Réamhamharc ar dheilbhín fógra</string>
-    <string name="notification_icon_preview_hint">Úsáid an sleamhnán chun an méid a athrú. Tarraing chun athshuíomh.</string>
+    <string name="adaptive_icon_label">Adaptach</string>
+    <string name="adaptive_icon_monochrome_label">Monacrómach</string>
+    <string name="adaptive_icon_guide">Treoir cruthaithe icon</string>
+    <string name="adaptive_icon_guide_png_title">Úsáid PNG le cúlra trédhearcach</string>
+    <string name="adaptive_icon_guide_png_body">Caithfidh an réamhfógra a bheith comhad PNG le cúlra trédhearcach. Beidh dath soladach cúlra mícheart - tiocfaidh dath an cúlra ón roghadóir cúlra thíos.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Criosanna sábháilte</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Crios istigh (soladach): tá an t-ábhar ar fáil i gcónaí go hiomlán ar fhoirm gach launcher.
+Crios amuigh (briste): is féidir a ghearradh ag masc an launcher - coinnigh sonraí tábhachtacha laistigh den chrios istigh."</string>
+    <string name="adaptive_icon_guide_notification_title">Deilbhín fógra</string>
+    <string name="adaptive_icon_guide_notification_body">Ginte go huaimh ón íomhá réamhfógra. Coinnigh a mhéid áirithint ag an sleáiteoir Comhfhreagracht. Feictear gach t-ábhar ar fáil i bhfíor-bhán ar barra an stáit.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Íocón aonchromach</string>
+    <string name="adaptive_icon_guide_monochrome_body">Ginte go huaimh ón íomhá réamhfógra ag úsáid na athrúcháin íocóin oiriúnaitheacha céanna. Feictear é tinted leis an ndath béige ballaireachta ar Android 13 agus níos déanaí.</string>
+    <string name="notification_icon_preview">Fógra</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Cruthaigh ceanntásc saincheaptha</string>
-    <string name="header_creator_instructions">Roghnaigh íomhánna le haghaidh téamaí geala agus dorcha, agus ansin coigeartaigh iad le gothaí pinch-to-súmáil</string>
     <string name="header_creator_light_theme">Ceanntásc téama éadrom</string>
     <string name="header_creator_dark_theme">Ceanntásc téama dorcha</string>
     <string name="header_creator_no_image">Níl aon íomhá roghnaithe</string>
     <string name="header_creator_success">Cruthaíodh ceanntásc go rathúil</string>
     <string name="header_creator_failed">Theip ar cheanntásc a chruthú</string>
-    <string name="header_creator_folder_explanation">Roghnaigh cá háit le fillteán \'%1$s/%2$s\' a chruthú leis na comhaid ceanntásca a ghintear</string>
+    <string name="header_creator_guide">Treoir cruthaithe ceanntar</string>
+    <string name="header_creator_guide_image_title">Ceanglais íomhá</string>
+    <string name="header_creator_guide_image_body">Úsáid comhad íomhá ar bith (PNG nó JPEG). Fá na torthaí is fearr, úsáid íomhá fadtomhais le cóimheas aice 2.7:1. Beidh comhaid PNG le cúlraí trédhearcacha ag comhtháthú go nádúrtha le téama an aip.</string>
+    <string name="header_creator_guide_themes_title">Téamaí solas agus dorcha</string>
+    <string name="header_creator_guide_themes_body">Teastaíonn íomhánna ar leith do na téamaí solas agus dorcha ó na fo-bhonn d’fheidhmchláir. Tá fad mór á ndéanamh ag fo-bhonn d’fheidhmchláir (mar YouTube Music) fós a úsáid tearma dorcha amháin, mar sin ní fheictear ach an t-eisimre seo.</string>
+    <string name="header_creator_guide_positioning_title">Suíomh agus meisciú</string>
+    <string name="header_creator_guide_positioning_body">Úsáid giotaí meisciú agus tarraingt go díreach sa rochtain chun suíomh agus meascadh d’íomhá. Tagann treoirlínte snap chun feidhme nuair a bhíonn an íomhá in aice an lár. Is féidir freisin úsáid a bhaint as an sleáiteoir faoin rochtain.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">An bhfuil tú cinnte gur mian leat an aip seo a dhíshuiteáil?</string>
     <string name="home_app_info_remove_app_warning">Scriosfaidh sé seo go buan:</string>
@@ -238,10 +250,8 @@ Chun na torthaí is fearr a fháil, molann an aip seo paiste a chur ar &lt;b&gt;
     <string name="home_app_info_original_package_name">Ainm an phacáiste bhunaidh</string>
     <string name="home_app_info_applied_patches">Paistí curtha i bhfeidhm</string>
     <string name="home_app_info_patch_source_used">Foinse paiste a úsáideadh</string>
-    <string name="home_app_info_install_type">Cineál suiteála</string>
     <string name="home_app_info_install_type_custom_installer">Suiteálaí saincheaptha</string>
     <string name="home_app_info_install_type_system_installer">Suiteálaí córais</string>
-    <string name="home_app_info_patched_at">Paisteáilte</string>
     <string name="home_app_info_patch_update_available">Nuashonrú paiste ar fáil</string>
     <string name="home_app_info_patch_update_available_description">Tá leagan níos nuaí de na paistí ar fáil. Déan paiste nua ar d\'aip chun na feabhsuithe agus na socruithe is déanaí a fháil.</string>
     <string name="home_app_info_app_deleted_warning">Díshuiteáladh an aip</string>
@@ -654,7 +664,7 @@ Ní mór toisí na híomhá a bheith mar seo a leanas:
     <string name="settings_system_about">Maidir</string>
     <string name="settings_system_share_website">Comhroinn suíomh Gréasáin</string>
     <string name="settings_system_share_website_description">Comhroinn suíomh Gréasáin oifigiúil Morphe</string>
-    <string name="settings_system_manager_description">"Tionscadal foinse oscailte le haghaidh paisteáil nua-aimseartha, sruthlínithe ar aipeanna coitianta Android, á thiomáint ag aiseolas agus ranníocaíochtaí ón bpobal."</string>
+    <string name="settings_system_manager_description">Tionscadal foinse oscailte le haghaidh paisteáil nua-aimseartha, sruthlínithe ar aipeanna coitianta Android, á thiomáint ag aiseolas agus ranníocaíochtaí ón bpobal.</string>
     <string name="credits">Creidmheasanna</string>
     <string name="credits_current_development">Forbairt reatha</string>
     <string name="credits_prior_development">Forbairt roimhe seo</string>
@@ -755,9 +765,4 @@ Ní mór toisí na híomhá a bheith mar seo a leanas:
 
 Ar mhaith leat leanúint ar aghaidh fós?"</string>
     <string name="download_update_confirmation">Íoslódáil an nuashonrú?</string>
-    <string name="just_now">Díreach anois</string>
-    <string name="minutes_ago">%sm ó shin</string>
-    <string name="hours_ago">%su ó shin</string>
-    <string name="days_ago">%slá ó shin</string>
-    <string name="invalid_date">Dáta neamhbhailí</string>
 </resources>

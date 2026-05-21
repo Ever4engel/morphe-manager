@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Skrýt tuto aplikaci?</string>
     <string name="home_app_hide_message">Tato aplikace bude skryta z domovské obrazovky. Můžete ji později obnovit pomocí tlačítka \"\" na konci seznamu</string>
     <string name="home_app_will_be_hidden">Tato aplikace bude skryta</string>
-    <string name="home_app_show_hidden">Zobrazit skryté aplikace</string>
     <string name="home_app_no_hidden">Žádné skryté aplikace</string>
     <string name="home_app_hidden_apps_title">Skryté aplikace</string>
     <string name="home_app_hidden_apps_hint">Klepněte pro zobrazení</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Pojďme zkrotit vaše aplikace</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Dnešní předpověď: 100% šance na záplatování</string>
+    <string name="home_greeting_7" formatted="false">Dnešní předpověď: 100% šance na záplatování</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Připraveni změnit nudu v pecku?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@ Pro nejlepší výsledky doporučujeme záplatovat &lt;b&gt;úplný APK&lt;/b&gt
     <string name="patch_option_required_missing">%s: vyplňte všechna povinná pole</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Vytvořit adaptivní ikonu</string>
-    <string name="adaptive_icon_instructions">Vyberte obrázek popředí, vyberte barvu pozadí, poté použijte posuvník nebo gesta přiblížení a oddálení pro úpravu náhledu</string>
-    <string name="adaptive_icon_preview">Náhled adaptivní ikony</string>
-    <string name="adaptive_icon_preview_hint">Pro nejlepší výsledek nechte ikonu uvnitř vnitřního kruhu</string>
     <string name="adaptive_icon_select_image">Vybrat obrázek</string>
     <string name="adaptive_icon_change_image">Změnit obrázek</string>
     <string name="adaptive_icon_background_color">Barva pozadí</string>
     <string name="adaptive_icon_reset_transform">Resetovat pozici a měřítko</string>
     <string name="adaptive_icon_safe_zone_inner">Bezpečná zóna (vždy viditelná)</string>
     <string name="adaptive_icon_safe_zone_outer">Maskovací zóna (může být skryta)</string>
+    <string name="adaptive_icon_no_transparency_warning">Obrázek neobsahuje průhledné pixely. Výsledek se může zobrazit nesprávně</string>
     <string name="adaptive_icon_created_success">Adaptivní ikona byla úspěšně vytvořena</string>
     <string name="adaptive_icon_creation_failed">Adaptivní ikona se nepodařila vytvořit</string>
-    <string name="adaptive_icon_folder_explanation">Vyberte, kde vytvořit složku \'%1$s/%2$s\' s generovanými ikonami</string>
-    <string name="notification_icon_preview">Tlačítko oznámení je skryté</string>
-    <string name="notification_icon_preview_hint">Použijte posuvník pro změnu velikosti. Táhněte pro přesunutí</string>
+    <string name="adaptive_icon_label">Adaptivní</string>
+    <string name="adaptive_icon_monochrome_label">Monochromá</string>
+    <string name="adaptive_icon_guide">Návod k vytvoření ikon</string>
+    <string name="adaptive_icon_guide_png_title">Použijte PNG s prühzím pozadím</string>
+    <string name="adaptive_icon_guide_png_body">Popřední pozadí musí být PNG soubor s prühzím pozadím. Jednobarevné pozadí bude vypadat nesprávně - barva pozadí by měla pocházet z názorníku pozadí uvedeného níže.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Bezpečné zóny</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Vnitřní zóna (plná): obsah je vždy plně viditelný ve všech tvarech spouštěč
+Vnějní zóna (přerušovaná): může být ořezaná maskou spouštěčé - udržujte důležité detaily uvnitř vnitřní zóny."</string>
+    <string name="adaptive_icon_guide_notification_title">Ikona oznámení</string>
+    <string name="adaptive_icon_guide_notification_body">Automaticky generováno z popředního obrazu. Upravte jeí velikost pomocí přesuvníku Oznámení. Veškerý viditelný obsah se v horním panelu zobrazuje bíle.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Monochromá ikona</string>
+    <string name="adaptive_icon_guide_monochrome_body">Automaticky generováno z popředního obrazu pomocí stejných transformací adaptivních ikon. Zobrazuje se s odstínem barvy tapety v Androidu 13 a nověším.</string>
+    <string name="notification_icon_preview">Oznámení</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Vytvořit vlastní záhlaví</string>
-    <string name="header_creator_instructions">Vyberte obrázky pro světlé a tmavé téma, potom přizpůsobte gesty pinch-to-zoom</string>
     <string name="header_creator_light_theme">Záhlaví pro světlé téma</string>
     <string name="header_creator_dark_theme">Záhlaví pro tmavé téma</string>
     <string name="header_creator_no_image">Není vybrán žádný obrázek</string>
     <string name="header_creator_success">Záhlaví vytvořeno úspěšně</string>
     <string name="header_creator_failed">Nepodařilo se vytvořit záhlaví</string>
-    <string name="header_creator_folder_explanation">Vyberte, kde vytvořit složku \'%1$s/%2$s\' s generovanými hlavičkovými soubory</string>
+    <string name="header_creator_guide">Návod k vytvoření hlavičky</string>
+    <string name="header_creator_guide_image_title">Požadavky k obrazu</string>
+    <string name="header_creator_guide_image_body">Použijte jakýkoli obrazový soubor (PNG nebo JPEG). Pro dosažení nejlepších výsledků použijte obraz sširokého formátu s poměrem stran přibližně 2,7:1. PNG soubory s prühzím pozadím se budé přirozeně míchat s motivem aplikace.</string>
+    <string name="header_creator_guide_themes_title">Světlý a tmavý motivy</string>
+    <string name="header_creator_guide_themes_body">Většina aplikací vyžaduje samostatný obraz pro světlý a tmavý motiv. Nětkterý aplikace (například YouTube Music) používají pouze tmavý motiv, proto je zobrazena pouze tato sekce.</string>
+    <string name="header_creator_guide_positioning_title">Pozicování a měřítko</string>
+    <string name="header_creator_guide_positioning_body">Pomocí gest klepnutím a roztáhnutím přímo v náhledu k pozicování a změnné velikosti obrazu. Vodící linky se zobrazí, když se obraz nachází blízko středu. Můžšte použít i posuvník pod náhledem.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Opravdu chcete odinstalovat tuto aplikaci?</string>
     <string name="home_app_info_remove_app_warning">Tím trvale smažete:</string>
@@ -238,10 +250,8 @@ Pro nejlepší výsledky doporučujeme záplatovat &lt;b&gt;úplný APK&lt;/b&gt
     <string name="home_app_info_original_package_name">Původní název balíčku</string>
     <string name="home_app_info_applied_patches">Použité balíčky záplat</string>
     <string name="home_app_info_patch_source_used">Zdroje záplat</string>
-    <string name="home_app_info_install_type">Zaplatěno</string>
     <string name="home_app_info_install_type_custom_installer">Vlastní instalátor</string>
     <string name="home_app_info_install_type_system_installer">Systémový instalátor</string>
-    <string name="home_app_info_patched_at">Zaplatěno</string>
     <string name="home_app_info_patch_update_available">Je k dispozici novější verze záplat.</string>
     <string name="home_app_info_patch_update_available_description">Je k dispozici novější verze záplaty. Repatchujte svou aplikaci, abyste získali nejnovější vylepšení a opravy.</string>
     <string name="home_app_info_app_deleted_warning">Aplikace byla odinstalována</string>
@@ -656,7 +666,7 @@ Rozměry obrázků musí být následující:
     <string name="settings_system_about">O aplikaci</string>
     <string name="settings_system_share_website">Sdílet webovou stránku</string>
     <string name="settings_system_share_website_description">Sdílí oficiální webové stránky aplikace Morphe</string>
-    <string name="settings_system_manager_description">"Projekt s otevřeným zdrojovým kódem pro moderní, optimalizované opravy populárních Android aplikací, řízený zpětnou vazbou a příspěvky komunity"</string>
+    <string name="settings_system_manager_description">Projekt s otevřeným zdrojovým kódem pro moderní, optimalizované opravy populárních Android aplikací, řízený zpětnou vazbou a příspěvky komunity</string>
     <string name="credits">Kredity</string>
     <string name="credits_current_development">Současný vývoj</string>
     <string name="credits_prior_development">Předchozí vývoj</string>
@@ -757,9 +767,4 @@ Rozměry obrázků musí být následující:
 
 Chcete přesto pokračovat?"</string>
     <string name="download_update_confirmation">Stáhnout aktualizaci?</string>
-    <string name="just_now">Právě teď</string>
-    <string name="minutes_ago">před %s</string>
-    <string name="hours_ago">před %sh</string>
-    <string name="days_ago">před %sd</string>
-    <string name="invalid_date">Neplatné datum</string>
 </resources>

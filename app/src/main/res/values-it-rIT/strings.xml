@@ -7,7 +7,6 @@
     <string name="home_app_hide_title">Nascondere questa app?</string>
     <string name="home_app_hide_message">Questa app sarà nascosta dalla schermata principale. Potrai ripristinarla in seguito dalle app nascoste utilizzando il pulsante in fondo alla lista.</string>
     <string name="home_app_will_be_hidden">Questa app verrà nascosta</string>
-    <string name="home_app_show_hidden">Mostra le app nascoste</string>
     <string name="home_app_no_hidden">Nessuna app nascosta</string>
     <string name="home_app_hidden_apps_title">App nascoste</string>
     <string name="home_app_hidden_apps_hint">Tocca per mostrare</string>
@@ -47,7 +46,7 @@
     <!-- Friendly, slightly mischievous joke about controlling app behavior -->
     <string name="home_greeting_6">Facciamo comportare le tue app come vuoi tu</string>
     <!-- Whimsical forecast-style joke, not meant literally -->
-    <string name="home_greeting_7">Previsioni per oggi: probabilità di patch del 100%</string>
+    <string name="home_greeting_7" formatted="false">Previsioni per oggi: probabilità di patch del 100%</string>
     <!-- From mediocrity to amazing -->
     <string name="home_greeting_8">Pronti a trasformare il deludente in eccezionale?</string>
     <!-- Playful exaggeration, making patching feel heroic -->
@@ -201,29 +200,42 @@ Per ottenere i risultati migliori, questa app raccomanda di applicare una patch 
     <string name="patch_option_required_missing">%s: compilare tutte le opzioni richieste</string>
     <!-- Adaptive Icon Creator -->
     <string name="adaptive_icon_create">Crea icona adattiva</string>
-    <string name="adaptive_icon_instructions">Scegli un\'immagine in primo piano, seleziona il colore dello sfondo, quindi usa il cursore o i gesti di pizzico per regolare l\'anteprima</string>
-    <string name="adaptive_icon_preview">Anteprima dell\'icona adattiva</string>
-    <string name="adaptive_icon_preview_hint">Per ottenere il miglior risultato, mantieni la tua icona all\'interno del cerchio interno pieno</string>
     <string name="adaptive_icon_select_image">Seleziona immagine</string>
     <string name="adaptive_icon_change_image">Cambia immagine</string>
     <string name="adaptive_icon_background_color">Colore dello sfondo</string>
     <string name="adaptive_icon_reset_transform">Reimposta posizione e scala</string>
     <string name="adaptive_icon_safe_zone_inner">Zona sicura (sempre visibile)</string>
     <string name="adaptive_icon_safe_zone_outer">Zona di maschera (potrebbe venire tagliata)</string>
+    <string name="adaptive_icon_no_transparency_warning">L\'immagine non ha pixel trasparenti. Il risultato potrebbe non essere corretto</string>
     <string name="adaptive_icon_created_success">Icona adattiva creata con successo</string>
     <string name="adaptive_icon_creation_failed">Impossibile creare l\'icona adattiva</string>
-    <string name="adaptive_icon_folder_explanation">Seleziona dove creare la cartella \'%1$s/%2$s\' con i file dell\'icona generati</string>
-    <string name="notification_icon_preview">Anteprima dell\'icona di notifica</string>
-    <string name="notification_icon_preview_hint">Usa il cursore per ridimensionare. Trascina per riposizionare</string>
+    <string name="adaptive_icon_label">Adattivo</string>
+    <string name="adaptive_icon_monochrome_label">Monocromatico</string>
+    <string name="adaptive_icon_guide">Guida alla creazione delle icone</string>
+    <string name="adaptive_icon_guide_png_title">Utilizza un PNG con sfondo trasparente</string>
+    <string name="adaptive_icon_guide_png_body">Il primo piano deve essere un file PNG con uno sfondo trasparente. Uno sfondo a tinta unita apparirà errato: il colore di sfondo deve essere scelto dal selettore di sfondo sottostante.</string>
+    <string name="adaptive_icon_guide_safe_zones_title">Zone di sicurezza</string>
+    <string name="adaptive_icon_guide_safe_zones_body">"Zona interna (solida): il contenuto è sempre completamente visibile su tutte le forme di avvio.
+Zona esterna (tratteggiata): potrebbe essere ritagliata dalla maschera di avvio: mantieni i dettagli importanti all'interno della zona interna."</string>
+    <string name="adaptive_icon_guide_notification_title">Icona di notifica</string>
+    <string name="adaptive_icon_guide_notification_body">Generato automaticamente dall\'immagine di primo piano. Regola le dimensioni utilizzando il cursore delle notifiche. Tutto il contenuto visibile appare in bianco nella barra di stato.</string>
+    <string name="adaptive_icon_guide_monochrome_title">Icona monocromatica</string>
+    <string name="adaptive_icon_guide_monochrome_body">Generata automaticamente dall\'immagine di primo piano utilizzando le stesse trasformazioni dell\'icona adattiva. Appare sfumata con il colore di accento della carta da parati su Android 13 e versioni successive.</string>
+    <string name="notification_icon_preview">Notifiche</string>
     <!-- Header Creator -->
     <string name="header_creator_create">Crea intestazione personalizzata</string>
-    <string name="header_creator_instructions">Scegli le immagini per i temi chiaro e scuro, quindi regola con gesti di pinch-to-zoom</string>
     <string name="header_creator_light_theme">Intestazione con tema chiaro</string>
     <string name="header_creator_dark_theme">Intestazione con tema scuro</string>
     <string name="header_creator_no_image">Nessuna immagine selezionata</string>
     <string name="header_creator_success">Intestazione creata con successo</string>
     <string name="header_creator_failed">Impossibile creare l\'intestazione</string>
-    <string name="header_creator_folder_explanation">Seleziona dove creare la cartella \'%1$s/%2$s\' con i file dell\'intestazione generati</string>
+    <string name="header_creator_guide">Guida alla creazione dell\'intestazione</string>
+    <string name="header_creator_guide_image_title">Requisiti dell\'immagine</string>
+    <string name="header_creator_guide_image_body">Utilizza qualsiasi file immagine (PNG o JPEG). Per risultati ottimali, utilizza un\'immagine in formato panoramico con un rapporto di aspetto di circa 2,7:1. I file PNG con sfondi trasparenti si integreranno naturalmente con il tema dell\'app.</string>
+    <string name="header_creator_guide_themes_title">Temi chiaro e scuro</string>
+    <string name="header_creator_guide_themes_body">La maggior parte delle app richiede immagini separate per i temi chiaro e scuro. Alcune app (come YouTube Music) utilizzano solo il tema scuro, quindi viene visualizzata solo quella sezione.</string>
+    <string name="header_creator_guide_positioning_title">Posizionamento e ridimensionamento</string>
+    <string name="header_creator_guide_positioning_body">Utilizza i gesti di pizzicamento per zoomare e trascinare direttamente nell\'anteprima per posizionare e ridimensionare l\'immagine. Appaiono delle guide quando l\'immagine è vicino al centro. Puoi anche utilizzare il cursore sotto l\'anteprima.</string>
     <!-- Home Screen - App Info Screen -->
     <string name="home_app_info_uninstall_app_confirmation">Sei sicuro di voler disinstallare questa app?</string>
     <string name="home_app_info_remove_app_warning">Questo eliminerà in modo permanente:</string>
@@ -238,10 +250,8 @@ Per ottenere i risultati migliori, questa app raccomanda di applicare una patch 
     <string name="home_app_info_original_package_name">Nome pacchetto originale</string>
     <string name="home_app_info_applied_patches">Patch applicate</string>
     <string name="home_app_info_patch_source_used">Fonte delle patch utilizzata</string>
-    <string name="home_app_info_install_type">Tipo di installazione</string>
     <string name="home_app_info_install_type_custom_installer">Installatore personalizzato</string>
     <string name="home_app_info_install_type_system_installer">Installatore di sistema</string>
-    <string name="home_app_info_patched_at">Patchato</string>
     <string name="home_app_info_patch_update_available">Aggiornamento delle patch disponibile</string>
     <string name="home_app_info_patch_update_available_description">È disponibile una nuova versione delle patch. Ripatcha la tua app per ottenere gli ultimi miglioramenti e correttivi</string>
     <string name="home_app_info_app_deleted_warning">L\'app è stata disinstallata</string>
@@ -645,7 +655,7 @@ Le dimensioni delle immagini devono essere le seguenti:
     <string name="settings_system_about">A proposito di</string>
     <string name="settings_system_share_website">Condividi il sito</string>
     <string name="settings_system_share_website_description">Condividi il sito ufficiale di Morphe</string>
-    <string name="settings_system_manager_description">"Un progetto open-source per un patching moderno e semplificato delle app Android popolari, guidato dal feedback e dai contributi della community"</string>
+    <string name="settings_system_manager_description">Un progetto open-source per un patching moderno e semplificato delle app Android popolari, guidato dal feedback e dai contributi della community</string>
     <string name="credits">Crediti</string>
     <string name="credits_current_development">Sviluppo attuale</string>
     <string name="credits_prior_development">Sviluppo precedente</string>
@@ -746,9 +756,4 @@ Le dimensioni delle immagini devono essere le seguenti:
 
 Vuoi comunque continuare?"</string>
     <string name="download_update_confirmation">Scaricare l\'aggiornamento?</string>
-    <string name="just_now">Adesso</string>
-    <string name="minutes_ago">%sm fa</string>
-    <string name="hours_ago">%so fa</string>
-    <string name="days_ago">%sg fa</string>
-    <string name="invalid_date">Data non valida</string>
 </resources>

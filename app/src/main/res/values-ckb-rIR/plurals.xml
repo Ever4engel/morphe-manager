@@ -36,10 +36,6 @@
         <item quantity="one">%s پینە دیاریکراوە</item>
         <item quantity="other">%s پینەکان دیاریکراوە</item>
     </plurals>
-    <plurals name="home_app_show_selected">
-        <item quantity="one">نیشاندانی %s ئەپ</item>
-        <item quantity="other">نیشاندانی %s ئەپەکان</item>
-    </plurals>
     <plurals name="home_app_show_hidden_count">
         <item quantity="one">%s ئەپ شاراوە</item>
         <item quantity="other">%s ئەپە شاراوەکان</item>
