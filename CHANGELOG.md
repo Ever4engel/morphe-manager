@@ -1,3 +1,12 @@
+# [1.19.0-dev.7](https://github.com/MorpheApp/morphe-manager/compare/v1.19.0-dev.6...v1.19.0-dev.7) (2026-05-24)
+
+
+### Bug Fixes
+
+* Eliminate empty-state flash and clear search query after exit animation ([4e3f30e](https://github.com/MorpheApp/morphe-manager/commit/4e3f30e7c018516bc5d0c2b5592324c9438a7451))
+* Fix search keyboard delay and header crossfade animation in file picker ([43bfc61](https://github.com/MorpheApp/morphe-manager/commit/43bfc6164fed7f8321e7ff22cd5b7d53f3c640e9))
+* Use produceState to eliminate empty-state flash on directory change ([bf30ad7](https://github.com/MorpheApp/morphe-manager/commit/bf30ad7988dbab5d37c170535f5d7a6689f8c034))
+
 # [1.19.0-dev.6](https://github.com/MorpheApp/morphe-manager/compare/v1.19.0-dev.5...v1.19.0-dev.6) (2026-05-24)
 
 
