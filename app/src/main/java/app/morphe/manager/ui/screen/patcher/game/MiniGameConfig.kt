@@ -50,14 +50,11 @@ class MiniGameState {
     var selectedGame by mutableStateOf<MiniGame?>(null)
 
     fun selectGame(game: MiniGame) {
-        if (selectedGame != game) {
-            when (selectedGame) {
-                MiniGame.GAME_2048 -> game2048.restart()
-                MiniGame.FLAPPY -> flappy.restart()
-                MiniGame.SNAKE -> snake.restart()
-                MiniGame.DINO -> dino.restart()
-                null -> {}
-            }
+        when (game) {
+            MiniGame.GAME_2048 -> game2048.restart()
+            MiniGame.FLAPPY -> flappy.restart()
+            MiniGame.SNAKE -> snake.restart()
+            MiniGame.DINO -> dino.restart()
         }
         selectedGame = game
     }
