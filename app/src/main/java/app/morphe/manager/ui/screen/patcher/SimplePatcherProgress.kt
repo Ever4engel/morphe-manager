@@ -9,11 +9,19 @@ import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.outlined.BarChart
 import androidx.compose.material.icons.outlined.Info
+import androidx.compose.material.icons.outlined.SportsEsports
+import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material3.CircularProgressIndicator
+import androidx.compose.material3.Icon
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.*
+import androidx.compose.runtime.saveable.rememberSaveable
+import app.morphe.manager.ui.screen.patcher.game.Game2048Board
+import app.morphe.manager.ui.screen.patcher.game.MiniGameState
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.StrokeCap
@@ -44,12 +52,14 @@ fun SimplePatchingInProgress(
     patchesProgress: Pair<Int, Int>,
     patcherViewModel: PatcherViewModel,
     showLongStepWarning: Boolean = false,
+    miniGameState: MiniGameState,
     onCancelClick: () -> Unit,
     onHomeClick: () -> Unit
 ) {
     val windowSize = rememberWindowSize()
     val (completed, total) = patchesProgress
     val context = LocalContext.current
+    var showGame by rememberSaveable { mutableStateOf(false) }
 
     val currentMessage = remember {
         mutableIntStateOf(
@@ -86,6 +96,9 @@ fun SimplePatchingInProgress(
                 total = total,
                 showLongStepWarning = showLongStepWarning,
                 patcherViewModel = patcherViewModel,
+                showGame = showGame,
+                onToggleGame = { showGame = !showGame },
+                miniGameState = miniGameState,
                 onCancelClick = onCancelClick,
                 onHomeClick = onHomeClick
             )
@@ -119,6 +132,9 @@ private fun AdaptiveProgressContent(
     total: Int,
     showLongStepWarning: Boolean,
     patcherViewModel: PatcherViewModel,
+    showGame: Boolean,
+    onToggleGame: () -> Unit,
+    miniGameState: MiniGameState,
     onCancelClick: () -> Unit = {},
     onHomeClick: () -> Unit = {}
 ) {
@@ -169,44 +185,134 @@ private fun AdaptiveProgressContent(
                 )
             }
 
-            // Right column: Circular progress
-            Box(
-                modifier = Modifier
-                    .weight(0.5f)
-                    .fillMaxHeight(),
-                contentAlignment = Alignment.Center
-            ) {
-                CircularProgressWithStats(
-                    progress = progress,
-                    completed = completed,
-                    total = total,
-                    modifier = Modifier.size(280.dp)
-                )
-            }
-        }
-    } else {
-        // Single-column layout for compact windows (portrait)
-        Column(
-            modifier = Modifier
-                .fillMaxWidth()
-                .padding(horizontal = contentPadding),
-            horizontalAlignment = Alignment.CenterHorizontally,
-            verticalArrangement = Arrangement.spacedBy(itemSpacing * 3)
-        ) {
-            ProgressMessageSection(currentMessage)
-
-            CircularProgressWithStats(
+            // Right column: Progress circle or game
+            ProgressSlot(
                 progress = progress,
                 completed = completed,
                 total = total,
-                modifier = Modifier.size(280.dp)
+                showGame = showGame,
+                onToggleGame = onToggleGame,
+                miniGameState = miniGameState,
+                modifier = Modifier
+                    .weight(0.5f)
+                    .fillMaxHeight()
             )
+        }
+    } else {
+        // Single-column layout for compact windows (portrait)
+        BoxWithConstraints(
+            modifier = Modifier
+                .fillMaxSize()
+                .padding(horizontal = contentPadding),
+            contentAlignment = Alignment.Center
+        ) {
+            // Slot height = square board (maxWidth) + 56dp header (ScoreRow 44dp + spacing 12dp),
+            // capped so message + details still fit.
+            val slotHeight = (maxWidth + 56.dp)
+                .coerceAtMost(maxHeight - 160.dp)
+                .coerceAtLeast(220.dp)
 
-            ProgressDetailsSection(
-                showLongStepWarning = showLongStepWarning,
-                patcherViewModel = patcherViewModel,
-                windowSize = windowSize
+            Column(
+                modifier = Modifier.fillMaxWidth(),
+                horizontalAlignment = Alignment.CenterHorizontally,
+                verticalArrangement = Arrangement.spacedBy(itemSpacing)
+            ) {
+                ProgressMessageSection(currentMessage)
+
+                ProgressSlot(
+                    progress = progress,
+                    completed = completed,
+                    total = total,
+                    showGame = showGame,
+                    onToggleGame = onToggleGame,
+                    miniGameState = miniGameState,
+                    modifier = Modifier
+                        .fillMaxWidth()
+                        .height(slotHeight)
+                )
+
+                ProgressDetailsSection(
+                    showLongStepWarning = showLongStepWarning,
+                    patcherViewModel = patcherViewModel,
+                    windowSize = windowSize
+                )
+            }
+        }
+    }
+}
+
+/**
+ * Swappable slot that shows either the circular progress or the mini-game.
+ */
+@Composable
+private fun ProgressSlot(
+    progress: Float,
+    completed: Int,
+    total: Int,
+    showGame: Boolean,
+    onToggleGame: () -> Unit,
+    miniGameState: MiniGameState,
+    modifier: Modifier = Modifier
+) {
+    Box(modifier = modifier) {
+        if (showGame) {
+            Game2048Board(
+                state = miniGameState.game2048,
+                modifier = Modifier.fillMaxSize().padding(8.dp),
+                progress = progress,
+                extraActions = {
+                    Surface(
+                        onClick = onToggleGame,
+                        shape = RoundedCornerShape(10.dp),
+                        color = MaterialTheme.colorScheme.surfaceVariant
+                    ) {
+                        Icon(
+                            imageVector = Icons.Outlined.BarChart,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                            modifier = Modifier
+                                .padding(12.dp)
+                                .size(20.dp)
+                        )
+                    }
+                }
             )
+        } else {
+            Column(
+                modifier = Modifier.fillMaxSize().padding(8.dp),
+                verticalArrangement = Arrangement.spacedBy(12.dp)
+            ) {
+                Row(
+                    modifier = Modifier.fillMaxWidth(),
+                    horizontalArrangement = Arrangement.End
+                ) {
+                    Surface(
+                        onClick = onToggleGame,
+                        shape = RoundedCornerShape(10.dp),
+                        color = MaterialTheme.colorScheme.surfaceVariant
+                    ) {
+                        Icon(
+                            imageVector = Icons.Outlined.SportsEsports,
+                            contentDescription = null,
+                            tint = MaterialTheme.colorScheme.onSurfaceVariant,
+                            modifier = Modifier
+                                .padding(12.dp)
+                                .size(20.dp)
+                        )
+                    }
+                }
+                Box(
+                    modifier = Modifier.weight(1f).fillMaxWidth(),
+                    contentAlignment = Alignment.Center
+                ) {
+                    CircularProgressWithStats(
+                        progress = progress,
+                        completed = completed,
+                        total = total,
+                        modifier = Modifier.size(280.dp)
+                    )
+                }
+            }
         }
     }
 }

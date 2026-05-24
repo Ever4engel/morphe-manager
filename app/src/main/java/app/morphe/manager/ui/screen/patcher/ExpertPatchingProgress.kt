@@ -56,6 +56,9 @@ import app.morphe.manager.patcher.worker.PatcherWorker.Companion.LOG_WORKER_PREF
 import app.morphe.manager.ui.model.State
 import app.morphe.manager.ui.screen.shared.*
 import app.morphe.manager.ui.viewmodel.PatcherViewModel
+import androidx.compose.runtime.saveable.rememberSaveable
+import app.morphe.manager.ui.screen.patcher.game.Game2048Board
+import app.morphe.manager.ui.screen.patcher.game.MiniGameState
 import kotlinx.coroutines.delay
 
 /** Brand blue — start of the progress gradient. */
@@ -242,6 +245,7 @@ fun ExpertPatchingInProgress(
     patchesProgress: Pair<Int, Int>,
     patcherViewModel: PatcherViewModel,
     patcherSucceeded: Boolean? = null,
+    miniGameState: MiniGameState,
     onCancelClick: () -> Unit,
     onInstallClick: () -> Unit = {},
     onHomeClick: () -> Unit
@@ -323,6 +327,7 @@ fun ExpertPatchingInProgress(
                     patcherViewModel = patcherViewModel,
                     listState = listState,
                     patcherSucceeded = patcherSucceeded,
+                    miniGameState = miniGameState,
                     modifier = Modifier
                         .weight(0.58f)
                         .fillMaxHeight()
@@ -350,6 +355,7 @@ fun ExpertPatchingInProgress(
                     patcherViewModel = patcherViewModel,
                     listState = listState,
                     patcherSucceeded = patcherSucceeded,
+                    miniGameState = miniGameState,
                     modifier = Modifier
                         .weight(1f)
                         .fillMaxWidth()
@@ -727,17 +733,20 @@ private fun ExpertStepPipeline(patcherViewModel: PatcherViewModel) {
 
 /**
  * Scrollable log panel backed directly by [PatcherViewModel.logs].
+ * The header tab row lets the user switch between logs and the mini-game.
  */
 @Composable
 private fun ExpertLogPanel(
     modifier: Modifier = Modifier,
     patcherViewModel: PatcherViewModel,
     listState: LazyListState,
-    patcherSucceeded: Boolean? = null
+    patcherSucceeded: Boolean? = null,
+    miniGameState: MiniGameState
 ) {
     val rawLogs = patcherViewModel.logs
     // Convert the full list in one stateful pass so banner cards can aggregate metadata from auxiliary lines
     val logItems = remember(rawLogs.size) { rawLogs.toLogItems() }
+    var showGame by rememberSaveable { mutableStateOf(false) }
 
     Surface(
         modifier = modifier,
@@ -746,76 +755,122 @@ private fun ExpertLogPanel(
         tonalElevation = 2.dp
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
-            LogPanelHeader(isLive = patcherSucceeded == null)
+            LogPanelTabHeader(
+                isLive = patcherSucceeded == null,
+                showGame = showGame,
+                onShowGame = { showGame = it }
+            )
 
             HorizontalDivider(
                 color = MaterialTheme.colorScheme.outlineVariant.copy(alpha = 0.4f)
             )
 
-            LazyColumn(
-                state = listState,
-                modifier = Modifier
-                    .fillMaxSize()
-                    .padding(vertical = 6.dp),
-            ) {
-                if (rawLogs.isEmpty()) {
-                    item {
-                        Box(
-                            modifier = Modifier
-                                .fillMaxWidth()
-                                .padding(vertical = 48.dp),
-                            contentAlignment = Alignment.Center
-                        ) {
-                            Column(
-                                horizontalAlignment = Alignment.CenterHorizontally,
-                                verticalArrangement = Arrangement.spacedBy(10.dp)
+            if (showGame) {
+                Game2048Board(
+                    state = miniGameState.game2048,
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(16.dp)
+                )
+            } else {
+                LazyColumn(
+                    state = listState,
+                    modifier = Modifier
+                        .fillMaxSize()
+                        .padding(vertical = 6.dp),
+                ) {
+                    if (rawLogs.isEmpty()) {
+                        item {
+                            Box(
+                                modifier = Modifier
+                                    .fillMaxWidth()
+                                    .padding(vertical = 48.dp),
+                                contentAlignment = Alignment.Center
                             ) {
-                                LiveIndicatorDot(size = 10.dp)
-                                Text(
-                                    text = "Waiting for log output…",
-                                    style = MaterialTheme.typography.bodySmall,
-                                    color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.45f),
-                                    fontFamily = FontFamily.Monospace,
-                                    textAlign = TextAlign.Center
-                                )
+                                Column(
+                                    horizontalAlignment = Alignment.CenterHorizontally,
+                                    verticalArrangement = Arrangement.spacedBy(10.dp)
+                                ) {
+                                    LiveIndicatorDot(size = 10.dp)
+                                    Text(
+                                        text = "Waiting for log output…",
+                                        style = MaterialTheme.typography.bodySmall,
+                                        color = MaterialTheme.colorScheme.onSurfaceVariant.copy(alpha = 0.45f),
+                                        fontFamily = FontFamily.Monospace,
+                                        textAlign = TextAlign.Center
+                                    )
+                                }
                             }
                         }
                     }
-                }
 
-                items(
-                    count = logItems.size,
-                    key = { index -> index }
-                ) { index ->
-                    LogItemContent(logItems[index])
-                }
+                    items(
+                        count = logItems.size,
+                        key = { index -> index }
+                    ) { index ->
+                        LogItemContent(logItems[index])
+                    }
 
-                // Bottom padding so last item isn't clipped by rounded corners
-                item { Spacer(Modifier.height(8.dp)) }
+                    // Bottom padding so last item isn't clipped by rounded corners
+                    item { Spacer(Modifier.height(8.dp)) }
+                }
             }
         }
     }
 }
 
 /**
- * Panel header with a live-indicator dot and "Patcher Logs" label.
+ * Tab header that switches the log panel between patcher logs and the game.
  */
 @Composable
-private fun LogPanelHeader(isLive: Boolean = true) {
+private fun LogPanelTabHeader(isLive: Boolean, showGame: Boolean, onShowGame: (Boolean) -> Unit) {
     Row(
         modifier = Modifier
             .fillMaxWidth()
-            .padding(horizontal = 16.dp, vertical = 13.dp),
-        horizontalArrangement = Arrangement.spacedBy(10.dp),
+            .padding(horizontal = 12.dp, vertical = 8.dp),
+        horizontalArrangement = Arrangement.spacedBy(6.dp),
         verticalAlignment = Alignment.CenterVertically
     ) {
-        LiveIndicatorDot(size = 8.dp, isLive = isLive)
-        Text(
-            text = "Patcher Logs",
-            style = MaterialTheme.typography.labelLarge,
-            fontWeight = FontWeight.SemiBold,
-            color = MaterialTheme.colorScheme.onSurface
+        LogTabChip(
+            label = stringResource(R.string.patcher_tab_logs),
+            selected = !showGame,
+            onClick = { onShowGame(false) },
+            leadingContent = { LiveIndicatorDot(size = 8.dp, isLive = isLive && !showGame) }
         )
+        LogTabChip(
+            label = stringResource(R.string.patcher_tab_game_2048),
+            selected = showGame,
+            onClick = { onShowGame(true) }
+        )
+    }
+}
+
+@Composable
+private fun LogTabChip(
+    label: String,
+    selected: Boolean,
+    onClick: () -> Unit,
+    leadingContent: @Composable (() -> Unit)? = null
+) {
+    Surface(
+        onClick = onClick,
+        shape = RoundedCornerShape(8.dp),
+        color = if (selected) MaterialTheme.colorScheme.primaryContainer else Color.Transparent
+    ) {
+        Row(
+            modifier = Modifier.padding(horizontal = 10.dp, vertical = 5.dp),
+            horizontalArrangement = Arrangement.spacedBy(6.dp),
+            verticalAlignment = Alignment.CenterVertically
+        ) {
+            leadingContent?.invoke()
+            Text(
+                text = label,
+                style = MaterialTheme.typography.labelLarge,
+                fontWeight = if (selected) FontWeight.SemiBold else FontWeight.Normal,
+                color = if (selected) MaterialTheme.colorScheme.onPrimaryContainer
+                        else MaterialTheme.colorScheme.onSurface.copy(alpha = 0.5f)
+            )
+        }
     }
 }
 

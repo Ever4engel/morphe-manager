@@ -289,6 +289,7 @@ Outer zone (dashed): may be clipped by the launcher mask - keep important detail
     <string name="patcher_error_dialog_app_info">App info</string>
     <string name="patcher_patches_progress_format" translatable="false">%1$s / %2$s</string>
     <string name="patcher_percentage" translatable="false">%s%%</string>
+    <string name="patcher_tab_logs">Patcher Logs</string>
     <string name="patcher_long_step_warning">This step may take a while. Please wait…</string>
     <string name="patcher_installing_subtitle">Almost ready to rock! 🎸</string>
     <string name="patcher_success_title">All Done! 🎉</string>
@@ -392,6 +393,13 @@ Uninstalling will permanently erase all app data"</string>
     <string name="package_name">Package name</string>
     <string name="failed_to_mount">Failed to mount: %s</string>
     <string name="failed_to_unmount">Failed to unmount: %s</string>
+
+    <!-- Patcher Screen - Mini-game (2048) -->
+    <string name="patcher_tab_game_2048" translatable="false">2048</string>
+    <string name="game_2048_score">Score %d</string>
+    <string name="game_2048_win" translatable="false">2048!</string>
+    <string name="game_2048_game_over">Game Over</string>
+    <string name="game_2048_try_again">Try Again</string>
 
     <!-- Settings -->
     <string name="appearance">Appearance</string>

@@ -44,6 +44,7 @@ import app.morphe.manager.ui.viewmodel.InstallViewModel
 import app.morphe.manager.ui.viewmodel.PatcherViewModel
 import app.morphe.manager.util.APK_MIMETYPE
 import app.morphe.manager.util.EventEffect
+import app.morphe.manager.ui.screen.patcher.game.MiniGameState
 import app.morphe.manager.util.tag
 import com.google.android.gms.common.ConnectionResult
 import com.google.android.gms.common.GoogleApiAvailability
@@ -78,6 +79,7 @@ fun PatcherScreen(
 
     // Remember patcher state
     val state = rememberMorphePatcherState(patcherViewModel)
+    val miniGameState = remember { MiniGameState() }
 
     // Notification prompt: driven by ViewModel after successful export or install
     val shouldPromptNotification by patcherViewModel.shouldPromptNotification.collectAsStateWithLifecycle()
@@ -443,6 +445,7 @@ fun PatcherScreen(
                             patchesProgress = patchesProgress,
                             patcherViewModel = patcherViewModel,
                             patcherSucceeded = patcherSucceeded,
+                            miniGameState = miniGameState,
                             onCancelClick = { state.showCancelDialog = true },
                             onInstallClick = { showSuccessScreen = true },
                             onHomeClick = onBackClick
@@ -453,6 +456,7 @@ fun PatcherScreen(
                             patchesProgress = patchesProgress,
                             patcherViewModel = patcherViewModel,
                             showLongStepWarning = showLongStepWarning,
+                            miniGameState = miniGameState,
                             onCancelClick = { state.showCancelDialog = true },
                             onHomeClick = onBackClick
                         )
