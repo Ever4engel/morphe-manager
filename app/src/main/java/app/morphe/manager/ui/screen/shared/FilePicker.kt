@@ -12,9 +12,8 @@ import android.graphics.Canvas
 import android.os.Environment
 import android.util.LruCache
 import androidx.appcompat.content.res.AppCompatResources
+import androidx.compose.animation.AnimatedContent
 import androidx.compose.animation.AnimatedVisibility
-import androidx.compose.animation.Crossfade
-import androidx.compose.animation.core.tween
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
@@ -52,7 +51,6 @@ import app.morphe.manager.util.PM
 import app.morphe.manager.util.formatBytes
 import com.topjohnwu.superuser.Shell
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import org.koin.compose.koinInject
@@ -268,12 +266,7 @@ fun FilePicker(
     }
 
     LaunchedEffect(showSearch) {
-        if (showSearch) {
-            // Allow the TextField to attach to the window before requesting focus,
-            // otherwise the keyboard animation is delayed in release builds
-            delay(100)
-            searchFocusRequester.requestFocus()
-        }
+        if (showSearch) searchFocusRequester.requestFocus()
     }
 
     // Clear search when navigating to a different directory
@@ -307,19 +300,21 @@ fun FilePicker(
         footer = null
     ) {
         Column(modifier = Modifier.fillMaxSize()) {
-            Crossfade(
+            // New content appears instantly; old content fades out
+            AnimatedContent(
                 targetState = showSearch,
-                animationSpec = tween(100),
+                transitionSpec = MorpheAnimations.fadeCrossfade(),
                 modifier = Modifier
                     .fillMaxWidth()
                     .statusBarsPadding()
-                    .padding(start = 4.dp, end = 8.dp, top = 4.dp, bottom = 4.dp)
+                    .padding(start = 4.dp, end = 8.dp, top = 4.dp, bottom = 4.dp),
+                label = "FilePickerHeader"
             ) { isSearching ->
-                Row(
-                    modifier = Modifier.fillMaxWidth(),
-                    verticalAlignment = Alignment.CenterVertically
-                ) {
-                    if (isSearching) {
+                if (isSearching) {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
                         IconButton(onClick = { showSearch = false; searchQuery = "" }) {
                             Icon(
                                 imageVector = Icons.AutoMirrored.Outlined.ArrowBack,
@@ -353,7 +348,12 @@ fun FilePicker(
                                     .focusRequester(searchFocusRequester)
                             )
                         }
-                    } else {
+                    }
+                } else {
+                    Row(
+                        modifier = Modifier.fillMaxWidth(),
+                        verticalAlignment = Alignment.CenterVertically
+                    ) {
                         Text(
                             text = stringResource(
                                 if (allowFolderSelection) R.string.select_folder
