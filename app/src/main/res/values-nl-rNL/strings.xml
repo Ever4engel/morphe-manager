@@ -36,7 +36,7 @@
     <!-- Home Screen - Home Greetings -->
     <string name="home_greeting_1">Welke app wil je patchen?</string>
     <!-- Humorous hype message with light nostalgia -->
-    <string name="home_greeting_2">Klaar om apps nog legendairer te maken?</string>
+    <string name="home_greeting_2">Klaar om apps nog legendarischer te maken?</string>
     <!-- "Buckle up" referring to fastening your vehicle seat belt. A light-hearted joke to build excitement -->
     <string name="home_greeting_3">Riemen vast, het is tijd om te patchen</string>
     <!-- Sarcastic joke about blocking ads, intentionally over-the-top -->
@@ -71,7 +71,7 @@
     <string name="sources_management_source_updating">Bron bijwerken</string>
     <!-- Home Screen - Sources Dialogs -->
     <string name="sources_dialog_display_name">Weergavenaam</string>
-    <string name="sources_dialog_rename">Patchbron toevoegen</string>
+    <string name="sources_dialog_rename">Patchbron hernoemen</string>
     <string name="sources_dialog_duplicate_name_error">Er bestaat al een patchbron met deze naam</string>
     <string name="sources_dialog_missing_error">Kon deze patchbron niet bijwerken.</string>
     <string name="sources_dialog_view_any_version">Elke versie</string>
@@ -143,7 +143,7 @@
     <string name="expert_mode_reset_to_default">Aanbevolen patches inschakelen</string>
     <string name="expert_mode_reset_to_default_done">Aanbevolen patches toegepast</string>
     <string name="expert_mode_restore_saved">Selectie opslaan herstellen</string>
-    <string name="expert_mode_restore_saved_done">Herstelde selectie is teruggezet</string>
+    <string name="expert_mode_restore_saved_done">Opgeslagen selectie hersteld</string>
     <string name="expert_mode_no_results">Geen patches gevonden</string>
     <string name="expert_mode_universal_patches">Universele patches</string>
     <string name="expert_mode_new_patches">Nieuw</string>
@@ -367,6 +367,8 @@ Deïnstalleren wist alle app-gegevens permanent."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Kies een spel</string>
     <string name="mini_game_score">Score %d</string>
+    <string name="mini_game_best">Beste %d</string>
+    <string name="mini_game_new_record">Nieuw record!</string>
     <string name="mini_game_game_over">Game Over</string>
     <string name="mini_game_try_again">Probeer opnieuw</string>
     <string name="mini_game_paused">Pauze</string>

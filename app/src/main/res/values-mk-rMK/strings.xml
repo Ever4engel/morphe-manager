@@ -34,7 +34,7 @@
     <string name="home_all_apps_hidden_title">Сите апликации се скриени</string>
     <string name="home_all_apps_hidden_subtitle">Ги скривте сите апликации од почетниот екран</string>
     <!-- Home Screen - Home Greetings -->
-    <string name="home_greeting_1">Која апликација сакате да ја поправите?</string>
+    <string name="home_greeting_1">Која апликација сакате да ја закрпите?</string>
     <!-- Humorous hype message with light nostalgia -->
     <string name="home_greeting_2">Готови да ги направите апликациите повторно легендарни?</string>
     <!-- "Buckle up" referring to fastening your vehicle seat belt. A light-hearted joke to build excitement -->
@@ -59,7 +59,7 @@
     <string name="sources_management_failed_to_open_url">Не успеа да се отвори URL адреса</string>
     <string name="sources_management_prerelease_toggle">Пукање пред да се донесе</string>
     <string name="sources_management_prerelease_toggle_description">Прима ранен пристап до нови експериментални верзии на закрпи</string>
-    <string name="sources_management_experimental_versions_toggle">Верзии за пукање од експериментална апликација</string>
+    <string name="sources_management_experimental_versions_toggle">Експериментални верзии на апликацијата</string>
     <string name="sources_management_experimental_versions_toggle_description">Закрпува експериментални цели на апликации доколку се достапни</string>
     <string name="sources_management_already_exists">Овој извор веќе е додаден</string>
     <string name="sources_management_invalid_url">Невалидна URL адреса на извор. Проверете ја адресата и обидете се повторно</string>
@@ -368,6 +368,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Изберете игра</string>
     <string name="mini_game_score">Резултат %d</string>
+    <string name="mini_game_best">Најдобро %d</string>
+    <string name="mini_game_new_record">Нов рекорд!</string>
     <string name="mini_game_game_over">Игра завршена</string>
     <string name="mini_game_try_again">Обидете се повторно</string>
     <string name="mini_game_paused">Пауза</string>

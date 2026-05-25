@@ -370,6 +370,8 @@ Ang pag-uninstall ay permanenteng bubura sa lahat ng data ng app."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Pumili ng laro</string>
     <string name="mini_game_score">Marka %d</string>
+    <string name="mini_game_best">Pinakamahusay na %d</string>
+    <string name="mini_game_new_record">Bagong rekord!</string>
     <string name="mini_game_game_over">Tapos na ang laro</string>
     <string name="mini_game_try_again">Subukan Muli</string>
     <string name="mini_game_paused">Naka-pause</string>

@@ -270,7 +270,7 @@ Crios seachtrach (daite): féadfaidh masc an lainseálaí é a bhearradh - coinn
     <string name="patcher_error_log">Log earráide</string>
     <string name="patcher_error_technical">Sonraí teicniúla</string>
     <string name="patcher_error_dialog_app_info">Eolas faoin aip</string>
-    <string name="patcher_tab_logs">Logaí Patcher</string>
+    <string name="patcher_tab_logs">Logaí Paisteora</string>
     <string name="patcher_tab_game">Cluiche</string>
     <string name="patcher_long_step_warning">D’fhéadfadh sé go dtógfadh an chéim seo tamall. Fan le do thoil…</string>
     <string name="patcher_installing_subtitle">Beagnach réidh le tosú! 🎸</string>
@@ -370,17 +370,19 @@ Scriosfaidh díshuiteáil gach sonraí aip go buan."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Roghnaigh cluiche</string>
     <string name="mini_game_score">Scór %d</string>
+    <string name="mini_game_best">Is fearr %d</string>
+    <string name="mini_game_new_record">Taifead nua!</string>
     <string name="mini_game_game_over">Cluiche Thart</string>
-    <string name="mini_game_try_again">Iarr Athuair</string>
-    <string name="mini_game_paused">Idirbhreithnithe</string>
+    <string name="mini_game_try_again">Bain Triail Arís</string>
+    <string name="mini_game_paused">Sosaithe</string>
     <string name="mini_game_resume">Lean ar aghaidh</string>
-    <string name="mini_game_2048_picker_subtitle">Sleamhnaigh tíleanna chun a chomhtháthú</string>
-    <string name="mini_game_flappy_picker_subtitle">Tapa chun eitilt tríd na píopaí</string>
-    <string name="mini_game_flappy_tap_to_start">Tapa chun eitilt</string>
-    <string name="mini_game_snake_picker_subtitle">Ithe bia, ná buaileadh leat féin</string>
-    <string name="mini_game_snake_swipe_to_start">Sleamhnaigh chun tosú</string>
-    <string name="mini_game_dino_picker_subtitle">Tapa chun léim thar na cacti</string>
-    <string name="mini_game_dino_tap_to_start">Tapa chun rith</string>
+    <string name="mini_game_2048_picker_subtitle">Sleamhnaigh tíleanna le cumasc</string>
+    <string name="mini_game_flappy_picker_subtitle">Beartaigh chun eitilt trí phíopaí</string>
+    <string name="mini_game_flappy_tap_to_start">Beartaigh le heitilt</string>
+    <string name="mini_game_snake_picker_subtitle">Ith bia, ná buail tú féin</string>
+    <string name="mini_game_snake_swipe_to_start">Svaidhpeáil le tosú</string>
+    <string name="mini_game_dino_picker_subtitle">Tapáil chun léim thar cacti</string>
+    <string name="mini_game_dino_tap_to_start">Tapáil le rith</string>
     <!-- Settings -->
     <string name="appearance">Dealramh</string>
     <string name="advanced">Ardleibhéil</string>

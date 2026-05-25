@@ -370,6 +370,8 @@ Kaldırma işlemi tüm uygulama verilerini kalıcı olarak silecektir"</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Bir oyun seç</string>
     <string name="mini_game_score">%d puan</string>
+    <string name="mini_game_best">En iyisi %d</string>
+    <string name="mini_game_new_record">Yeni rekor!</string>
     <string name="mini_game_game_over">Oyun Bitti</string>
     <string name="mini_game_try_again">Tekrar Dene</string>
     <string name="mini_game_paused">Duraklatıldı</string>

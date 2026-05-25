@@ -370,6 +370,8 @@ Afinstallation sletter permanent alle appdata."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Vælg et spil</string>
     <string name="mini_game_score">Score %d</string>
+    <string name="mini_game_best">Bedste %d</string>
+    <string name="mini_game_new_record">Ny rekord!</string>
     <string name="mini_game_game_over">Game Over</string>
     <string name="mini_game_try_again">Prøv igen</string>
     <string name="mini_game_paused">Pauset</string>

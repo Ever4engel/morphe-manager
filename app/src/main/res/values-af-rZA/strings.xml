@@ -370,6 +370,8 @@ Deïnstallering sal alle toepassingsdata permanent uitwis."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Kies \'n speletjie</string>
     <string name="mini_game_score">Punt %d</string>
+    <string name="mini_game_best">Beste %d</string>
+    <string name="mini_game_new_record">Nuwe rekord!</string>
     <string name="mini_game_game_over">Speletjie Einde</string>
     <string name="mini_game_try_again">Probeer weer</string>
     <string name="mini_game_paused">Pauze</string>

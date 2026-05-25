@@ -367,6 +367,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">গেমটি নির্বাচন করুন</string>
     <string name="mini_game_score">স্কোর: %d</string>
+    <string name="mini_game_best">সেরা %d</string>
+    <string name="mini_game_new_record">নতুন রেকর্ড!</string>
     <string name="mini_game_game_over">গেম ওভার</string>
     <string name="mini_game_try_again">আবার চেষ্টা করুন</string>
     <string name="mini_game_paused">বিরতি</string>

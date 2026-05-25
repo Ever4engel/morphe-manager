@@ -273,7 +273,7 @@ Xarici sahə (ştrixli): başladıcı örtüyündən kəsilə bilər - mühüm h
     <string name="patcher_tab_logs">Yamaqlayıcı Qeydləri</string>
     <string name="patcher_tab_game">Oyun</string>
     <string name="patcher_long_step_warning">Bu keçid bir müddət çəkə bilər. Zəhmət olmasa, gözləyin...</string>
-    <string name="patcher_installing_subtitle">Təqribən silkələnməyə hazırdır! 🎸</string>
+    <string name="patcher_installing_subtitle">Təqribən rok-a hazırdır! 🎸</string>
     <string name="patcher_success_title">Hamısı Bitdi! 🎉</string>
     <string name="patcher_success_subtitle">Tətbiqiniz yamaqlanıb və quraşdırılıb!</string>
     <string name="patcher_complete_title">Yamaqlanma Tamamlandı! ✨</string>
@@ -349,7 +349,7 @@ Quraşdırma ləğvi bütün tətbiq məlumatını qalıcı siləcək"</string>
     <string name="patcher_message_19">Tətbiqinizin hərarəti var və yeganə resept daha çox yamaqdır... 🩺🔔 </string>
     <string name="patcher_message_20">Lazımsız olanı silirəm. Zəhmət olmasa, gözləyin... 🗑️ </string>
     <!-- Expert patcher Screen -->
-    <string name="patching_app">Tətbiqi yamaqlama</string>
+    <string name="patching_app">Tətbiqi yamaqlayır</string>
     <string name="memory_usage">Yaddaş istifadəsi</string>
     <!-- Patcher Screen - Other hidden strings -->
     <string name="applying_patches">Yamaqlar tətbiq olunur</string>
@@ -370,6 +370,7 @@ Quraşdırma ləğvi bütün tətbiq məlumatını qalıcı siləcək"</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Oyun seç</string>
     <string name="mini_game_score">Hesab %d</string>
+    <string name="mini_game_best">Ən yaxşı %d</string>
     <string name="mini_game_game_over">Oyun Bitdi</string>
     <string name="mini_game_try_again">Təkrar cəhd et</string>
     <string name="mini_game_paused">Fasilə edildi</string>
@@ -693,7 +694,7 @@ morphe_header_custom_light.png morphe_header_custom_dark.png
     <!-- Settings - System Tab - About Section -->
     <string name="settings_system_about">Haqqında</string>
     <string name="settings_system_share_website">Veb saytı paylaş</string>
-    <string name="settings_system_share_website_description">Xidməti Morphe veb saytı paylaşılır</string>
+    <string name="settings_system_share_website_description">Rəsmi Morphe veb saytı paylaşılır</string>
     <string name="settings_system_manager_description">İcma əlaqələri və töhfələri ilə idarə olunan məşhur Android tətbiqlərinin müasir, rəvan yamaqlanması üçün açıq mənbəli layihə</string>
     <string name="credits">Sərmayələr</string>
     <string name="credits_current_development">Hazırkı inkişaf</string>

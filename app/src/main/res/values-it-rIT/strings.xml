@@ -370,6 +370,8 @@ La disinstallazione cancellerà definitivamente tutti i dati dell'app."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Scegli un gioco</string>
     <string name="mini_game_score">Punteggio %d</string>
+    <string name="mini_game_best">Migliore %d</string>
+    <string name="mini_game_new_record">Nuovo record!</string>
     <string name="mini_game_game_over">Game Over</string>
     <string name="mini_game_try_again">Riprova</string>
     <string name="mini_game_paused">In pausa</string>

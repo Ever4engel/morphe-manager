@@ -370,6 +370,8 @@ Desinstalar borrará permanentemente todos los datos de la aplicación."</string
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Elige un juego</string>
     <string name="mini_game_score">Puntuación %d</string>
+    <string name="mini_game_best">Mejor %d</string>
+    <string name="mini_game_new_record">¡Nuevo récord!</string>
     <string name="mini_game_game_over">Fin del juego</string>
     <string name="mini_game_try_again">Volver a intentar</string>
     <string name="mini_game_paused">Pausado</string>

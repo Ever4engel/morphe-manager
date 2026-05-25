@@ -371,6 +371,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">اختر لعبة</string>
     <string name="mini_game_score">النتيجة %d</string>
+    <string name="mini_game_best">الأفضل %d</string>
+    <string name="mini_game_new_record">سجل جديد!</string>
     <string name="mini_game_game_over">انتهت اللعبة</string>
     <string name="mini_game_try_again">حاول مرة أخرى</string>
     <string name="mini_game_paused">متوقفة</string>

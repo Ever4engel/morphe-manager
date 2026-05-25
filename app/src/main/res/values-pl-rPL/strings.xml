@@ -370,6 +370,8 @@ Odinstalowanie bezpowrotnie usunie wszystkie dane aplikacji"</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Wybierz grę</string>
     <string name="mini_game_score">Wynik %d</string>
+    <string name="mini_game_best">Rekord %d</string>
+    <string name="mini_game_new_record">Nowy rekord!</string>
     <string name="mini_game_game_over">Koniec gry</string>
     <string name="mini_game_try_again">Spróbuj ponownie</string>
     <string name="mini_game_paused">Pauza</string>

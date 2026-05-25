@@ -371,6 +371,8 @@ Mencopot pemasangannya akan menghapus semua data aplikasi secara permanen"</stri
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Pilih permainan</string>
     <string name="mini_game_score">Skor %d</string>
+    <string name="mini_game_best">Terbaik %d</string>
+    <string name="mini_game_new_record">Rekor baru!</string>
     <string name="mini_game_game_over">Permainan Selesai</string>
     <string name="mini_game_try_again">Coba Lagi</string>
     <string name="mini_game_paused">Dijeda</string>

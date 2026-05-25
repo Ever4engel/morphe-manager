@@ -370,6 +370,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">בחר משחק</string>
     <string name="mini_game_score">נקודות %d</string>
+    <string name="mini_game_best">הטוב ביותר %d</string>
+    <string name="mini_game_new_record">רשומה חדשה!</string>
     <string name="mini_game_game_over">סיום משחק</string>
     <string name="mini_game_try_again">נסה שוב</string>
     <string name="mini_game_paused">השהה</string>

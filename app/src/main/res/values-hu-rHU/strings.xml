@@ -370,6 +370,8 @@ Az eltávolítás véglegesen törli az alkalmazás összes adatát."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Válassz egy játékot</string>
     <string name="mini_game_score">Pontszám: %d</string>
+    <string name="mini_game_best">A legjobb %d</string>
+    <string name="mini_game_new_record">Új rekord!</string>
     <string name="mini_game_game_over">Játék vége</string>
     <string name="mini_game_try_again">Próbálja újra</string>
     <string name="mini_game_paused">Szüneteltetve</string>

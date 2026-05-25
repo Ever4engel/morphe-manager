@@ -370,6 +370,8 @@ Durch die Deinstallation werden alle App-Daten dauerhaft gelöscht"</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Wähle ein Spiel</string>
     <string name="mini_game_score">Punktzahl %d</string>
+    <string name="mini_game_best">Beste(r) %d</string>
+    <string name="mini_game_new_record">Neuer Rekord!</string>
     <string name="mini_game_game_over">Spiel vorbei</string>
     <string name="mini_game_try_again">Erneut versuchen</string>
     <string name="mini_game_paused">Pausiert</string>

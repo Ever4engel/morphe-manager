@@ -370,6 +370,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">खेल चुनें</string>
     <string name="mini_game_score">अंक %d</string>
+    <string name="mini_game_best">सर्वश्रेष्ठ %d</string>
+    <string name="mini_game_new_record">नया रिकॉर्ड!</string>
     <string name="mini_game_game_over">खेल खत्म</string>
     <string name="mini_game_try_again">फिर से प्रयास करें</string>
     <string name="mini_game_paused">विराम</string>

@@ -370,6 +370,8 @@ Odinštalovanie trvalo vymaže všetky údaje aplikácie."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Vyberte hru</string>
     <string name="mini_game_score">Skóre %d</string>
+    <string name="mini_game_best">Najlepšie %d</string>
+    <string name="mini_game_new_record">Nový rekord!</string>
     <string name="mini_game_game_over">Koniec hry</string>
     <string name="mini_game_try_again">Skúsiť znova</string>
     <string name="mini_game_paused">Pozastavené</string>

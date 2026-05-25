@@ -370,6 +370,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Επιλέξτε ένα παιχνίδι</string>
     <string name="mini_game_score">Βαθμολογία %d</string>
+    <string name="mini_game_best">Καλύτερο %d</string>
+    <string name="mini_game_new_record">Νέο ρεκόρ!</string>
     <string name="mini_game_game_over">Τέλος παιχνιδιού</string>
     <string name="mini_game_try_again">Δοκιμάστε ξανά</string>
     <string name="mini_game_paused">Παύση</string>

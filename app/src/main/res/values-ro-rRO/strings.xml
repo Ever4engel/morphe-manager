@@ -370,6 +370,8 @@ Dezinstalarea va șterge definitiv toate datele aplicației."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Alege un joc</string>
     <string name="mini_game_score">Punctaj %d</string>
+    <string name="mini_game_best">Cel mai bun %d</string>
+    <string name="mini_game_new_record">Record nou!</string>
     <string name="mini_game_game_over">Game Over</string>
     <string name="mini_game_try_again">Încearcă din nou</string>
     <string name="mini_game_paused">Pauză</string>

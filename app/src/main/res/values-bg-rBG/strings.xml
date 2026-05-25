@@ -370,6 +370,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Избери игра</string>
     <string name="mini_game_score">Резултат %d</string>
+    <string name="mini_game_best">Най-добър %d</string>
+    <string name="mini_game_new_record">Нов рекорд!</string>
     <string name="mini_game_game_over">Край на играта</string>
     <string name="mini_game_try_again">Опитай отново</string>
     <string name="mini_game_paused">Пауза</string>

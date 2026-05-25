@@ -370,6 +370,8 @@ Deinstalacija će trajno obrisati sve podatke aplikacije"</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Izaberi igru</string>
     <string name="mini_game_score">Rezultat %d</string>
+    <string name="mini_game_best">Najbolji %d</string>
+    <string name="mini_game_new_record">Novi rekord!</string>
     <string name="mini_game_game_over">Igra je završena</string>
     <string name="mini_game_try_again">Pokušaj ponovo</string>
     <string name="mini_game_paused">Pauza</string>

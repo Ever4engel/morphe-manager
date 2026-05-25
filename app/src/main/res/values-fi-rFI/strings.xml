@@ -369,6 +369,8 @@ Poistaminen poistaa pysyvästi kaikki sovelluksen tiedot."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Valitse peli</string>
     <string name="mini_game_score">Pisteet %d</string>
+    <string name="mini_game_best">Paras %d</string>
+    <string name="mini_game_new_record">Uusi ennätys!</string>
     <string name="mini_game_game_over">Peli ohi</string>
     <string name="mini_game_try_again">Yritä uudelleen</string>
     <string name="mini_game_paused">Tauolla</string>

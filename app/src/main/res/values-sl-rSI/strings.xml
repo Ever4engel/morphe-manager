@@ -62,7 +62,7 @@
     <string name="sources_management_experimental_versions_toggle">Eksperimentalne različice aplikacije</string>
     <string name="sources_management_experimental_versions_toggle_description">Popravi cilje eksperimentalnih aplikacij, če so na voljo</string>
     <string name="sources_management_already_exists">Ta vir že obstaja</string>
-    <string name="sources_management_invalid_url">Neveljaven URL izvor. Preverite naslov in poskusite znova</string>
+    <string name="sources_management_invalid_url">Neveljaven izvorni URL. Preverite naslov in poskusite znova</string>
     <string name="sources_management_metadata_unavailable">Metapodatki N/A</string>
     <string name="sources_management_metadata_unavailable_hint">Dostop do datoteke metapodatkov na daljavi ni možen. Uporaba popravka z nameščenim paketom še vedno deluje, vendar je samodejno posodabljanje za ta vir onemogočeno.</string>
     <string name="sources_management_metadata_unavailable_hint_missing">Paket popravkov se ni dal prenesti. URL naslov izvora je lahko napačen ali datoteka ne obstaja.</string>
@@ -96,7 +96,7 @@
     <string name="sources_download_fail_named">\"%s\" se ni dalo posodobiti. Preverite internetno povezavo in poskusite znova</string>
     <string name="sources_download_endpoint_not_found">\"%s\": metadate popravka niso bile najdene</string>
     <string name="sources_patch_expert_badge">Izkušen</string>
-    <string name="sources_patch_expert_badge_tooltip">Omogoči način strokovnjaka v Nastavitvah, da vključite ta popravek ročno</string>
+    <string name="sources_patch_expert_badge_tooltip">Omogočite način poznavalca v Nastavitvah, da ročno vključite ta popravek</string>
     <!-- Home Screen - Dialog 1: APK Availability -->
     <string name="home_apk_availability_dialog_title">Potrebujete pomoč pri iskanju izvirnega, nepopravljenega APK?</string>
     <string name="home_apk_availability_dialog_simple">Za popravilo &lt;b&gt;%s&lt;/b&gt; potrebujete nepopravljeno različico APK:</string>
@@ -172,7 +172,7 @@ Za najboljše rezultate ta aplikacija priporoča popravljanje &lt;b&gt;polne APK
     <string name="home_dialog_unsupported_version_dialog_description">Ta APK ni priporočena različica aplikacije. Nadaljevanje lahko povzroči, da aplikacija ne bo delovala.</string>
     <string name="home_dialog_unsupported_version_dialog_proceed">Naprej kljub temu</string>
     <string name="home_dialog_unsupported_version_compatible_versions">Združljive različice:</string>
-    <string name="home_dialog_unsupported_version_unsupported_label">Ni podprto</string>
+    <string name="home_dialog_unsupported_version_unsupported_label">Nepodprto</string>
     <string name="home_dialog_wrong_package_title">Izbrana napačna datoteka</string>
     <string name="home_dialog_wrong_package_description">Izbrana datoteka APK ni za aplikacijo, ki jo želite popraviti.</string>
     <string name="home_dialog_expected_package">Pričakovan paket:</string>
@@ -227,7 +227,7 @@ Zunanji območji (črtkano): ga lahko maska zaganjalnika obreže – pomembne po
     <string name="header_creator_no_image">Ni izbrana nobena slika</string>
     <string name="header_creator_success">Glava uspešno ustvarjena</string>
     <string name="header_creator_failed">Pri ustvarjanju glave je prišlo do napake</string>
-    <string name="header_creator_guide">Navodilo za ustvarjanje glave</string>
+    <string name="header_creator_guide">Navodila za ustvarjanje glave</string>
     <string name="header_creator_guide_image_title">Zahteve za sliko</string>
     <string name="header_creator_guide_image_body">Uporabite poljubno sliko (PNG ali JPEG). Za najboljše rezultate uporabite sliko v širokem formatu z razmerjem stranic približno 2,7:1. Datoteke PNG s preglednim ozadjem se bodo naravno zmešale s temo aplikacije.</string>
     <string name="header_creator_guide_themes_title">Svetle in temne teme</string>
@@ -279,7 +279,7 @@ Zunanji območji (črtkano): ga lahko maska zaganjalnika obreže – pomembne po
     <string name="patcher_complete_title">Popravek končan! ✨</string>
     <string name="patcher_failed_title">Očitno! Nekaj se je zgodilo narobe</string>
     <string name="patcher_failed_subtitle">Preveri podrobnosti napake spodaj</string>
-    <string name="patcher_failed_dialog_title">Popravek je spodletel</string>
+    <string name="patcher_failed_dialog_title">Popravljanje je spodletelo</string>
     <string name="patcher_unknown_error">Prišlo je do neznane napake</string>
     <string name="patcher_conflict_title">Konflikt paketov</string>
     <string name="patcher_conflict_subtitle">Morate odstraniti obstoječo različico</string>
@@ -370,6 +370,8 @@ Odstranitev bo trajno izbrisala vse podatke aplikacije."</string>
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Izberi igro</string>
     <string name="mini_game_score">Rezultat %d</string>
+    <string name="mini_game_best">Najboljša %d</string>
+    <string name="mini_game_new_record">Nov rekord!</string>
     <string name="mini_game_game_over">Konec igre</string>
     <string name="mini_game_try_again">Poskusite znova</string>
     <string name="mini_game_paused">Pavza</string>

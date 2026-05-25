@@ -368,6 +368,8 @@ Neqişandin dê hemî daneyên serîlêdanê bi awayê daîmî tune bike"</strin
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Lîstikek hilbijêre</string>
     <string name="mini_game_score">Pêvan %d</string>
+    <string name="mini_game_best">Çêtirîn %d</string>
+    <string name="mini_game_new_record">Rekord nû!</string>
     <string name="mini_game_game_over">Dawî</string>
     <string name="mini_game_try_again">Carek din bicûrbîne</string>
     <string name="mini_game_paused">Seikin</string>

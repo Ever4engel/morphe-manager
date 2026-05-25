@@ -370,6 +370,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">選擇遊戲</string>
     <string name="mini_game_score">分數：%d</string>
+    <string name="mini_game_best">最佳 %d</string>
+    <string name="mini_game_new_record">新紀錄！</string>
     <string name="mini_game_game_over">遊戲結束</string>
     <string name="mini_game_try_again">再試一次</string>
     <string name="mini_game_paused">已暫停</string>

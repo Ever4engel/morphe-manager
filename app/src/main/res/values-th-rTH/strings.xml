@@ -370,6 +370,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">เลือกเกม</string>
     <string name="mini_game_score">คะแนน %d</string>
+    <string name="mini_game_best">ดีที่สุด %d</string>
+    <string name="mini_game_new_record">บันทึกใหม่!</string>
     <string name="mini_game_game_over">เกมจบ</string>
     <string name="mini_game_try_again">ลองอีกครั้ง</string>
     <string name="mini_game_paused">หยุดชั่วคราว</string>

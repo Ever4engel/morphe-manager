@@ -370,6 +370,8 @@
     <!-- Patcher Screen - Mini-games -->
     <string name="mini_game_picker_title">Выберите игру</string>
     <string name="mini_game_score">Счет %d</string>
+    <string name="mini_game_best">Лучший %d</string>
+    <string name="mini_game_new_record">Новый рекорд!</string>
     <string name="mini_game_game_over">Игра окончена</string>
     <string name="mini_game_try_again">Попробовать снова</string>
     <string name="mini_game_paused">Пауза</string>

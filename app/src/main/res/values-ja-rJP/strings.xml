@@ -58,7 +58,7 @@
     <string name="sources_management_open_in_browser">ブラウザで開く</string>
     <string name="sources_management_failed_to_open_url">URL を開けませんでした</string>
     <string name="sources_management_prerelease_toggle">プレリリース版のパッチを使用</string>
-    <string name="sources_management_prerelease_toggle_description">新しい実験的パッチバージョンの早期アクセスを受け取ります</string>
+    <string name="sources_management_prerelease_toggle_description">実験的なバージョンのパッチを取得します</string>
     <string name="sources_management_experimental_versions_toggle">実験的なバージョンのアプリを使用</string>
     <string name="sources_management_experimental_versions_toggle_description">利用可能な場合は、実験的なバージョンのアプリをパッチ対象にします</string>
     <string name="sources_management_already_exists">このソースは既に存在します</string>
@@ -368,19 +368,21 @@
     <string name="failed_to_mount">マウントに失敗しました: %s</string>
     <string name="failed_to_unmount">アンマウントに失敗しました: %s</string>
     <!-- Patcher Screen - Mini-games -->
-    <string name="mini_game_picker_title">ゲームを選ぶ</string>
+    <string name="mini_game_picker_title">ゲームを選択</string>
     <string name="mini_game_score">スコア %d</string>
+    <string name="mini_game_best">ベストスコア %d</string>
+    <string name="mini_game_new_record">新しい記録！</string>
     <string name="mini_game_game_over">ゲームオーバー</string>
-    <string name="mini_game_try_again">もう一度試す</string>
-    <string name="mini_game_paused">一時停止</string>
+    <string name="mini_game_try_again">リトライ</string>
+    <string name="mini_game_paused">一時停止中</string>
     <string name="mini_game_resume">続行</string>
-    <string name="mini_game_2048_picker_subtitle">スライドしてタイルを結合</string>
-    <string name="mini_game_flappy_picker_subtitle">パイプの間を飛ぶにはタップ</string>
-    <string name="mini_game_flappy_tap_to_start">飛ぶにはタップ</string>
-    <string name="mini_game_snake_picker_subtitle">食べ物を食べて、自分にぶつからないように</string>
-    <string name="mini_game_snake_swipe_to_start">開始するにはスワイプ</string>
-    <string name="mini_game_dino_picker_subtitle">サボテンを飛び越えるにはタップ</string>
-    <string name="mini_game_dino_tap_to_start">走るにはタップ</string>
+    <string name="mini_game_2048_picker_subtitle">タイルをスライドして合体させよう</string>
+    <string name="mini_game_flappy_picker_subtitle">タップしてパイプの間を飛び抜けよう</string>
+    <string name="mini_game_flappy_tap_to_start">タップして開始</string>
+    <string name="mini_game_snake_picker_subtitle">食べ物を食べよう。自分にぶつかるな！</string>
+    <string name="mini_game_snake_swipe_to_start">スワイプして開始</string>
+    <string name="mini_game_dino_picker_subtitle">タップしてサボテンを飛び越えよう</string>
+    <string name="mini_game_dino_tap_to_start">タップして開始</string>
     <!-- Settings -->
     <string name="appearance">外観</string>
     <string name="advanced">詳細設定</string>
@@ -434,7 +436,7 @@
     <!-- Settings - Advanced Tab - Updates Section -->
     <string name="settings_advanced_updates">更新</string>
     <string name="settings_advanced_updates_use_prereleases">プレリリース版のパッチを使用</string>
-    <string name="settings_advanced_updates_use_prereleases_description">新しい Morphe アプリの早期アクセス。パッチソースでソースごとにプレリリースを有効にします</string>
+    <string name="settings_advanced_updates_use_prereleases_description">新しいバージョンの Morphe をいち早く利用できます。プレリリース版を使用するには、各パッチソースにて設定を有効にしてください</string>
     <string name="settings_advanced_updates_allow_metered">モバイルデータ通信で更新</string>
     <string name="settings_advanced_updates_allow_metered_description">モバイルデータ通信での Morphe およびパッチの更新のダウンロードを許可します</string>
     <string name="settings_advanced_updates_background_notifications">バックグラウンドでの更新通知</string>
@@ -597,7 +599,7 @@ morphe_header_custom_dark.png
     <string name="settings_prompt_installer_on_install_description">パッチ適用済みアプリをインストールする際に、毎回インストーラー選択ダイアログを表示します</string>
     <!-- Settings - System Tab - Performance Section -->
     <string name="settings_system_battery_optimization">電池の最適化</string>
-    <string name="settings_system_battery_optimization_description">アプリを最小化した状態でもパッチャーを実行し続けます</string>
+    <string name="settings_system_battery_optimization_description">アプリを閉じているときでも、パッチャーを実行し続けます</string>
     <string name="settings_system_performance">パフォーマンス</string>
     <string name="settings_system_process_runtime">別プロセスで実行</string>
     <string name="settings_system_process_runtime_description">安定性を向上させるために、パッチ処理を別プロセスで実行します</string>
