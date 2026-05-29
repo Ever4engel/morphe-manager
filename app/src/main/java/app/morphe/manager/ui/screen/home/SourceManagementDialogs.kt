@@ -1158,7 +1158,7 @@ fun BundleChangelogDialog(
                 val lastStable = allEntries.firstOrNull { !it.version.contains("-") }
                 if (lastStable != null)
                     ChangelogParser.entriesNewerThan(allEntries, lastStable.version) + lastStable
-                else allEntries
+                else allEntries.take(30)
             } else {
                 // Stable: from the installed version onwards
                 val installed = src.installedVersionSignature

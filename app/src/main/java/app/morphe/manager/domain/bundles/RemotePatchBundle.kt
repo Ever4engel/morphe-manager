@@ -379,7 +379,7 @@ class JsonPatchBundle(
         val activeEndpoint = resolveBranchUrl(endpoint)
         val changelogUrl = api.changelogUrlFromBundleEndpoint(activeEndpoint) ?: return emptyList()
         return fetchAndCacheEntries("$uid|$changelogUrl", sinceVersion) {
-            api.fetchChangelogFromUrl(changelogUrl)
+            api.fetchChangelogFromUrl(changelogUrl, stopAfterFirstStable = usePrerelease)
         }
     }
 
@@ -461,7 +461,9 @@ class APIPatchBundle(
 
     override suspend fun fetchChangelogEntries(sinceVersion: String?): List<ChangelogEntry> {
         val branch = if (usePrerelease) BRANCH_DEV else BRANCH_STABLE
-        return fetchAndCacheEntries("$uid|$branch", sinceVersion) { api.fetchPatchesChangelog(branch) }
+        return fetchAndCacheEntries("$uid|$branch", sinceVersion) {
+            api.fetchPatchesChangelog(branch, stopAfterFirstStable = usePrerelease)
+        }
     }
 
     override fun copy(

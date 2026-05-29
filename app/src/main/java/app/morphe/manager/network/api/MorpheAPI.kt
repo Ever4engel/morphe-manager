@@ -421,17 +421,17 @@ class MorpheAPI(
     }
 
     /** Fetches and parses CHANGELOG.md from the first-party patches repository. */
-    suspend fun fetchPatchesChangelog(branch: String = "main"): List<ChangelogEntry> =
-        fetchChangelogFromRepo(patchesConfig, branch)
+    suspend fun fetchPatchesChangelog(branch: String = "main", stopAfterFirstStable: Boolean = false): List<ChangelogEntry> =
+        fetchChangelogFromRepo(patchesConfig, branch, stopAfterFirstStable = stopAfterFirstStable)
 
     /**
      * Fetches and parses CHANGELOG.md from an arbitrary raw URL.
      * Used for third-party bundles that follow the Morphe changelog format.
      */
-    suspend fun fetchChangelogFromUrl(changelogUrl: String): List<ChangelogEntry> {
+    suspend fun fetchChangelogFromUrl(changelogUrl: String, stopAfterFirstStable: Boolean = false): List<ChangelogEntry> {
         Log.d(tag, "fetchChangelogFromUrl: $changelogUrl")
         return when (val r = client.request<String> { url(changelogUrl) }) {
-            is APIResponse.Success -> ChangelogParser.parse(r.data)
+            is APIResponse.Success -> ChangelogParser.parse(r.data, stopAfterFirstStable)
             is APIResponse.Error, is APIResponse.Failure -> {
                 Log.w(tag, "Failed to fetch changelog from $changelogUrl")
                 emptyList()
@@ -442,7 +442,8 @@ class MorpheAPI(
     private suspend fun fetchChangelogFromRepo(
         config: RepoConfig,
         branch: String,
-        path: String = "CHANGELOG.md"
+        path: String = "CHANGELOG.md",
+        stopAfterFirstStable: Boolean = false
     ): List<ChangelogEntry> {
         val url = config.rawFileUrl(branch, path)
         Log.d(tag, "fetchChangelog: $url")
@@ -450,7 +451,7 @@ class MorpheAPI(
             url(url)
             header("Cache-Control", "no-cache")
         }) {
-            is APIResponse.Success -> ChangelogParser.parse(r.data)
+            is APIResponse.Success -> ChangelogParser.parse(r.data, stopAfterFirstStable)
             is APIResponse.Error, is APIResponse.Failure -> {
                 Log.w(tag, "Failed to fetch $path for ${config.name}@$branch")
                 emptyList()
